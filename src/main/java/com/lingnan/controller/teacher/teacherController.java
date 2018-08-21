@@ -22,6 +22,7 @@ public class teacherController {
 
     @RequestMapping("/getList")
     public String getList(ModelMap map){
+
         List<Teacher> all = ts.findAll();
         map.put("teacherList",all);
         return "teacher/teacher-list";
