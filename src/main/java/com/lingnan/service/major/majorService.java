@@ -25,4 +25,5 @@ public interface majorService {
 
     int updateMajor(Major major);
 
+    List<Major> findByCollegeId(int parentId);
 }

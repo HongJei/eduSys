@@ -64,5 +64,10 @@ public class MajorServiceImpl implements majorService {
         return md.updateMajor(major);
     }
 
+    @Override
+    public List<Major> findByCollegeId(int parentId) {
+        return md.findByCollegeId(parentId);
+    }
+
 
 }

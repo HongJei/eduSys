@@ -16,8 +16,8 @@
         SELECT * FROM tb_teacher
     </select>
 
-    <!--新增管理员-->
-    <insert id="addAdmin" parameterType="Admin">
+    <!--新增教师-->
+    <insert id="addTeacher" parameterType="Teacher">
         INSERT INTO tb_teacher(work_id, t_name, t_img, t_gender, major_no,
                                college_no, t_address, t_telephone, t_status, t_email)
         VALUES (#{work_id},#{t_name},#{t_img},#{t_gender},#{major_no},#{college_no},#{t_address},

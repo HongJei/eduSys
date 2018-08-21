@@ -10,6 +10,11 @@
         SELECT * FROM tb_major
     </select>
 
+    <!--根据学院编号获取数据-->
+    <select id="findByCollegeId" resultType="Major">
+        SELECT * FROM tb_major WHERE college_no=#{parentId}
+    </select>
+
     <!--新增专业-->
     <insert id="addMajor" parameterType="College">
         INSERT INTO tb_major(major_no, major_name, college_no,major_status)

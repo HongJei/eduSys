@@ -24,4 +24,6 @@ public interface majorDao {
     Major getOneMajor(String major_no);
 
     int updateMajor(Major major);
+
+    List<Major> findByCollegeId(int parentId);
 }

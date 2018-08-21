@@ -29,6 +29,16 @@ public class MajorController {
         return "major/major-list";
     }
 
+    /*获取专业列表
+    * 返回json数据
+    * */
+    @RequestMapping("/getToJson")
+    @ResponseBody
+    public List<Major> getToJson(@RequestParam(value = "parentId")int parentId){
+        List<Major> majorList = ms.findByCollegeId(parentId);
+        return majorList;
+    }
+
     /*跳转到添加页面*/
     @RequestMapping("/toAddMajor")
     public String toAddMajor(){
