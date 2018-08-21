@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lingnan.dao.major.majorDao">
+
+    <!--获取所有专业-->
+    <select id="findAll" resultType="Major">
+        SELECT * FROM tb_major
+    </select>
+
+    <!--新增专业-->
+    <insert id="addMajor" parameterType="College">
+        INSERT INTO tb_major(major_no, major_name, college_no,major_status)
+        VALUES (#{major_no},#{major_name},#{college_no},#{major_status})
+    </insert>
+
+    <!--根据ID删除一条数据-->
+    <delete id="delById" parameterType="String">
+        DELETE FROM tb_major WHERE major_no=#{major_no}
+    </delete>
+
+    <!--修改专业状态-->
+    <update id="updateStatus" parameterType="Map">
+        UPDATE tb_major SET major_status=#{status}
+        WHERE major_no=#{major_no}
+    </update>
+
+    <!--批量删除-->
+    <delete id="delByIds" parameterType="String">
+        DELETE FROM tb_major
+        WHERE major_no IN (
+        <foreach collection="array" item="major_no" separator=",">
+            #{major_no}
+        </foreach>
+        )
+    </delete>
+
+    <!--更新-->
+    <update id="updateMajor" parameterType="Major">
+        UPDATE tb_major SET
+        major_name=#{major_name},college_no=#{college_no},major_status=#{major_status}
+        WHERE major_no=#{major_no}
+    </update>
+
+    <!--根据ID获取一个major-->
+    <select id="getOneMajor" parameterType="String" resultType="Major">
+        SELECT * FROM tb_major WHERE major_no=#{major_no}
+    </select>
+
+
+    <resultMap id="baseMap" type="Major">
+        <id column="major_no" property="major_no"></id>
+        <result column="major_name" property="major_name"></result>
+    </resultMap>
+
+</mapper>

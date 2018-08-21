@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lingnan.dao.teacher.teacherDao">
+
+    <!--根据ID获取-->
+    <select id="findById" parameterType="String" resultType="Teacher">
+        select * from tb_teacher where work_id=#{work_id}
+    </select>
+
+
+    <!--获取所有教师-->
+    <select id="findAll" resultType="Teacher">
+        SELECT * FROM tb_teacher
+    </select>
+
+    <!--新增管理员-->
+    <insert id="addAdmin" parameterType="Admin">
+        INSERT INTO tb_teacher(work_id, t_name, t_img, t_gender, major_no,
+                               college_no, t_address, t_telephone, t_status, t_email)
+        VALUES (#{work_id},#{t_name},#{t_img},#{t_gender},#{major_no},#{college_no},#{t_address},
+                #{t_telephone},#{t_status},#{t_email})
+    </insert>
+
+    <!--根据ID删除一条数据-->
+    <delete id="delById" parameterType="String">
+        DELETE FROM tb_teacher WHERE work_id=#{work_id}
+    </delete>
+
+    <!--修改教师状态-->
+    <update id="updateStatus" parameterType="Map">
+        UPDATE tb_teacher SET t_status=#{t_status}
+        WHERE work_id=#{work_id}
+    </update>
+
+    <!--批量删除-->
+    <delete id="delByIds" parameterType="String">
+        DELETE FROM tb_teacher
+        WHERE work_id IN (
+        <foreach collection="array" item="work_id" separator=",">
+            #{work_id}
+        </foreach>
+        )
+    </delete>
+
+    <!--更新-->
+    <update id="updateAdmin" parameterType="Admin">
+        UPDATE tb_teacher SET
+            t_name=#{t_name},t_img=#{t_img},t_gender=#{t_gender},
+            major_no=#{major_no},college_no=#{college_no},
+            t_address=#{t_address},t_telephone=#{t_telephone},
+            t_status=#{t_status},t_email=#{t_email}
+        WHERE work_id=#{work_id}
+    </update>
+
+    <resultMap id="baseMap" type="Teacher">
+        <id column="work_id" property="work_id"></id>
+        <result column="t_name" property="t_name"></result>
+        <result column="t_img" property="t_img"></result>
+        <result column="t_gender" property="t_gender"></result>
+        <result column="major_no" property="major_no"></result>
+        <result column="college_no" property="college_no"></result>
+        <result column="t_address" property="t_address"></result>
+        <result column="t_telephone" property="t_telephone"></result>
+        <result column="t_status" property="t_status"></result>
+        <result column="t_email" property="t_email"></result>
+    </resultMap>
+
+</mapper>

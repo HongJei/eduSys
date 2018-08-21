@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lingnan.dao.college.collegeDao">
+
+    <!--查找所有学院-->
+    <select id="findAll" resultType="College">
+        SELECT * FROM tb_college
+    </select>
+
+    <!--新增学院-->
+    <insert id="addCollege" parameterType="College">
+        INSERT INTO tb_college(college_no, college_name, setting_quota, current_quota, major_int,college_status)
+        VALUES (#{college_no},#{college_name},#{setting_quota},#{current_quota},#{major_int},#{college_status})
+    </insert>
+
+    <!--根据ID删除一条数据-->
+    <delete id="delByColId" parameterType="String">
+        DELETE FROM tb_college WHERE college_no=#{college_no}
+    </delete>
+
+    <!--修改学院状态-->
+    <update id="updateStatus" parameterType="Map">
+        UPDATE tb_college SET college_status=#{status}
+        WHERE college_no=#{college_no}
+    </update>
+
+    <!--批量删除-->
+    <delete id="delByColIds" parameterType="String">
+        DELETE FROM tb_college
+        WHERE college_no IN (
+                <foreach collection="array" item="college_no" separator=",">
+                    #{college_no}
+                </foreach>
+        )
+    </delete>
+
+    <!--更新-->
+    <update id="updateCollege" parameterType="College">
+        UPDATE tb_college SET
+            college_name=#{college_name},setting_quota=#{setting_quota},
+            current_quota=#{current_quota},college_status=#{college_status}
+        WHERE college_no=#{college_no}
+    </update>
+
+    <!--根据ID获取一个college-->
+    <select id="getOneCol" parameterType="String" resultType="College">
+        SELECT * FROM tb_college WHERE college_no=#{college_no}
+    </select>
+
+    <resultMap id="baseMap" type="College">
+        <id column="college_no" property="college_no"></id>
+        <result column="college_name" property="college_name"></result>
+        <result column="setting_quota" property="setting_quota"></result>
+        <result column="current_quota" property="current_quota"></result>
+        <result column="major_int" property="major_int"></result>
+        <result column="college_status" property="college_status"></result>
+    </resultMap>
+
+</mapper>

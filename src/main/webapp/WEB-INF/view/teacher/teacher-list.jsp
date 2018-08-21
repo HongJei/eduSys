@@ -62,7 +62,7 @@
                 <tbody>
                 <tr class="text-c">
                     <td><input name="" type="checkbox" value=""></td>
-                    <td>Id${teacher.work_id}</td>
+                    <td>${teacher.work_id}</td>
                     <td>${teacher.t_name}</td>
                     <td>
                         <a href="javascript:;" onClick="picture_edit('图库编辑','picture-show.html','10001')">
