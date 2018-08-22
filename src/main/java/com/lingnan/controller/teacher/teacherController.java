@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -33,6 +34,26 @@ public class teacherController {
         List<Teacher> all = ts.findAll();
         map.put("teacherList",all);
         return "teacher/teacher-list";
+    }
+
+    /*删除教师*/
+    @RequestMapping("/delById")
+    @ResponseBody
+    public String delById(@RequestParam(value = "work_id")String work_id){
+        int i = ts.delById(work_id);
+        if (i == 1)
+            return "success";
+        return "error";
+    }
+
+    /*批量删除教师*/
+    @RequestMapping("/delByIds")
+    @ResponseBody
+    public String delByIds(@RequestParam(value = "Ids")int Ids[]){
+        int i = ts.delByIds(Ids);
+        if (i == 1)
+            return "success";
+        return "error";
     }
 
     /*添加教师页面*/
@@ -74,6 +95,26 @@ public class teacherController {
         {
             return "error";
         }
+    }
+
+    @RequestMapping("/updateStatus")
+    @ResponseBody
+    public String updateStatus(@RequestParam(value = "work_id")String work_id,
+                               @RequestParam(value = "status")String status){
+        int i = ts.updateStatus(work_id, status);
+        if (i == 1)
+            return work_id;
+        return "error";
+    }
+
+    /*更新页面*/
+    @RequestMapping("/toUpdate")
+    public String toUpdate(@RequestParam(value = "work_id")String work_id,ModelMap map){
+        Teacher byId = ts.findById(work_id);
+        List<College> all = cs.findAll();
+        map.put("collegeList",all);
+        map.put("teacher",byId);
+        return "teacher/teacher-add";
     }
 
 

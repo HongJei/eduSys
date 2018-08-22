@@ -24,15 +24,20 @@
 <div class="page-container">
     <form class="form form-horizontal" id="form-teacher-add" enctype="multipart/form-data">
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>教师编号：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="work_id"  name="work_id">
-            </div>
+            <c:if test="${teacher!=null}">
+                <input type="text" class="input-text" value="${teacher.work_id}" hidden="hidden"  name="work_id">
+            </c:if>
+            <c:if test="${teacher==null}">
+                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>教师编号：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <input type="text" class="input-text" placeholder="" id="work_id"  name="work_id">
+                </div>
+            </c:if>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>教师名称：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="t_name"  name="t_name">
+                <input type="text" class="input-text" value="${teacher.t_name}" placeholder="" id="t_name"  name="t_name">
             </div>
         </div>
         <div class="row cl">
@@ -68,19 +73,19 @@
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>联系号码：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="t_telephone"  name="t_telephone">
+                <input type="text" class="input-text" value="${teacher.t_telephone}" placeholder="" id="t_telephone"  name="t_telephone">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">邮箱：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="@" name="t_email" id="email">
+                <input type="text" class="input-text" value="${teacher.t_email}" placeholder="@" name="t_email" id="email">
             </div>
         </div>
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">联系地址：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="t_address"  name="t_address">
+                <input type="text" class="input-text" value="${teacher.t_address}" placeholder="" id="t_address"  name="t_address">
             </div>
         </div>
         <div class="row cl">
@@ -88,10 +93,18 @@
             <div class="formControls col-xs-8 col-sm-9">
 				<span class="select-box">
 				<select id="department" class="select" name="college_no" onchange="change(this)">
-                    <option checked>请选择学院:</option>
-                    <c:forEach items="${collegeList}" var="college">
-                        <option value="${college.college_no}">${college.college_name}</option>
-                    </c:forEach>
+                    <c:if test="${teacher!=null}">
+                        <option checked value="${teacher.college_no}">当前所属学院编号:${teacher.college_no}</option>
+                        <c:forEach items="${collegeList}" var="college">
+                            <option value="${college.college_no}">${college.college_name}</option>
+                        </c:forEach>
+                    </c:if>
+                    <c:if test="${teacher==null}">
+                        <option checked>请选择学院:</option>
+                        <c:forEach items="${collegeList}" var="college">
+                            <option value="${college.college_no}">${college.college_name}</option>
+                        </c:forEach>
+                    </c:if>
                 </select>
 				</span>
             </div>
@@ -101,14 +114,28 @@
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>分属专业：</label>
             <div class="formControls col-xs-8 col-sm-9">
 				<span class="select-box">
-				<select id="professional" class="select" name="major_no"></select>
+				<select id="professional" class="select" name="major_no">
+                    <c:if test="${teacher!=null}">
+                        <option checked value="${teacher.major_no}">当前所属专业编号:${teacher.major_no}</option>
+                    </c:if>
+                </select>
 				</span>
             </div>
         </div>
-
-
+        <c:if test="${teacher!=null}">
+            <div class="row cl">
+                <label class="form-label col-xs-4 col-sm-2">
+                    当前头像:
+                </label>
+                <div class="formControls col-xs-8 col-sm-9">
+                        ${teacher.t_img}
+                </div>
+            </div>
+        </c:if>
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2">肖像上传：</label>
+            <label class="form-label col-xs-4 col-sm-2">
+                肖像上传：
+            </label>
             <div class="formControls col-xs-8 col-sm-9">
                 <span class="item_name" style="width: 120px;">上传图片：</span>
                 <label class="uploadImg">
@@ -116,7 +143,9 @@
                     <input type="file" name="pictureFile" />
                 </label>
             </div>
+
         </div>
+
 
         <div class="row cl">
             <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-2">
@@ -147,60 +176,60 @@
                 increaseArea: '20%'
             });
 
-        $("#form-teacher-add").validate({
-            rules:{
-                t_name:{
-                    required:true,
-                    minlength:2,
-                    maxlength:16
+            $("#form-teacher-add").validate({
+                rules:{
+                    t_name:{
+                        required:true,
+                        minlength:2,
+                        maxlength:16
+                    },
+                    work_id:{
+                        required:true,
+                        minlength:2,
+                        maxlength:10
+                    },
+                    t_telephone:{
+                        required:true,
+                        isPhone:true
+                    },
+                    college_no:{
+                        required:true,
+                    },
+                    major_no:{
+                        required:true,
+                    },
+                    t_email:{
+                        required:true,
+                        email:true
+                    },
                 },
-                work_id:{
-                    required:true,
-                    minlength:2,
-                    maxlength:10
-                },
-                t_telephone:{
-                    required:true,
-                    isPhone:true
-                },
-                college_no:{
-                    required:true,
-                },
-                major_no:{
-                    required:true,
-                },
-                t_email:{
-                    required:true,
-                    email:true
-                },
-            },
-            onkeyup:false,
-            focusCleanup:true,
-            success:"valid",
-            submitHandler:function(form){
-                var params = $('#form-teacher-add').serialize();
-                var url = "${path}/teacher/addTeacher";
-                if (${teacher!=null}){
-                    url = "${path}/teacher/doUpdate";
-                }
-                layer.confirm('确认提交吗？',function(index){
-                    $(form).ajaxSubmit({
-                        type: 'post',
-                        url: url ,
-                        data: params,
-                        dataType: 'text',
-                        success: function(data){
-                            layer.msg('操作成功!',{icon:1,time:3000});
-                            $('#form-teacher-add')[0].reset();
-                        },
-                        error: function(data){
-                            layer.msg('操作失败!编号已存在!',{icon:5,time:4000});
-                        }
-                    });
+                onkeyup:false,
+                focusCleanup:true,
+                success:"valid",
+                submitHandler:function(form){
+                    var params = $('#form-teacher-add').serialize();
+                    var url = "${path}/teacher/addTeacher";
+                    if (${teacher!=null}){
+                        url = "${path}/teacher/doUpdate";
+                    }
+                    layer.confirm('确认提交吗？',function(index){
+                        $(form).ajaxSubmit({
+                            type: 'post',
+                            url: url ,
+                            data: params,
+                            dataType: 'text',
+                            success: function(data){
+                                layer.msg('操作成功!',{icon:1,time:3000});
+                                $('#form-teacher-add')[0].reset();
+                            },
+                            error: function(data){
+                                layer.msg('操作失败!编号已存在!',{icon:5,time:4000});
+                            }
+                        });
 
-                });
-            }
-        });
+                    });
+                }
+            });
         }
     );
 

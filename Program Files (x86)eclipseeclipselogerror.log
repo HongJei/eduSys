@@ -5767,3 +5767,1902 @@ Log session start time Tue Aug 21 15:01:22 CST 2018<br>
 <td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
 <td title="Message">&lt;==      Total: 109</td>
 </tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Aug 21 17:55:13 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">==&gt;  Preparing: SELECT * FROM tb_teacher </td>
+</tr>
+
+<tr>
+<td>84</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">==&gt; Parameters: </td>
+</tr>
+
+<tr>
+<td>125</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==    Columns: work_id, t_name, t_img, t_gender, major_no, college_no, t_address, t_telephone, t_status, t_email</td>
+</tr>
+
+<tr>
+<td>126</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010001, 穆言, null, null, null, null, 广东省湛江市, 1380013800, 1, muyan@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>131</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010002, 孙扬, null, null, null, null, null, null, 1, sunyang@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>167</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010003, 李咪霞, null, null, null, null, null, null, 1, limx@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>167</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010004, 孙雨明, null, null, null, null, null, null, 1, sun_ym@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>168</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010005, 侯仰云, null, null, null, null, null, null, 1, houyy@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>169</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010006, 邹爱琳, null, null, null, null, null, null, 1, zouailing@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>170</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010007, 夏伯春, null, null, null, null, null, null, 1, xiabn@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>171</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010008, 刘雪花, null, null, null, null, null, null, 1, liuxueling427@163.com</td>
+</tr>
+
+<tr>
+<td>173</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010009, 路婴, null, null, null, null, null, null, 1, luying@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>174</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010010, 彭钧, null, null, null, null, null, null, null, pengjj@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>175</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010011, 肖皮皮, null, null, null, null, null, null, null, xiaopeng@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>179</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010012, 唐君, null, null, null, null, null, null, null, tangxj@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>180</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010013, 于得水, null, null, null, null, null, null, null, yuds@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>180</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010015, 金利文, null, null, null, null, null, null, null, jinlw@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>180</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020001, 熊路, null, null, null, null, null, null, null, xiongli@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>181</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020002, 刘洪武, null, null, null, null, null, null, null, liuhw@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>222</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020003, 张加和, null, null, null, null, null, null, null, zhangjh@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>222</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020004, 刘瑜伽, null, null, null, null, null, null, null, liu_yj@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>223</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020005, 郑丽荣, null, null, null, null, null, null, null, zhengli@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>224</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020006, 王琳琳, null, null, null, null, null, null, null, wanglin@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>224</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020007, 吕欢乐, null, null, null, null, null, null, null, lvhl@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>224</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020008, 赵卢龙, null, null, null, null, null, null, null, zhaoll@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>227</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020009, 张云彩, null, null, null, null, null, null, null, zhang_yc@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>228</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020010, 王英航, null, null, null, null, null, null, null, wang-yh@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>229</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020011, 臧淑君, null, null, null, null, null, null, null, zangsj@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>234</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020012, 王立丽, null, null, null, null, null, null, null, wangli@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>235</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020013, 张仁, null, null, null, null, null, null, null, zhangrs@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>235</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020014, 宛济, null, null, null, null, null, null, null, wanjie@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>235</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020015, 何文, null, null, null, null, null, null, null, hewb@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>236</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030001, 梁鸿威, null, null, null, null, null, null, null, lianghw@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>236</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030002, 王从良, null, null, null, null, null, null, null, wyl@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>236</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030003, 王亚哈, null, null, null, null, null, null, null, yhwang@dl.cn</td>
+</tr>
+
+<tr>
+<td>236</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030004, 康吉健, null, null, null, null, null, null, null, kjkj55555@163.com</td>
+</tr>
+
+<tr>
+<td>237</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030005, 曹冠珠, null, null, null, null, null, null, null, caogz@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>237</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030006, 付德利, null, null, null, null, null, null, null, fudl@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>237</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030007, 张丰润, null, null, null, null, null, null, null, zhangfr@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>237</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030008, 董小蜜, null, null, null, null, null, null, null, dongxm@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>238</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030009, 于加为, null, null, null, null, null, null, null, yujw@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>238</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030010, 王蔚蓝, null, null, null, null, null, null, null, wang_wl@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>239</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030011, 赵正如, null, null, null, null, null, null, null, zhao_zr@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>239</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030012, 杨开萍, null, null, null, null, null, null, null, yangkb@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>239</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030013, 季军, null, null, null, null, null, null, null, jijun@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>239</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030014, 康健建, null, null, null, null, null, null, null, kangjian@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>244</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030015, 刘超然, null, null, null, null, null, null, null, liuchao@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>246</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030016, 刘艳丽, null, null, null, null, null, null, null, liuyanl@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>246</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030017, 邵辉烟, null, null, null, null, null, null, null, shaohy@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>247</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030018, 薛晓豆, null, null, null, null, null, null, null, xuexd@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>247</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030019, 张大行, null, null, null, null, null, null, null, zhang_dh@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>252</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030020, 王蒙, null, null, null, null, null, null, null, 582868410@qq.com</td>
+</tr>
+
+<tr>
+<td>252</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030021, 杜连栋, null, null, null, null, null, null, null, 349190079@qq.com</td>
+</tr>
+
+<tr>
+<td>252</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030022, 张玉吉, null, null, null, null, null, null, null, zhangyj@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>253</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030023, 李笑雁, null, null, null, null, null, null, null, lixy@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>253</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030024, 赵西男, null, null, null, null, null, null, null, zhaoxin@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>255</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030025, 王正司, null, null, null, null, null, null, null, zs_wang@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>255</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030027, 王慧, images/teacher/test.jpg, null, null, null, null, null, null, wang_hui@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>255</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030028, 王楚艳, null, null, 101, 01, null, null, null, wang-cy@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>256</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030029, 崔志衎, null, null, null, null, null, null, null, cuizk@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>256</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030030, 丁卓越, null, null, null, null, null, null, null, dingzhy@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>256</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030031, 李默然, null, null, null, null, null, null, null, limo@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>256</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030032, 杨得之, null, null, null, null, null, null, null, yangdz@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>257</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030033, 王码, null, null, null, null, null, null, null, wang1016523@sina.com</td>
+</tr>
+
+<tr>
+<td>257</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030034, 张海燕, null, null, null, null, null, null, null, zhanghaiying@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>269</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030035, 赵尘, null, null, null, null, null, null, null, 79719591@qq.com</td>
+</tr>
+
+<tr>
+<td>269</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030036, 李露露, null, null, null, null, null, null, null, lill@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>269</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 040030, 石德义, null, null, null, null, null, null, null, shidy@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>270</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 050001, 舒宝奎, null, null, null, null, null, null, null, shukui@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>270</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 050002, 张龙起, null, null, null, null, null, null, null, longqizu@163.com</td>
+</tr>
+
+<tr>
+<td>270</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 050003, 于忠文, null, null, null, null, null, null, null, yuzd@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>270</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 050004, 姚雏龙, null, null, null, null, null, null, null, yaocl@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>270</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 050005, 闫会诊, null, null, null, null, null, null, null, yanhz@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>270</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 050006, 陶学哼, null, null, null, null, null, null, null, xhtao@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>271</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 050011, 刘建安, null, null, null, null, null, null, null, liujian@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>271</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 050012, 王启丽, null, null, null, null, null, null, null, wangql@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>271</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 050013, 崔一慧, null, null, null, null, null, null, null, cuiyh@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>271</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 050014, 牟俊男, null, null, null, null, null, null, null, moujun@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>271</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 050015, 康缇英, null, null, null, null, null, null, null, kangty@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>272</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 050016, 初荣立, null, null, null, null, null, null, null, shirley_churan@sina.com</td>
+</tr>
+
+<tr>
+<td>272</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 050017, 张海春, null, null, null, null, null, null, null, zhanghc@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>272</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060001, 耿也否, null, null, null, null, null, null, null, gengye@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>272</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060002, 苏皮, null, null, null, null, null, null, null, subo1973@163.com</td>
+</tr>
+
+<tr>
+<td>272</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060003, 李晓, null, null, null, null, null, null, null, lixh@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>273</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060004, 沈蓝蓝, null, null, null, null, null, null, null, shenlan@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>274</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060005, 刘楠吖, null, null, null, null, null, null, null, liuna@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>274</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060006, 王文, null, null, null, null, null, null, null, wanghw@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>274</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060007, 范丰收, null, null, null, null, null, null, null, fanfl@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>275</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060008, 于强, null, null, null, null, null, null, null, tigeryxq@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>275</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060009, 刘英均, null, null, null, null, null, null, null, ly0625@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>277</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060010, 房言, null, null, null, null, null, null, null, dlpu_fy@163.com</td>
+</tr>
+
+<tr>
+<td>277</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060011, 王航, null, null, null, null, null, null, null, wangmh@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>277</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060012, 王萍, null, null, null, null, null, null, null, wanghp@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>277</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060013, 邵小利, null, null, null, null, null, null, null, shaoli@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>278</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060014, 康佳丽, null, null, null, null, null, null, null, kangli@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>278</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060015, 刘柏伟, null, null, null, null, null, null, null, lbdlcn@hotmail.com</td>
+</tr>
+
+<tr>
+<td>278</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070001, 李旭日, null, null, null, null, null, null, null, lixu@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>278</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070002, 李吉春, null, null, null, null, null, null, null, lijp@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>278</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070003, 金桂花, null, null, null, null, null, null, null, guiyue.jin@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>278</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070004, 李萍萍, null, null, null, null, null, null, null, liping@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>279</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070005, 曹冠草, null, null, null, null, null, null, null, gycao@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>279</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070006, 杨依兰, null, null, null, null, null, null, null, yang_yi@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>280</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070007, 袁爱国, null, null, null, null, null, null, null, yuanax@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>280</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070008, 李鹏春, null, null, null, null, null, null, null, lipeng@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>280</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070009, 李总胜, null, null, null, null, null, null, null, desheng@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>281</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070010, 祁坚刚, null, null, null, null, null, null, null, qijg@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>282</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070011, 杨志喜, null, null, null, null, null, null, null, yangzx@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>282</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070012, 李微微, null, null, null, null, null, null, null, liwei@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>282</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070013, 唐树神, null, null, null, null, null, null, null, tangshusen@sina.com</td>
+</tr>
+
+<tr>
+<td>283</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070014, 李宝英, null, null, null, null, null, null, null, liby@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>283</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070015, 牛悦丽, null, null, null, null, null, null, null, niuyl@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>283</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070016, 王一如, null, null, null, null, null, null, null, wangyr@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>284</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==      Total: 109</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Aug 21 18:11:59 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">==&gt;  Preparing: SELECT * FROM tb_teacher </td>
+</tr>
+
+<tr>
+<td>56</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">==&gt; Parameters: </td>
+</tr>
+
+<tr>
+<td>75</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==    Columns: work_id, t_name, t_img, t_gender, major_no, college_no, t_address, t_telephone, t_status, t_email</td>
+</tr>
+
+<tr>
+<td>75</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010001, 穆言, null, null, null, null, 广东省湛江市, 1380013800, 1, muyan@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>78</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010002, 孙扬, null, null, null, null, null, null, 1, sunyang@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>79</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010003, 李咪霞, null, null, null, null, null, null, 1, limx@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>80</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010004, 孙雨明, null, null, null, null, null, null, 1, sun_ym@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>80</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010005, 侯仰云, null, null, null, null, null, null, 1, houyy@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>80</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010006, 邹爱琳, null, null, null, null, null, null, 1, zouailing@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>81</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010007, 夏伯春, null, null, null, null, null, null, 1, xiabn@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>81</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010008, 刘雪花, null, null, null, null, null, null, 1, liuxueling427@163.com</td>
+</tr>
+
+<tr>
+<td>81</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010009, 路婴, null, null, null, null, null, null, 1, luying@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>81</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010010, 彭钧, null, null, null, null, null, null, null, pengjj@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>82</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010011, 肖皮皮, null, null, null, null, null, null, null, xiaopeng@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>82</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010012, 唐君, null, null, null, null, null, null, null, tangxj@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>82</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010013, 于得水, null, null, null, null, null, null, null, yuds@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>82</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 010015, 金利文, null, null, null, null, null, null, null, jinlw@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>83</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020001, 熊路, null, null, null, null, null, null, null, xiongli@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>83</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020002, 刘洪武, null, null, null, null, null, null, null, liuhw@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>85</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020003, 张加和, null, null, null, null, null, null, null, zhangjh@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>86</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020004, 刘瑜伽, null, null, null, null, null, null, null, liu_yj@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>87</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020005, 郑丽荣, null, null, null, null, null, null, null, zhengli@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>88</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020006, 王琳琳, null, null, null, null, null, null, null, wanglin@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>88</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020007, 吕欢乐, null, null, null, null, null, null, null, lvhl@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>88</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020008, 赵卢龙, null, null, null, null, null, null, null, zhaoll@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>89</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020009, 张云彩, null, null, null, null, null, null, null, zhang_yc@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>89</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020010, 王英航, null, null, null, null, null, null, null, wang-yh@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>89</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020011, 臧淑君, null, null, null, null, null, null, null, zangsj@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>90</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020012, 王立丽, null, null, null, null, null, null, null, wangli@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>90</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020013, 张仁, null, null, null, null, null, null, null, zhangrs@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>90</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020014, 宛济, null, null, null, null, null, null, null, wanjie@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>93</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 020015, 何文, null, null, null, null, null, null, null, hewb@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>93</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030001, 梁鸿威, null, null, null, null, null, null, null, lianghw@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>93</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030002, 王从良, null, null, null, null, null, null, null, wyl@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>94</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030003, 王亚哈, null, null, null, null, null, null, null, yhwang@dl.cn</td>
+</tr>
+
+<tr>
+<td>98</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030004, 康吉健, null, null, null, null, null, null, null, kjkj55555@163.com</td>
+</tr>
+
+<tr>
+<td>98</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030005, 曹冠珠, null, null, null, null, null, null, null, caogz@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>99</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030006, 付德利, null, null, null, null, null, null, null, fudl@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>99</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030007, 张丰润, null, null, null, null, null, null, null, zhangfr@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>99</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030008, 董小蜜, null, null, null, null, null, null, null, dongxm@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>99</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030009, 于加为, null, null, null, null, null, null, null, yujw@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>100</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030010, 王蔚蓝, null, null, null, null, null, null, null, wang_wl@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>100</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030011, 赵正如, null, null, null, null, null, null, null, zhao_zr@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>100</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030012, 杨开萍, null, null, null, null, null, null, null, yangkb@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>101</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030013, 季军, null, null, null, null, null, null, null, jijun@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>101</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030014, 康健建, null, null, null, null, null, null, null, kangjian@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>106</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030015, 刘超然, null, null, null, null, null, null, null, liuchao@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>106</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030016, 刘艳丽, null, null, null, null, null, null, null, liuyanl@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>106</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030017, 邵辉烟, null, null, null, null, null, null, null, shaohy@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>107</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030018, 薛晓豆, null, null, null, null, null, null, null, xuexd@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>108</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030019, 张大行, null, null, null, null, null, null, null, zhang_dh@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>108</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030020, 王蒙, null, null, null, null, null, null, null, 582868410@qq.com</td>
+</tr>
+
+<tr>
+<td>109</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030021, 杜连栋, null, null, null, null, null, null, null, 349190079@qq.com</td>
+</tr>
+
+<tr>
+<td>109</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030022, 张玉吉, null, null, null, null, null, null, null, zhangyj@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>109</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030023, 李笑雁, null, null, null, null, null, null, null, lixy@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>110</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030024, 赵西男, null, null, null, null, null, null, null, zhaoxin@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>110</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030025, 王正司, null, null, null, null, null, null, null, zs_wang@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>110</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030027, 王慧, images/teacher/test.jpg, null, null, null, null, null, null, wang_hui@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>111</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030028, 王楚艳, null, null, 101, 01, null, null, null, wang-cy@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>111</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030029, 崔志衎, null, null, null, null, null, null, null, cuizk@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>112</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030030, 丁卓越, null, null, null, null, null, null, null, dingzhy@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>112</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030031, 李默然, null, null, null, null, null, null, null, limo@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>113</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030032, 杨得之, null, null, null, null, null, null, null, yangdz@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>113</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030033, 王码, null, null, null, null, null, null, null, wang1016523@sina.com</td>
+</tr>
+
+<tr>
+<td>113</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030034, 张海燕, null, null, null, null, null, null, null, zhanghaiying@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>114</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030035, 赵尘, null, null, null, null, null, null, null, 79719591@qq.com</td>
+</tr>
+
+<tr>
+<td>114</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 030036, 李露露, null, null, null, null, null, null, null, lill@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>114</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 040030, 石德义, null, null, null, null, null, null, null, shidy@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>115</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 050001, 舒宝奎, null, null, null, null, null, null, null, shukui@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>115</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 050002, 张龙起, null, null, null, null, null, null, null, longqizu@163.com</td>
+</tr>
+
+<tr>
+<td>115</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 050004, 姚雏龙, null, null, null, null, null, null, null, yaocl@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>116</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 050005, 闫会诊, null, null, null, null, null, null, null, yanhz@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>116</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060002, 苏皮, null, null, null, null, null, null, null, subo1973@163.com</td>
+</tr>
+
+<tr>
+<td>116</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060003, 李晓, null, null, null, null, null, null, null, lixh@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>117</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060004, 沈蓝蓝, null, null, null, null, null, null, null, shenlan@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>117</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060005, 刘楠吖, null, null, null, null, null, null, null, liuna@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>117</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060006, 王文, null, null, null, null, null, null, null, wanghw@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>118</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060007, 范丰收, null, null, null, null, null, null, null, fanfl@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>118</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060008, 于强, null, null, null, null, null, null, null, tigeryxq@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>119</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060009, 刘英均, null, null, null, null, null, null, null, ly0625@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>119</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060010, 房言, null, null, null, null, null, null, null, dlpu_fy@163.com</td>
+</tr>
+
+<tr>
+<td>119</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060011, 王航, null, null, null, null, null, null, null, wangmh@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>120</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060012, 王萍, null, null, null, null, null, null, null, wanghp@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>120</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060013, 邵小利, null, null, null, null, null, null, null, shaoli@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>120</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060014, 康佳丽, null, null, null, null, null, null, null, kangli@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>121</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 060015, 刘柏伟, null, null, null, null, null, null, null, lbdlcn@hotmail.com</td>
+</tr>
+
+<tr>
+<td>121</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070001, 李旭日, null, null, null, null, null, null, null, lixu@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>121</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070002, 李吉春, null, null, null, null, null, null, null, lijp@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>121</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070003, 金桂花, null, null, null, null, null, null, null, guiyue.jin@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>121</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070004, 李萍萍, null, null, null, null, null, null, null, liping@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>121</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070005, 曹冠草, null, null, null, null, null, null, null, gycao@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>122</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070006, 杨依兰, null, null, null, null, null, null, null, yang_yi@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>123</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070007, 袁爱国, null, null, null, null, null, null, null, yuanax@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>124</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070008, 李鹏春, null, null, null, null, null, null, null, lipeng@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>125</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070009, 李总胜, null, null, null, null, null, null, null, desheng@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>125</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070010, 祁坚刚, null, null, null, null, null, null, null, qijg@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>125</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070011, 杨志喜, null, null, null, null, null, null, null, yangzx@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>125</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070012, 李微微, null, null, null, null, null, null, null, liwei@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>125</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070013, 唐树神, null, null, null, null, null, null, null, tangshusen@sina.com</td>
+</tr>
+
+<tr>
+<td>125</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070014, 李宝英, null, null, null, null, null, null, null, liby@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>126</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070015, 牛悦丽, null, null, null, null, null, null, null, niuyl@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>127</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==        Row: 070016, 王一如, null, null, null, null, null, null, null, wangyr@dlpu.edu.cn</td>
+</tr>
+
+<tr>
+<td>127</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher.teacherDao.findAll category">com.lingnan.dao.teacher.teacherDao.findAll</td>
+<td title="Message">&lt;==      Total: 99</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Aug 21 22:38:07 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher.teacherDao.addTeacher category">com.lingnan.dao.teacher.teacherDao.addTeacher</td>
+<td title="Message">==&gt;  Preparing: INSERT INTO tb_teacher(work_id, t_name, t_img, t_gender, major_no, college_no, t_address, t_telephone, t_status, t_email) VALUES (?,?,?,?,?,?,?, ?,?,?) </td>
+</tr>
+
+<tr>
+<td>74</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher.teacherDao.addTeacher category">com.lingnan.dao.teacher.teacherDao.addTeacher</td>
+<td title="Message">==&gt; Parameters: test(String), 张三(String), null(String), 男(String), 0(String), 1380013800(String), 123456789@163.om(String), 广东省湛江市(String), 07(String), 303(String)</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Aug 21 22:40:16 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher.teacherDao.addTeacher category">com.lingnan.dao.teacher.teacherDao.addTeacher</td>
+<td title="Message">==&gt;  Preparing: INSERT INTO tb_teacher(work_id, t_name, t_img, t_gender, major_no, college_no, t_address, t_telephone, t_status, t_email) VALUES (?,?,?,?,?,?,?, ?,?,?) </td>
+</tr>
+
+<tr>
+<td>78</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher.teacherDao.addTeacher category">com.lingnan.dao.teacher.teacherDao.addTeacher</td>
+<td title="Message">==&gt; Parameters: test(String), 张三(String), null(String), 男(String), 0(String), 1380013800(String), 123456789@163.om(String), 广东省湛江市(String), 07(String), 702(String)</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Tue Aug 21 22:44:09 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher.teacherDao.addTeacher category">com.lingnan.dao.teacher.teacherDao.addTeacher</td>
+<td title="Message">==&gt;  Preparing: INSERT INTO tb_teacher(work_id, t_name, t_img, t_gender, major_no, college_no, t_address, t_telephone, t_status, t_email) VALUES (?,?,?,?,?,?,?, ?,?,?) </td>
+</tr>
+
+<tr>
+<td>72</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher.teacherDao.addTeacher category">com.lingnan.dao.teacher.teacherDao.addTeacher</td>
+<td title="Message">==&gt; Parameters: test(String), 张三(String), null(String), 男(String), 702(String), 07(String), 广东省湛江市(String), 1380013800(String), 0(String), 123456789@163.com(String)</td>
+</tr>
+
+<tr>
+<td>397</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher.teacherDao.addTeacher category">com.lingnan.dao.teacher.teacherDao.addTeacher</td>
+<td title="Message">&lt;==    Updates: 1</td>
+</tr>

@@ -6,6 +6,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="referrer" content="origin">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <meta http-equiv="Cache-Control" content="no-siteapp" />
@@ -37,7 +38,7 @@
         <table class="table table-border table-bordered table-bg table-hover table-sort table-responsive">
             <thead>
             <tr class="text-c">
-                <th width="40"><input name="" type="checkbox" value=""></th>
+                <th width="40"><input  type="checkbox" value=""></th>
                 <th width="80">ID</th>
                 <th width="70">姓名</th>
                 <th width="80">肖像</th>
@@ -55,12 +56,12 @@
             <c:forEach items="${teacherList}" var="teacher">
 
                 <tr class="text-c">
-                    <td><input name="" type="checkbox" value=""></td>
+                    <td><input name="checkboxs" type="checkbox" value="${teacher.work_id}"></td>
                     <td>${teacher.work_id}</td>
                     <td>${teacher.t_name}</td>
                     <td>
                         <a href="javascript:;" onClick="picture_edit('图库编辑','picture-show.html','10001')">
-                            <img width="60" height="50" class="picture-thumb" src="${path}/images/teacher/${teacher.t_img}">
+                            <img width="60" height="50" class="picture-thumb" src="/eduSys/images/teacher/${teacher.t_img}">
                         </a>
                     </td>
                     <td class="text-l">${teacher.t_gender}</td>
@@ -71,19 +72,29 @@
                     <td>${teacher.t_email}</td>
                     <td class="td-status">
                         <c:if test="${teacher.t_status==1}">
-                            <span class="label label-success radius">工作中</span>
+                            <span class="label label-success radius">工作</span>
                         </c:if>
                         <c:if test="${teacher.t_status==0}">
-                            <span class="label  radius">空闲</span>
+                            <span class="label  radius">休假</span>
                         </c:if>
                     </td>
-                    <td class="td-manage"><a style="text-decoration:none" onClick="picture_stop(this,'10001')" href="javascript:;" title="下架">
-                        <i class="Hui-iconfont">&#xe6de;</i>
-                    </a>
-                        <a style="text-decoration:none" class="ml-5" onClick="picture_edit('图库编辑','picture-add.html','10001')" href="javascript:;" title="编辑">
+                    <td class="td-manage">
+                        <c:if test="${teacher.t_status==1}">
+                            <a style="text-decoration:none" onClick="teacher_stop(this,'${teacher.work_id}')" href="javascript:;" title="休假">
+                                <i class="Hui-iconfont">&#xe631;</i>
+                            </a>
+                        </c:if>
+                        <c:if test="${teacher.t_status==0||teacher.t_status==null}">
+                            <a style="text-decoration:none" onClick="teacher_start(this,'${teacher.work_id}')" href="javascript:;" title="工作">
+                                <i class="Hui-iconfont">&#xe615;</i>
+                            </a>
+                        </c:if>
+
+
+                        <a style="text-decoration:none" class="ml-5" onClick="teacher_edit('更新教师','${path}/teacher/toUpdate?work_id=${teacher.work_id}')" href="javascript:;" title="编辑">
                             <i class="Hui-iconfont">&#xe6df;</i>
                         </a>
-                        <a style="text-decoration:none" class="ml-5" onClick="picture_del(this,'10001')" href="javascript:;" title="删除">
+                        <a style="text-decoration:none" class="ml-5" onClick="teacher_del(this,'${teacher.work_id}')" href="javascript:;" title="删除">
                             <i class="Hui-iconfont">&#xe6e2;</i>
                         </a>
                     </td>
@@ -131,52 +142,61 @@
         layer.full(index);
     }
 
-    /*图片-审核*/
-    function picture_shenhe(obj,id){
-        layer.confirm('审核文章？', {
-                btn: ['通过','不通过'],
-                shade: false
-            },
-            function(){
-                $(obj).parents("tr").find(".td-manage").prepend('<a class="c-primary" onClick="picture_start(this,id)" href="javascript:;" title="申请上线">申请上线</a>');
-                $(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已发布</span>');
-                $(obj).remove();
-                layer.msg('已发布', {icon:6,time:1000});
-            },
-            function(){
-                $(obj).parents("tr").find(".td-manage").prepend('<a class="c-primary" onClick="picture_shenqing(this,id)" href="javascript:;" title="申请上线">申请上线</a>');
-                $(obj).parents("tr").find(".td-status").html('<span class="label label-danger radius">未通过</span>');
-                $(obj).remove();
-                layer.msg('未通过', {icon:5,time:1000});
+    /*教师更新*/
+    function teacher_edit(title,url,w,h){
+        layer_show(title,url,w,h);
+    }
+
+
+    /*教师休假*/
+    function teacher_stop(obj,id){
+        layer.confirm('确认更新吗？',function(index){
+            //此处请求后台程序，下方是成功后的前台处理……
+            $.ajax({
+                type: 'POST',
+                url: '${path}/teacher/updateStatus',
+                data: {"work_id":id,"status":0},
+                dataType: "text",
+                success: function(data){
+                    $(obj).parents("tr").find(".td-manage").prepend('<a onClick="teacher_start(this,'+data+')" href="javascript:;" title="工作" style="text-decoration:none"><i class="Hui-iconfont">&#xe615;</i></a>');
+                    $(obj).parents("tr").find(".td-status").html('<span class="label  radius">休假</span>');
+                    $(obj).remove();
+                    layer.msg('已更新!',{icon: 5,time:1000})
+                },
+                error:function(data) {
+                    layer.msg('更新失败!',{icon: 5,time:5000});
+                    console.log(data.msg);
+                },
             });
-    }
-
-    /*图片-下架*/
-    function picture_stop(obj,id){
-        layer.confirm('确认要下架吗？',function(index){
-            $(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="picture_start(this,id)" href="javascript:;" title="发布"><i class="Hui-iconfont">&#xe603;</i></a>');
-            $(obj).parents("tr").find(".td-status").html('<span class="label label-defaunt radius">已下架</span>');
-            $(obj).remove();
-            layer.msg('已下架!',{icon: 5,time:1000});
+            ;
         });
     }
 
-    /*图片-发布*/
-    function picture_start(obj,id){
-        layer.confirm('确认要发布吗？',function(index){
-            $(obj).parents("tr").find(".td-manage").prepend('<a style="text-decoration:none" onClick="picture_stop(this,id)" href="javascript:;" title="下架"><i class="Hui-iconfont">&#xe6de;</i></a>');
-            $(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已发布</span>');
-            $(obj).remove();
-            layer.msg('已发布!',{icon: 6,time:1000});
+    /*教师工作*/
+    function teacher_start(obj,id){
+        layer.confirm('确认要更新吗？',function(index){
+            //此处请求后台程序，下方是成功后的前台处理……
+            $.ajax({
+                type: 'POST',
+                url: '${path}/teacher/updateStatus',
+                data: {"work_id":id,"status":1},
+                dataType: "text",
+                success: function(data){
+                    $(obj).parents("tr").find(".td-manage").prepend('<a onClick="teacher_stop(this,'+data+')" href="javascript:;" title="休假" style="text-decoration:none"><i class="Hui-iconfont">&#xe631;</i></a>');
+                    $(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">工作</span>');
+                    $(obj).remove();
+                    layer.msg('已更新!', {icon: 6,time:1000});
+                },
+                error:function(data) {
+                    layer.msg('更新失败!',{icon: 5,time:5000});
+                    console.log(data.msg);
+                },
+            });
+
+
         });
     }
 
-    /*图片-申请上线*/
-    function picture_shenqing(obj,id){
-        $(obj).parents("tr").find(".td-status").html('<span class="label label-default radius">待审核</span>');
-        $(obj).parents("tr").find(".td-manage").html("");
-        layer.msg('已提交申请，耐心等待审核!', {icon: 1,time:2000});
-    }
 
     /*图片-编辑*/
     function picture_edit(title,url,id){
@@ -188,18 +208,50 @@
         layer.full(index);
     }
 
-    /*图片-删除*/
-    function picture_del(obj,id){
+    /*教师-删除*/
+    function teacher_del(obj,id){
         layer.confirm('确认要删除吗？',function(index){
             $.ajax({
                 type: 'POST',
-                url: '',
-                dataType: 'json',
+                url: '${path}/teacher/delById',
+                data: {"work_id":id},
+                dataType: 'text',
                 success: function(data){
                     $(obj).parents("tr").remove();
                     layer.msg('已删除!',{icon:1,time:1000});
                 },
                 error:function(data) {
+                    layer.msg('删除失败!该教师相关信息尚未删除!',{icon:5,time:4000});
+                    console.log(data.msg);
+                },
+            });
+        });
+    }
+
+    /*教师-批量删除*/
+    function datadel(){
+        layer.confirm('确认要删除吗？',function(index){
+            var Ids = [];
+            $("input:checkbox[name = checkboxs]:checked").each(function(i){
+                //使用循环遍历迭代的方式得到所有被选中的checkbox复选框
+                console.log($(this).val());
+                Ids.push( $(this).val() ); //当前被选中checkbox背后对应的值
+            });
+            $.ajax({
+                traditional: true,
+                type: 'POST',
+                url: '${path}/teacher/delByIds',
+                data:{Ids:Ids},
+                dataType:"text",
+                success: function(data){
+                    $("input:checkbox[name = checkboxs]:checked").each(function(i){
+                        $(this).parents("tr").remove();
+                    });
+                    layer.msg('已删除!',{icon:1,time:6000});
+
+                },
+                error:function(data) {
+                    layer.msg('未选择!',{icon:5,time:2000});
                     console.log(data.msg);
                 },
             });
