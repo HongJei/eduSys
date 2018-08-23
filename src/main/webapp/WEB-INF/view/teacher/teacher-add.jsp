@@ -25,7 +25,10 @@
     <form class="form form-horizontal" id="form-teacher-add" enctype="multipart/form-data">
         <div class="row cl">
             <c:if test="${teacher!=null}">
-                <input type="text" class="input-text" value="${teacher.work_id}" hidden="hidden"  name="work_id">
+                <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>教师编号：</label>
+                <div class="formControls col-xs-8 col-sm-9">
+                    <input type="text" class="input-text" readonly="readonly" value="${teacher.work_id}"   name="work_id">
+                </div>
             </c:if>
             <c:if test="${teacher==null}">
                 <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>教师编号：</label>
@@ -139,7 +142,7 @@
             <div class="formControls col-xs-8 col-sm-9">
                 <span class="item_name" style="width: 120px;">上传图片：</span>
                 <label class="uploadImg">
-                    <input type="hidden" name="t_img" >
+                    <input type="hidden" value="${teacher.t_img}" name="t_img" >
                     <input type="file" name="pictureFile" />
                 </label>
             </div>
@@ -212,6 +215,8 @@
                     if (${teacher!=null}){
                         url = "${path}/teacher/doUpdate";
                     }
+                    alert(url);
+                    alert(params);
                     layer.confirm('确认提交吗？',function(index){
                         $(form).ajaxSubmit({
                             type: 'post',

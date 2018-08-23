@@ -46,7 +46,7 @@
     </delete>
 
     <!--更新-->
-    <update id="updateAdmin" parameterType="Admin">
+    <update id="updateTeacher" parameterType="Teacher">
         UPDATE tb_teacher SET
             t_name=#{t_name},t_img=#{t_img},t_gender=#{t_gender},
             major_no=#{major_no},college_no=#{college_no},

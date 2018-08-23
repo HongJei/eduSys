@@ -117,5 +117,39 @@ public class teacherController {
         return "teacher/teacher-add";
     }
 
+    /*更新教师*/
+    @RequestMapping("/doUpdate")
+    @ResponseBody
+    public String doUpdate(Teacher teacher,  MultipartFile pictureFile) throws IllegalStateException, IOException {
+
+        int flag = 0;
+        String picName = null;
+        String oriName = null;
+        String extName = null;
+
+        if(!pictureFile.isEmpty())
+        {
+            picName = UUID.randomUUID().toString();
+
+            oriName = pictureFile.getOriginalFilename();
+
+            extName = oriName.substring(oriName.lastIndexOf("."));
+
+            teacher.setT_img(picName+extName);
+            flag=ts.updateTeacher(teacher);
+        }
+
+        if(flag==1)
+        {
+            pictureFile.transferTo(new File("I:/IdeaProjects/eduSys/src/main/webapp/images/teacher/"+picName+extName));
+            return "success";
+        }
+        else
+        {
+            ts.updateTeacher(teacher);
+            return null;
+        }
+    }
+
 
 }

@@ -229,7 +229,7 @@
     }
 
     /*教师-批量删除*/
-    function datadel(){
+    function datadel() {
         layer.confirm('确认要删除吗？',function(index){
             var Ids = [];
             $("input:checkbox[name = checkboxs]:checked").each(function(i){
@@ -251,7 +251,7 @@
 
                 },
                 error:function(data) {
-                    layer.msg('未选择!',{icon:5,time:2000});
+                    layer.msg('出现异常!',{icon:5,time:2000});
                     console.log(data.msg);
                 },
             });

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lingnan.dao.course.courseDao">
+
+    <!--获取所有课程-->
+    <select id="findAll" resultType="Course">
+        SELECT * FROM tb_course
+    </select>
+
+    <!--根据课程编号获取数据-->
+    <select id="findById" resultMap="course-major">
+        SELECT course_no,course_name,credit,planned_hour,course_type,remarks,
+            m.major_no,major_name,college_no,major_status
+        FROM tb_course
+        LEFT JOIN tb_major m ON tb_course.major_no = m.major_no
+        WHERE course_no=#{course_no}
+    </select>
+
+    <!--新增专业-->
+    <insert id="addCourse" parameterType="Course">
+        INSERT INTO tb_course(course_no, major_no, course_name, credit, planned_hour, course_type, remarks)
+        VALUES (#{course_no},#{major_no},#{course_name},#{credit},#{planned_hour},#{course_type},#{remarks})
+    </insert>
+
+    <!--根据ID删除一条数据-->
+    <delete id="delById" parameterType="String">
+        DELETE FROM tb_course WHERE course_no=#{course_no}
+    </delete>
+
+
+    <!--批量删除-->
+    <delete id="delByIds" parameterType="String">
+        DELETE FROM tb_course
+        WHERE course_no IN (
+        <foreach collection="array" item="course_no" separator=",">
+            #{course_no}
+        </foreach>
+        )
+    </delete>
+
+    <!--更新-->
+    <update id="updateCourse" parameterType="Course">
+        UPDATE tb_course SET
+        course_name=#{course_name},credit=#{credit},planned_hour=#{planned_hour},
+            course_type=#{course_type},remarks=#{remarks},major_no=#{major_no}
+        WHERE course_no=#{course_no}
+    </update>
+
+
+
+    <resultMap id="baseMap" type="Course">
+        <id column="course_no" property="course_no"></id>
+        <result column="major_no" property="major_no"></result>
+        <result column="course_name" property="course_name"></result>
+        <result column="credit" property="credit"></result>
+        <result column="planned_hour" property="planned_hour"></result>
+        <result column="course_type" property="course_type"></result>
+        <result column="remarks" property="remarks"></result>
+    </resultMap>
+
+    <resultMap id="course-major" type="Course">
+        <id column="course_no" property="course_no"></id>
+        <result column="major_no" property="major_no"></result>
+        <result column="course_name" property="course_name"></result>
+        <result column="credit" property="credit"></result>
+        <result column="planned_hour" property="planned_hour"></result>
+        <result column="course_type" property="course_type"></result>
+        <result column="remarks" property="remarks"></result>
+        <association property="major" javaType="Major"
+                     resultMap="com.lingnan.dao.major.majorDao.baseMap">
+        </association>
+    </resultMap>
+
+
+</mapper>

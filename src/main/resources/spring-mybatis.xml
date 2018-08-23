@@ -4,16 +4,8 @@
 	   xmlns:util="http://www.springframework.org/schema/util" xmlns:tx="http://www.springframework.org/schema/tx"
 	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
 		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.2.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
- 
- 	<!-- spring与mybatis整合配置
- 	1.配置数据源
- 	a.读取配置文件，创建配置对象
- 	b.配置连接池对象的连接属性
- 	2.配置SqlSessionFactoryBean
- 	a.注入数据源
- 	b.配置加载mybatis的相关主配置信息
- 	3.配置MapperScannerConfigurer
- 	 -->
+
+	<!--配置数据源配置文件读取路径-->
 	<util:properties id="props" location="classpath:db.properties"></util:properties>
  	 
 	<bean id="dataSource" class="com.alibaba.druid.pool.DruidDataSource">
@@ -21,17 +13,11 @@
 		<property name="url" value="#{props.jdbcUrl}"></property>
 		<property name="username" value="#{props.username}"></property>
 		<property name="password" value="#{props.password}"></property>
-		<!-- 其他配置使用默认配置 -->
-	</bean> 
+	</bean>
 	
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<!-- 配置数据源属性 -->
 		<property name="dataSource" ref="dataSource"></property>
-		<!-- <property name="configLocation" value="classpath:mybatis-config.xml"></property> -->
-		<!-- 属性注入方式，注入mybatis相关设置 
-		mapperLocations：设置mapper映射配置文件的加载
-		typeAliasesPackage:设置对应实体类包下的所有类都使用别名简写，自动忽略包名
-		-->
 		<property name="mapperLocations" value="classpath:com/lingnan/dao/*/*.xml"></property>
 		<property name="typeAliasesPackage" value="com.lingnan.bean"></property>
 	</bean>
@@ -39,8 +25,6 @@
 	<bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
 		<!-- 指定哪些包下的dao层接口，需要由 mapperScannerConfigurer类来管理创建子类对象-->
 		<property name="basePackage" value="com.lingnan.dao"></property>
-		<!-- 注入sqlSessionFactory属性   可以省略不写，spring会通过自动装配的方式 根据类型匹配注入 -->
-		<!-- <property name="sqlSessionFactory" ref="sqlSessionFactory"></property> -->
 	</bean>
 
 	<!-- 配置事务管理器 -->
