@@ -69,7 +69,7 @@
             <dd>
                 <ul>
                     <li><a data-href="${path}/course/toList" data-title="课程列表" href="javascript:void(0)">课程列表</a></li>
-                    <li><a data-href="product-brand.html" data-title="课程计划" href="javascript:void(0)">课程计划</a></li>
+                    <li><a data-href="${path}/tc/toList" data-title="课程计划" href="javascript:void(0)">课程计划</a></li>
                 </ul>
             </dd>
         </dl>
@@ -88,11 +88,6 @@
                 <ul>
                     <li><a data-href="${path}/teacher/getList" data-title="教师列表" href="javascript:;">教师列表</a></li>
                     <li><a data-href="member-del.html" data-title="删除的会员" href="javascript:;">删除的会员</a></li>
-                    <li><a data-href="member-level.html" data-title="等级管理" href="javascript:;">等级管理</a></li>
-                    <li><a data-href="member-scoreoperation.html" data-title="积分管理" href="javascript:;">积分管理</a></li>
-                    <li><a data-href="member-record-browse.html" data-title="浏览记录" href="javascript:void(0)">浏览记录</a></li>
-                    <li><a data-href="member-record-download.html" data-title="下载记录" href="javascript:void(0)">下载记录</a></li>
-                    <li><a data-href="member-record-share.html" data-title="分享记录" href="javascript:void(0)">分享记录</a></li>
                 </ul>
             </dd>
         </dl>

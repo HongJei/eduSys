@@ -8936,3 +8936,2606 @@ Log session start time Thu Aug 23 21:43:03 CST 2018<br>
 <td title="com.lingnan.dao.course.courseDao.findById category">com.lingnan.dao.course.courseDao.findById</td>
 <td title="Message">&lt;==      Total: 1</td>
 </tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Thu Aug 23 22:33:36 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">==&gt;  Preparing: SELECT tc_no,launch_year,launch_term,executed_plan, tc.course_no,tc.course_name,t2.work_id,t2.t_name FROM tb_teach_course LEFT JOIN tb_course tc ON tb_teach_course.course_no = tc.course_no LEFT JOIN tb_teacher t2 ON tb_teach_course.work_id = t2.work_id </td>
+</tr>
+
+<tr>
+<td>65</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">==&gt; Parameters: </td>
+</tr>
+
+<tr>
+<td>90</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==    Columns: tc_no, launch_year, launch_term, executed_plan, course_no, course_name, work_id, t_name</td>
+</tr>
+
+<tr>
+<td>90</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 1, null, null, null, LAC264, 大学外语, 030021, 杜连栋</td>
+</tr>
+
+<tr>
+<td>99</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 2, null, null, null, LAC044, 体育, 030020, 王蒙</td>
+</tr>
+
+<tr>
+<td>106</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 3, null, null, null, LAC410, 马克思主义基本原理, 030019, 张大行</td>
+</tr>
+
+<tr>
+<td>114</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 4, null, null, null, MATH416, 高等数学1, 030018, 薛晓豆</td>
+</tr>
+
+<tr>
+<td>119</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 5, null, null, null, MATH417, 高等数学2, 030017, 邵辉烟</td>
+</tr>
+
+<tr>
+<td>120</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 6, null, null, null, LAC409, 中国近现代史纲要, 030016, 刘艳丽</td>
+</tr>
+
+<tr>
+<td>121</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 7, null, null, null, LAC264, 大学外语, 030021, 杜连栋</td>
+</tr>
+
+<tr>
+<td>124</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 8, null, null, null, LAC044, 体育, 030020, 王蒙</td>
+</tr>
+
+<tr>
+<td>125</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 9, null, null, null, LAC410, 马克思主义基本原理, 030019, 张大行</td>
+</tr>
+
+<tr>
+<td>129</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 10, null, null, null, MATH416, 高等数学1, 030018, 薛晓豆</td>
+</tr>
+
+<tr>
+<td>130</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 11, null, null, null, MATH417, 高等数学2, 030017, 邵辉烟</td>
+</tr>
+
+<tr>
+<td>131</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 12, null, null, null, LAC409, 中国近现代史纲要, 030016, 刘艳丽</td>
+</tr>
+
+<tr>
+<td>131</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 13, null, null, null, MATH093, 线性代数, 030015, 刘超然</td>
+</tr>
+
+<tr>
+<td>132</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 14, null, null, null, PHY638, 大学物理1, 030014, 康健建</td>
+</tr>
+
+<tr>
+<td>133</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 15, null, null, null, PHY639, 大学物理2, 030013, 季军</td>
+</tr>
+
+<tr>
+<td>134</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 16, null, null, null, PHY522, 大学物理实验2, 030012, 杨开萍</td>
+</tr>
+
+<tr>
+<td>145</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 17, null, null, null, PHY013, 大学物理实验1, 030011, 赵正如</td>
+</tr>
+
+<tr>
+<td>145</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 18, null, null, null, MATH033, 概率论与数理统计, 030010, 王蔚蓝</td>
+</tr>
+
+<tr>
+<td>146</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 19, null, null, null, CS141, 计算机系统基础, 030009, 于加为</td>
+</tr>
+
+<tr>
+<td>147</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 20, null, null, null, CS110, 程序设计基础, 030008, 董小蜜</td>
+</tr>
+
+<tr>
+<td>148</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 21, null, null, null, CS156, 电路与电子技术基础, 030007, 张丰润</td>
+</tr>
+
+<tr>
+<td>148</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 22, null, null, null, MATH056, 离散数学, 030006, 付德利</td>
+</tr>
+
+<tr>
+<td>149</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 23, null, null, null, CS270, 数据结构, 030005, 曹冠珠</td>
+</tr>
+
+<tr>
+<td>150</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 24, null, null, null, CS079, 数字电路与数字逻辑, 030004, 康吉健</td>
+</tr>
+
+<tr>
+<td>150</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 25, null, null, null, CS243, 编译原理, 030003, 王亚哈</td>
+</tr>
+
+<tr>
+<td>151</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 26, null, null, null, CS244, 数据库原理, 030002, 王从良</td>
+</tr>
+
+<tr>
+<td>151</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 27, null, null, null, CS328, 计算机组成原理, 030001, 梁鸿威</td>
+</tr>
+
+<tr>
+<td>152</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 28, null, null, null, CS307, 操作系统原理, 030034, 张海燕</td>
+</tr>
+
+<tr>
+<td>153</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 29, null, null, null, CS342, 面向对象程序设计, 030023, 李笑雁</td>
+</tr>
+
+<tr>
+<td>153</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 30, null, null, null, CS329, Linux系统与编程, 030024, 赵西男</td>
+</tr>
+
+<tr>
+<td>154</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 31, null, null, null, CS347, 微机原理与接口技术, 030027, 王慧</td>
+</tr>
+
+<tr>
+<td>157</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 32, null, null, null, CS449, 计算机网络, 030028, 王楚艳</td>
+</tr>
+
+<tr>
+<td>158</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 33, null, null, null, CS446, Web开发技术基础, 030029, 崔志衎</td>
+</tr>
+
+<tr>
+<td>158</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 34, null, null, null, CS426, 高级数据库应用, 040030, 石德义</td>
+</tr>
+
+<tr>
+<td>160</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 35, null, null, null, CS448, 嵌入式系统基础, 030031, 李默然</td>
+</tr>
+
+<tr>
+<td>160</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 36, null, null, null, CS473, 软件质量保证与测试, 030032, 杨得之</td>
+</tr>
+
+<tr>
+<td>162</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 37, null, null, null, CS449, 计算机网络, 030033, 王码</td>
+</tr>
+
+<tr>
+<td>168</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 38, null, null, null, MATH045, 计算方法, 030034, 张海燕</td>
+</tr>
+
+<tr>
+<td>168</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 39, null, null, null, CS435, java技术与应用, 030023, 李笑雁</td>
+</tr>
+
+<tr>
+<td>181</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 40, null, null, null, CS478, 计算机图形图像处理, 030024, 赵西男</td>
+</tr>
+
+<tr>
+<td>183</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 41, null, null, null, CS479, 嵌入式操作系统, 030025, 王正司</td>
+</tr>
+
+<tr>
+<td>183</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 42, null, null, null, CS489, .net技术与应用, 030027, 王慧</td>
+</tr>
+
+<tr>
+<td>188</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 43, null, null, null, CS347, 微机原理与接口技术, 030028, 王楚艳</td>
+</tr>
+
+<tr>
+<td>191</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 44, null, null, null, CS480, 软件项目管理, 030029, 崔志衎</td>
+</tr>
+
+<tr>
+<td>191</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 45, null, null, null, CS676, 工程制图, 040030, 石德义</td>
+</tr>
+
+<tr>
+<td>192</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 46, null, null, null, CS053, 科技论文写作, 030031, 李默然</td>
+</tr>
+
+<tr>
+<td>193</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 47, null, null, null, CS6CS, 移动互联网技术及开发, 030032, 杨得之</td>
+</tr>
+
+<tr>
+<td>193</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 48, null, null, null, CS690, 网络安全技术, 030033, 王码</td>
+</tr>
+
+<tr>
+<td>194</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 49, null, null, null, CS813, 物联网理论与物联技术, 030034, 张海燕</td>
+</tr>
+
+<tr>
+<td>195</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 50, null, null, null, CS119, 数据结构课程设计, 030023, 李笑雁</td>
+</tr>
+
+<tr>
+<td>196</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 51, null, null, null, CS741, 电子装配实习, 030025, 王正司</td>
+</tr>
+
+<tr>
+<td>197</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 52, null, null, null, CS625, 生产实习, 030028, 王楚艳</td>
+</tr>
+
+<tr>
+<td>197</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 53, null, null, null, CS484, 软件工程专题训练, 030029, 崔志衎</td>
+</tr>
+
+<tr>
+<td>198</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 54, null, null, null, CS482, 数据库专题训练, 040030, 石德义</td>
+</tr>
+
+<tr>
+<td>198</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 55, null, null, null, CS483, 程序设计专题训练, 030031, 李默然</td>
+</tr>
+
+<tr>
+<td>199</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 56, null, null, null, CS652, 软件测试专题训练, 030032, 杨得之</td>
+</tr>
+
+<tr>
+<td>199</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 57, null, null, null, CS653, 毕业实习, 030033, 王码</td>
+</tr>
+
+<tr>
+<td>200</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 58, null, null, null, EIE790, 数字电路, 030011, 赵正如</td>
+</tr>
+
+<tr>
+<td>200</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 59, null, null, null, EIE736, 微机原理与接口技术, 030010, 王蔚蓝</td>
+</tr>
+
+<tr>
+<td>201</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 60, null, null, null, EIE740, 单片机原理及应用, 030009, 于加为</td>
+</tr>
+
+<tr>
+<td>201</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 61, null, null, null, EIE735, 嵌入式系统基础, 030008, 董小蜜</td>
+</tr>
+
+<tr>
+<td>202</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 62, null, null, null, EIE733, 电机与拖动, 030007, 张丰润</td>
+</tr>
+
+<tr>
+<td>202</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 63, null, null, null, EIE734, 现代控制理论, 030006, 付德利</td>
+</tr>
+
+<tr>
+<td>203</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 64, null, null, null, EIE738, 自动控制原理, 030005, 曹冠珠</td>
+</tr>
+
+<tr>
+<td>203</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 65, null, null, null, EIE090, 检测技术, 030004, 康吉健</td>
+</tr>
+
+<tr>
+<td>204</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 66, null, null, null, EIE099, 电力电子技术, 030003, 王亚哈</td>
+</tr>
+
+<tr>
+<td>205</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 67, null, null, null, EIE732, 计算机网络, 030002, 王从良</td>
+</tr>
+
+<tr>
+<td>205</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 68, null, null, null, EIE021, 控制仪表与装置, 030001, 梁鸿威</td>
+</tr>
+
+<tr>
+<td>209</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 69, null, null, null, EIE049, 过程控制系统, 030034, 张海燕</td>
+</tr>
+
+<tr>
+<td>210</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 70, null, null, null, EIE1EIE, 运动控制系统及仿真, 030014, 康健建</td>
+</tr>
+
+<tr>
+<td>210</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 71, null, null, null, EIE739, PLC原理及应用, 030013, 季军</td>
+</tr>
+
+<tr>
+<td>212</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 72, null, null, null, EIE737, 计算机控制技术	, 030012, 杨开萍</td>
+</tr>
+
+<tr>
+<td>212</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 73, null, null, null, EIE745, 智能化仪表, 030011, 赵正如</td>
+</tr>
+
+<tr>
+<td>213</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 74, null, null, null, EIE740, 单片机原理及应用, 030010, 王蔚蓝</td>
+</tr>
+
+<tr>
+<td>215</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 75, null, null, null, EIE307, 电路分析, 030009, 于加为</td>
+</tr>
+
+<tr>
+<td>216</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 76, null, null, null, EIEEIE2, 电子线路CAD, 030008, 董小蜜</td>
+</tr>
+
+<tr>
+<td>216</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 77, null, null, null, EIE746, 科技文献检索与写作, 030007, 张丰润</td>
+</tr>
+
+<tr>
+<td>217</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 78, null, null, null, EIE029, 控制工程理论, 030006, 付德利</td>
+</tr>
+
+<tr>
+<td>217</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 79, null, null, null, EIE395, 楼宇自动化系统概论, 030005, 曹冠珠</td>
+</tr>
+
+<tr>
+<td>218</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 80, null, null, null, EIE742, 虚拟仪器及应用, 030004, 康吉健</td>
+</tr>
+
+<tr>
+<td>218</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 81, null, null, null, EIE306, 专业英语, 030002, 王从良</td>
+</tr>
+
+<tr>
+<td>219</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 82, null, null, null, EIEEIE7, 离散与非线性系统理论, 030001, 梁鸿威</td>
+</tr>
+
+<tr>
+<td>220</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 83, null, null, null, EIE394, 高级语言程序设计, 030034, 张海燕</td>
+</tr>
+
+<tr>
+<td>220</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 84, null, null, null, EIE058, DSP原理, 030014, 康健建</td>
+</tr>
+
+<tr>
+<td>221</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 85, null, null, null, EIE743, 工控组态软件, 030013, 季军</td>
+</tr>
+
+<tr>
+<td>225</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 86, null, null, null, EIE283, 化工过程设备概论, 030012, 杨开萍</td>
+</tr>
+
+<tr>
+<td>230</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 87, null, null, null, EIE299, 集散控制系统, 030011, 赵正如</td>
+</tr>
+
+<tr>
+<td>235</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 88, null, null, null, COM302, 信号与系统, 030010, 王蔚蓝</td>
+</tr>
+
+<tr>
+<td>237</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 89, null, null, null, COM793, 电磁场与电磁波, 030009, 于加为</td>
+</tr>
+
+<tr>
+<td>238</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 90, null, null, null, COM792, 高频电子线路, 030008, 董小蜜</td>
+</tr>
+
+<tr>
+<td>238</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 91, null, null, null, COM794, 通信原理, 030007, 张丰润</td>
+</tr>
+
+<tr>
+<td>239</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 92, null, null, null, COM797, 电子设计自动化, 030006, 付德利</td>
+</tr>
+
+<tr>
+<td>239</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 93, null, null, null, COM795, 移动通信, 030005, 曹冠珠</td>
+</tr>
+
+<tr>
+<td>239</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 94, null, null, null, COM796, 数字通信原理, 030004, 康吉健</td>
+</tr>
+
+<tr>
+<td>242</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 95, null, null, null, COM802, 现代通信技术, 030003, 王亚哈</td>
+</tr>
+
+<tr>
+<td>243</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 96, null, null, null, COM800, 物联通信协议, 030002, 王从良</td>
+</tr>
+
+<tr>
+<td>250</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 97, null, null, null, COM801, 现代交换技术, 030001, 梁鸿威</td>
+</tr>
+
+<tr>
+<td>251</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 98, null, null, null, COM462, 接入网技术, 030034, 张海燕</td>
+</tr>
+
+<tr>
+<td>251</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 99, null, null, null, COM798, 认知感知理论与技术, 030014, 康健建</td>
+</tr>
+
+<tr>
+<td>252</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 100, null, null, null, COM799, 通信工程设计与施工, 030013, 季军</td>
+</tr>
+
+<tr>
+<td>253</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 101, null, null, null, COM395, 科技文献检索与写作, 030012, 杨开萍</td>
+</tr>
+
+<tr>
+<td>253</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 102, null, null, null, COM809, 传感检测技术, 030011, 赵正如</td>
+</tr>
+
+<tr>
+<td>254</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 103, null, null, null, COM807, 自组织网络, 030010, 王蔚蓝</td>
+</tr>
+
+<tr>
+<td>257</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 104, null, null, null, COM803, 通信专业英语, 030009, 于加为</td>
+</tr>
+
+<tr>
+<td>264</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 105, null, null, null, COM813, 物联网理论与物联技术, 030008, 董小蜜</td>
+</tr>
+
+<tr>
+<td>265</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 106, null, null, null, COM8011, 物联信息安全, 030007, 张丰润</td>
+</tr>
+
+<tr>
+<td>265</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 107, null, null, null, COM743, 高级语言程序设计, 030005, 曹冠珠</td>
+</tr>
+
+<tr>
+<td>266</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 108, null, null, null, COM467, 通信前沿技术课题, 030004, 康吉健</td>
+</tr>
+
+<tr>
+<td>299</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 109, null, null, null, COM804, 通信网运营管理, 030003, 王亚哈</td>
+</tr>
+
+<tr>
+<td>300</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 110, null, null, null, COM810, 通信系统仿真, 030002, 王从良</td>
+</tr>
+
+<tr>
+<td>300</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 111, null, null, null, COM812, 电信增值业务开发, 030001, 梁鸿威</td>
+</tr>
+
+<tr>
+<td>301</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 112, null, null, null, COM806, DSP原理及应用, 030034, 张海燕</td>
+</tr>
+
+<tr>
+<td>301</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 113, null, null, null, COM029, 电子线路CAD, 030034, 张海燕</td>
+</tr>
+
+<tr>
+<td>301</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 114, null, null, null, FOQS401, 无机与分析化学2, 010001, 穆言</td>
+</tr>
+
+<tr>
+<td>302</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 115, null, null, null, FOQS400, 无机与分析化学1, 010002, 孙扬</td>
+</tr>
+
+<tr>
+<td>302</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 116, null, null, null, FOQS130, 有机化学1, 010003, 李咪霞</td>
+</tr>
+
+<tr>
+<td>302</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 117, null, null, null, FOQS132, 有机化学2, 010004, 孙雨明</td>
+</tr>
+
+<tr>
+<td>303</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 118, null, null, null, FOSE124, 生物化学与分子生物学, 010005, 侯仰云</td>
+</tr>
+
+<tr>
+<td>303</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 119, null, null, null, FOSE044, 食品微生物学, 010006, 邹爱琳</td>
+</tr>
+
+<tr>
+<td>303</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 120, null, null, null, FOQS416, 化工原理, 010007, 夏伯春</td>
+</tr>
+
+<tr>
+<td>310</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 121, null, null, null, FOSE115, 食品理化检验, 010008, 刘雪花</td>
+</tr>
+
+<tr>
+<td>312</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 122, null, null, null, FOSE215, 食品工艺学, 010009, 路婴</td>
+</tr>
+
+<tr>
+<td>313</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 123, null, null, null, FOSE004, 食品科学与工程导论, 010010, 彭钧</td>
+</tr>
+
+<tr>
+<td>313</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 124, null, null, null, FOQS554, 化工原理1, 010011, 肖皮皮</td>
+</tr>
+
+<tr>
+<td>314</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 125, null, null, null, FOSE124, 生物化学与分子生物学, 010012, 唐君</td>
+</tr>
+
+<tr>
+<td>315</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 126, null, null, null, FOQS555, 化工原理2, 020009, 张云彩</td>
+</tr>
+
+<tr>
+<td>318</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 127, null, null, null, FOQS048, 化工设备机械基础, 020010, 王英航</td>
+</tr>
+
+<tr>
+<td>319</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 128, null, null, null, FOSE044, 食品微生物学, 020012, 王立丽</td>
+</tr>
+
+<tr>
+<td>321</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 129, null, null, null, FOSE045, 食品微生物学实验, 020013, 张仁</td>
+</tr>
+
+<tr>
+<td>321</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 130, null, null, null, FOSE039, 食品化学, 020014, 宛济</td>
+</tr>
+
+<tr>
+<td>322</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 131, null, null, null, FOSE263, 食品添加剂, 020015, 何文</td>
+</tr>
+
+<tr>
+<td>322</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 132, null, null, null, FOSE228, 食品安全学, 020001, 熊路</td>
+</tr>
+
+<tr>
+<td>322</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 133, null, null, null, FOSE041, 食品技术原理, 020002, 刘洪武</td>
+</tr>
+
+<tr>
+<td>323</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 134, null, null, null, FOSE265, 食品物性学, 020003, 张加和</td>
+</tr>
+
+<tr>
+<td>323</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 135, null, null, null, FOSE121, 营养与食品卫生学, 020004, 刘瑜伽</td>
+</tr>
+
+<tr>
+<td>324</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 136, null, null, null, FOSE130, 食品专业外语, 020005, 郑丽荣</td>
+</tr>
+
+<tr>
+<td>325</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 137, null, null, null, FOSE115, 食品理化检验, 020006, 王琳琳</td>
+</tr>
+
+<tr>
+<td>327</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 138, null, null, null, FOSE034, 食品工厂设计概论, 020007, 吕欢乐</td>
+</tr>
+
+<tr>
+<td>328</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 139, null, null, null, FOSE033, 食品感官评定, 020008, 赵卢龙</td>
+</tr>
+
+<tr>
+<td>329</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 140, null, null, null, FOSE005, 功能食品, 020009, 张云彩</td>
+</tr>
+
+<tr>
+<td>329</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 141, null, null, null, FOSE218, 食品科学研究进展, 020010, 王英航</td>
+</tr>
+
+<tr>
+<td>330</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 142, null, null, null, FOSE251, 实验研究方法, 020011, 臧淑君</td>
+</tr>
+
+<tr>
+<td>330</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 143, null, null, null, FOSE132, 脂肪与健康, 020012, 王立丽</td>
+</tr>
+
+<tr>
+<td>330</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 144, null, null, null, FOSE216, 食品工程高新技术, 020013, 张仁</td>
+</tr>
+
+<tr>
+<td>331</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==      Total: 144</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Thu Aug 23 23:41:06 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher_course.tcDao.addTC category">com.lingnan.dao.teacher_course.tcDao.addTC</td>
+<td title="Message">==&gt;  Preparing: INSERT INTO tb_teach_course(course_no, work_id, launch_year, launch_term, executed_plan, audit) VALUES (?,?,?,?,?,?) </td>
+</tr>
+
+<tr>
+<td>69</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher_course.tcDao.addTC category">com.lingnan.dao.teacher_course.tcDao.addTC</td>
+<td title="Message">==&gt; Parameters: COM029(String), 010001(String), 2018-09-02(String), 1(Integer), 测试(String), 1(Integer)</td>
+</tr>
+
+<tr>
+<td>73</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher_course.tcDao.addTC category">com.lingnan.dao.teacher_course.tcDao.addTC</td>
+<td title="Message">&lt;==    Updates: 1</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Aug 24 10:24:19 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findById category">com.lingnan.dao.teacher_course.tcDao.findById</td>
+<td title="Message">==&gt;  Preparing: SELECT tc_no,launch_year,launch_term,executed_plan,audit, tc.course_no,tc.course_name,t2.work_id,t2.t_name FROM tb_teach_course LEFT JOIN tb_course tc ON tb_teach_course.course_no = tc.course_no LEFT JOIN tb_teacher t2 ON tb_teach_course.work_id = t2.work_id WHERE tc_no=? </td>
+</tr>
+
+<tr>
+<td>79</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findById category">com.lingnan.dao.teacher_course.tcDao.findById</td>
+<td title="Message">==&gt; Parameters: 146(Integer)</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findById category">com.lingnan.dao.teacher_course.tcDao.findById</td>
+<td title="Message">&lt;==    Columns: tc_no, launch_year, launch_term, executed_plan, audit, course_no, course_name, work_id, t_name</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findById category">com.lingnan.dao.teacher_course.tcDao.findById</td>
+<td title="Message">&lt;==        Row: 146, 2018-08-23, 1, 测试, 0, COM395, 科技文献检索与写作, 010002, 孙扬</td>
+</tr>
+
+<tr>
+<td>107</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findById category">com.lingnan.dao.teacher_course.tcDao.findById</td>
+<td title="Message">&lt;==      Total: 1</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Aug 24 10:26:21 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">==&gt;  Preparing: SELECT tc_no,launch_year,launch_term,executed_plan,audit, tc.course_no,tc.course_name,t2.work_id,t2.t_name FROM tb_teach_course LEFT JOIN tb_course tc ON tb_teach_course.course_no = tc.course_no LEFT JOIN tb_teacher t2 ON tb_teach_course.work_id = t2.work_id </td>
+</tr>
+
+<tr>
+<td>67</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">==&gt; Parameters: </td>
+</tr>
+
+<tr>
+<td>86</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==    Columns: tc_no, launch_year, launch_term, executed_plan, audit, course_no, course_name, work_id, t_name</td>
+</tr>
+
+<tr>
+<td>86</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 1, null, null, null, 0, LAC264, 大学外语, 030021, 杜连栋</td>
+</tr>
+
+<tr>
+<td>91</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 2, null, null, null, 1, LAC044, 体育, 030020, 王蒙</td>
+</tr>
+
+<tr>
+<td>96</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 3, null, null, null, 1, LAC410, 马克思主义基本原理, 030019, 张大行</td>
+</tr>
+
+<tr>
+<td>97</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 4, null, null, null, 1, MATH416, 高等数学1, 030018, 薛晓豆</td>
+</tr>
+
+<tr>
+<td>99</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 5, null, null, null, 1, MATH417, 高等数学2, 030017, 邵辉烟</td>
+</tr>
+
+<tr>
+<td>100</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 6, null, null, null, 1, LAC409, 中国近现代史纲要, 030016, 刘艳丽</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 7, null, null, null, 1, LAC264, 大学外语, 030021, 杜连栋</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 8, null, null, null, 1, LAC044, 体育, 030020, 王蒙</td>
+</tr>
+
+<tr>
+<td>105</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 9, null, null, null, 1, LAC410, 马克思主义基本原理, 030019, 张大行</td>
+</tr>
+
+<tr>
+<td>106</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 10, null, null, null, 1, MATH416, 高等数学1, 030018, 薛晓豆</td>
+</tr>
+
+<tr>
+<td>106</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 11, null, null, null, 1, MATH417, 高等数学2, 030017, 邵辉烟</td>
+</tr>
+
+<tr>
+<td>109</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 12, null, null, null, 1, LAC409, 中国近现代史纲要, 030016, 刘艳丽</td>
+</tr>
+
+<tr>
+<td>111</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 13, null, null, null, 1, MATH093, 线性代数, 030015, 刘超然</td>
+</tr>
+
+<tr>
+<td>111</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 14, null, null, null, 1, PHY638, 大学物理1, 030014, 康健建</td>
+</tr>
+
+<tr>
+<td>113</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 15, null, null, null, 1, PHY639, 大学物理2, 030013, 季军</td>
+</tr>
+
+<tr>
+<td>114</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 16, null, null, null, 1, PHY522, 大学物理实验2, 030012, 杨开萍</td>
+</tr>
+
+<tr>
+<td>122</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 17, null, null, null, 1, PHY013, 大学物理实验1, 030011, 赵正如</td>
+</tr>
+
+<tr>
+<td>123</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 18, null, null, null, 1, MATH033, 概率论与数理统计, 030010, 王蔚蓝</td>
+</tr>
+
+<tr>
+<td>124</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 19, null, null, null, 1, CS141, 计算机系统基础, 030009, 于加为</td>
+</tr>
+
+<tr>
+<td>124</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 20, null, null, null, 1, CS110, 程序设计基础, 030008, 董小蜜</td>
+</tr>
+
+<tr>
+<td>125</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 21, null, null, null, 1, CS156, 电路与电子技术基础, 030007, 张丰润</td>
+</tr>
+
+<tr>
+<td>126</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 22, null, null, null, 1, MATH056, 离散数学, 030006, 付德利</td>
+</tr>
+
+<tr>
+<td>126</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 23, null, null, null, 1, CS270, 数据结构, 030005, 曹冠珠</td>
+</tr>
+
+<tr>
+<td>128</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 24, null, null, null, 1, CS079, 数字电路与数字逻辑, 030004, 康吉健</td>
+</tr>
+
+<tr>
+<td>128</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 25, null, null, null, 1, CS243, 编译原理, 030003, 王亚哈</td>
+</tr>
+
+<tr>
+<td>129</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 26, null, null, null, 1, CS244, 数据库原理, 030002, 王从良</td>
+</tr>
+
+<tr>
+<td>130</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 27, null, null, null, 1, CS328, 计算机组成原理, 030001, 梁鸿威</td>
+</tr>
+
+<tr>
+<td>130</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 28, null, null, null, 1, CS307, 操作系统原理, 030034, 张海燕</td>
+</tr>
+
+<tr>
+<td>131</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 29, null, null, null, 1, CS342, 面向对象程序设计, 030023, 李笑雁</td>
+</tr>
+
+<tr>
+<td>134</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 30, null, null, null, 1, CS329, Linux系统与编程, 030024, 赵西男</td>
+</tr>
+
+<tr>
+<td>134</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 31, null, null, null, 1, CS347, 微机原理与接口技术, 030027, 王慧</td>
+</tr>
+
+<tr>
+<td>135</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 32, null, null, null, 1, CS449, 计算机网络, 030028, 王楚艳</td>
+</tr>
+
+<tr>
+<td>135</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 33, null, null, null, 1, CS446, Web开发技术基础, 030029, 崔志衎</td>
+</tr>
+
+<tr>
+<td>135</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 34, null, null, null, 1, CS426, 高级数据库应用, 040030, 石德义</td>
+</tr>
+
+<tr>
+<td>136</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 35, null, null, null, 1, CS448, 嵌入式系统基础, 030031, 李默然</td>
+</tr>
+
+<tr>
+<td>136</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 36, null, null, null, 1, CS473, 软件质量保证与测试, 030032, 杨得之</td>
+</tr>
+
+<tr>
+<td>136</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 37, null, null, null, 1, CS449, 计算机网络, 030033, 王码</td>
+</tr>
+
+<tr>
+<td>137</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 38, null, null, null, 1, MATH045, 计算方法, 030034, 张海燕</td>
+</tr>
+
+<tr>
+<td>138</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 39, null, null, null, 1, CS435, java技术与应用, 030023, 李笑雁</td>
+</tr>
+
+<tr>
+<td>138</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 40, null, null, null, 1, CS478, 计算机图形图像处理, 030024, 赵西男</td>
+</tr>
+
+<tr>
+<td>138</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 41, null, null, null, 1, CS479, 嵌入式操作系统, 030025, 王正司</td>
+</tr>
+
+<tr>
+<td>139</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 42, null, null, null, 1, CS489, .net技术与应用, 030027, 王慧</td>
+</tr>
+
+<tr>
+<td>140</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 43, null, null, null, 1, CS347, 微机原理与接口技术, 030028, 王楚艳</td>
+</tr>
+
+<tr>
+<td>140</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 44, null, null, null, 1, CS480, 软件项目管理, 030029, 崔志衎</td>
+</tr>
+
+<tr>
+<td>140</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 45, null, null, null, 1, CS676, 工程制图, 040030, 石德义</td>
+</tr>
+
+<tr>
+<td>141</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 46, null, null, null, 1, CS053, 科技论文写作, 030031, 李默然</td>
+</tr>
+
+<tr>
+<td>141</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 47, null, null, null, 1, CS6CS, 移动互联网技术及开发, 030032, 杨得之</td>
+</tr>
+
+<tr>
+<td>142</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 48, null, null, null, 1, CS690, 网络安全技术, 030033, 王码</td>
+</tr>
+
+<tr>
+<td>142</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 49, null, null, null, 1, CS813, 物联网理论与物联技术, 030034, 张海燕</td>
+</tr>
+
+<tr>
+<td>142</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 50, null, null, null, 1, CS119, 数据结构课程设计, 030023, 李笑雁</td>
+</tr>
+
+<tr>
+<td>143</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 51, null, null, null, 1, CS741, 电子装配实习, 030025, 王正司</td>
+</tr>
+
+<tr>
+<td>143</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 52, null, null, null, 1, CS625, 生产实习, 030028, 王楚艳</td>
+</tr>
+
+<tr>
+<td>144</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 53, null, null, null, 1, CS484, 软件工程专题训练, 030029, 崔志衎</td>
+</tr>
+
+<tr>
+<td>145</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 54, null, null, null, 1, CS482, 数据库专题训练, 040030, 石德义</td>
+</tr>
+
+<tr>
+<td>146</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 55, null, null, null, 1, CS483, 程序设计专题训练, 030031, 李默然</td>
+</tr>
+
+<tr>
+<td>146</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 56, null, null, null, 1, CS652, 软件测试专题训练, 030032, 杨得之</td>
+</tr>
+
+<tr>
+<td>146</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 57, null, null, null, 1, CS653, 毕业实习, 030033, 王码</td>
+</tr>
+
+<tr>
+<td>147</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 58, null, null, null, 1, EIE790, 数字电路, 030011, 赵正如</td>
+</tr>
+
+<tr>
+<td>147</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 59, null, null, null, 1, EIE736, 微机原理与接口技术, 030010, 王蔚蓝</td>
+</tr>
+
+<tr>
+<td>147</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 60, null, null, null, 1, EIE740, 单片机原理及应用, 030009, 于加为</td>
+</tr>
+
+<tr>
+<td>148</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 61, null, null, null, 1, EIE735, 嵌入式系统基础, 030008, 董小蜜</td>
+</tr>
+
+<tr>
+<td>148</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 62, null, null, null, 1, EIE733, 电机与拖动, 030007, 张丰润</td>
+</tr>
+
+<tr>
+<td>148</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 63, null, null, null, 1, EIE734, 现代控制理论, 030006, 付德利</td>
+</tr>
+
+<tr>
+<td>149</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 64, null, null, null, 1, EIE738, 自动控制原理, 030005, 曹冠珠</td>
+</tr>
+
+<tr>
+<td>150</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 65, null, null, null, 1, EIE090, 检测技术, 030004, 康吉健</td>
+</tr>
+
+<tr>
+<td>150</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 66, null, null, null, 1, EIE099, 电力电子技术, 030003, 王亚哈</td>
+</tr>
+
+<tr>
+<td>150</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 67, null, null, null, 1, EIE732, 计算机网络, 030002, 王从良</td>
+</tr>
+
+<tr>
+<td>150</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 68, null, null, null, 1, EIE021, 控制仪表与装置, 030001, 梁鸿威</td>
+</tr>
+
+<tr>
+<td>152</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 69, null, null, null, 1, EIE049, 过程控制系统, 030034, 张海燕</td>
+</tr>
+
+<tr>
+<td>153</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 70, null, null, null, 1, EIE1EIE, 运动控制系统及仿真, 030014, 康健建</td>
+</tr>
+
+<tr>
+<td>153</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 71, null, null, null, 1, EIE739, PLC原理及应用, 030013, 季军</td>
+</tr>
+
+<tr>
+<td>153</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 72, null, null, null, 1, EIE737, 计算机控制技术	, 030012, 杨开萍</td>
+</tr>
+
+<tr>
+<td>153</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 73, null, null, null, 1, EIE745, 智能化仪表, 030011, 赵正如</td>
+</tr>
+
+<tr>
+<td>154</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 74, null, null, null, 1, EIE740, 单片机原理及应用, 030010, 王蔚蓝</td>
+</tr>
+
+<tr>
+<td>154</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 75, null, null, null, 1, EIE307, 电路分析, 030009, 于加为</td>
+</tr>
+
+<tr>
+<td>154</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 76, null, null, null, 1, EIEEIE2, 电子线路CAD, 030008, 董小蜜</td>
+</tr>
+
+<tr>
+<td>154</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 77, null, null, null, 1, EIE746, 科技文献检索与写作, 030007, 张丰润</td>
+</tr>
+
+<tr>
+<td>155</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 78, null, null, null, 1, EIE029, 控制工程理论, 030006, 付德利</td>
+</tr>
+
+<tr>
+<td>155</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 79, null, null, null, 1, EIE395, 楼宇自动化系统概论, 030005, 曹冠珠</td>
+</tr>
+
+<tr>
+<td>155</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 80, null, null, null, 1, EIE742, 虚拟仪器及应用, 030004, 康吉健</td>
+</tr>
+
+<tr>
+<td>155</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 81, null, null, null, 1, EIE306, 专业英语, 030002, 王从良</td>
+</tr>
+
+<tr>
+<td>156</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 82, null, null, null, 1, EIEEIE7, 离散与非线性系统理论, 030001, 梁鸿威</td>
+</tr>
+
+<tr>
+<td>156</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 83, null, null, null, 1, EIE394, 高级语言程序设计, 030034, 张海燕</td>
+</tr>
+
+<tr>
+<td>156</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 84, null, null, null, 1, EIE058, DSP原理, 030014, 康健建</td>
+</tr>
+
+<tr>
+<td>157</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 85, null, null, null, 1, EIE743, 工控组态软件, 030013, 季军</td>
+</tr>
+
+<tr>
+<td>159</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 86, null, null, null, 1, EIE283, 化工过程设备概论, 030012, 杨开萍</td>
+</tr>
+
+<tr>
+<td>159</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 87, null, null, null, 1, EIE299, 集散控制系统, 030011, 赵正如</td>
+</tr>
+
+<tr>
+<td>160</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 88, null, null, null, 1, COM302, 信号与系统, 030010, 王蔚蓝</td>
+</tr>
+
+<tr>
+<td>160</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 89, null, null, null, 1, COM793, 电磁场与电磁波, 030009, 于加为</td>
+</tr>
+
+<tr>
+<td>161</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 90, null, null, null, 1, COM792, 高频电子线路, 030008, 董小蜜</td>
+</tr>
+
+<tr>
+<td>161</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 91, null, null, null, 1, COM794, 通信原理, 030007, 张丰润</td>
+</tr>
+
+<tr>
+<td>161</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 92, null, null, null, 1, COM797, 电子设计自动化, 030006, 付德利</td>
+</tr>
+
+<tr>
+<td>162</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 93, null, null, null, 1, COM795, 移动通信, 030005, 曹冠珠</td>
+</tr>
+
+<tr>
+<td>162</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 94, null, null, null, 1, COM796, 数字通信原理, 030004, 康吉健</td>
+</tr>
+
+<tr>
+<td>163</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 95, null, null, null, 1, COM802, 现代通信技术, 030003, 王亚哈</td>
+</tr>
+
+<tr>
+<td>163</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 96, null, null, null, 1, COM800, 物联通信协议, 030002, 王从良</td>
+</tr>
+
+<tr>
+<td>164</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 97, null, null, null, 1, COM801, 现代交换技术, 030001, 梁鸿威</td>
+</tr>
+
+<tr>
+<td>165</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 98, null, null, null, 1, COM462, 接入网技术, 030034, 张海燕</td>
+</tr>
+
+<tr>
+<td>165</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 99, null, null, null, 1, COM798, 认知感知理论与技术, 030014, 康健建</td>
+</tr>
+
+<tr>
+<td>166</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 100, null, null, null, 1, COM799, 通信工程设计与施工, 030013, 季军</td>
+</tr>
+
+<tr>
+<td>166</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 101, null, null, null, 1, COM395, 科技文献检索与写作, 030012, 杨开萍</td>
+</tr>
+
+<tr>
+<td>166</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 102, null, null, null, 1, COM809, 传感检测技术, 030011, 赵正如</td>
+</tr>
+
+<tr>
+<td>167</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 103, null, null, null, 1, COM807, 自组织网络, 030010, 王蔚蓝</td>
+</tr>
+
+<tr>
+<td>167</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 104, null, null, null, 1, COM803, 通信专业英语, 030009, 于加为</td>
+</tr>
+
+<tr>
+<td>167</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 105, null, null, null, 1, COM813, 物联网理论与物联技术, 030008, 董小蜜</td>
+</tr>
+
+<tr>
+<td>168</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 106, null, null, null, 1, COM8011, 物联信息安全, 030007, 张丰润</td>
+</tr>
+
+<tr>
+<td>168</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 107, null, null, null, 1, COM743, 高级语言程序设计, 030005, 曹冠珠</td>
+</tr>
+
+<tr>
+<td>168</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 108, null, null, null, 1, COM467, 通信前沿技术课题, 030004, 康吉健</td>
+</tr>
+
+<tr>
+<td>169</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 109, null, null, null, 1, COM804, 通信网运营管理, 030003, 王亚哈</td>
+</tr>
+
+<tr>
+<td>169</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 110, null, null, null, 1, COM810, 通信系统仿真, 030002, 王从良</td>
+</tr>
+
+<tr>
+<td>169</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 111, null, null, null, 1, COM812, 电信增值业务开发, 030001, 梁鸿威</td>
+</tr>
+
+<tr>
+<td>170</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 112, null, null, null, 1, COM806, DSP原理及应用, 030034, 张海燕</td>
+</tr>
+
+<tr>
+<td>170</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 113, null, null, null, 1, COM029, 电子线路CAD, 030034, 张海燕</td>
+</tr>
+
+<tr>
+<td>171</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 114, null, null, null, 1, FOQS401, 无机与分析化学2, 010001, 穆言</td>
+</tr>
+
+<tr>
+<td>171</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 115, null, null, null, 1, FOQS400, 无机与分析化学1, 010002, 孙扬</td>
+</tr>
+
+<tr>
+<td>172</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 116, null, null, null, 1, FOQS130, 有机化学1, 010003, 李咪霞</td>
+</tr>
+
+<tr>
+<td>172</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 117, null, null, null, 1, FOQS132, 有机化学2, 010004, 孙雨明</td>
+</tr>
+
+<tr>
+<td>172</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 118, null, null, null, 1, FOSE124, 生物化学与分子生物学, 010005, 侯仰云</td>
+</tr>
+
+<tr>
+<td>173</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 119, null, null, null, 1, FOSE044, 食品微生物学, 010006, 邹爱琳</td>
+</tr>
+
+<tr>
+<td>173</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 120, null, null, null, 1, FOQS416, 化工原理, 010007, 夏伯春</td>
+</tr>
+
+<tr>
+<td>173</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 121, null, null, null, 1, FOSE115, 食品理化检验, 010008, 刘雪花</td>
+</tr>
+
+<tr>
+<td>174</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 122, null, null, null, 1, FOSE215, 食品工艺学, 010009, 路婴</td>
+</tr>
+
+<tr>
+<td>174</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 123, null, null, null, 1, FOSE004, 食品科学与工程导论, 010010, 彭钧</td>
+</tr>
+
+<tr>
+<td>174</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 124, null, null, null, 1, FOQS554, 化工原理1, 010011, 肖皮皮</td>
+</tr>
+
+<tr>
+<td>175</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 125, null, null, null, 1, FOSE124, 生物化学与分子生物学, 010012, 唐君</td>
+</tr>
+
+<tr>
+<td>175</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 126, null, null, null, 1, FOQS555, 化工原理2, 020009, 张云彩</td>
+</tr>
+
+<tr>
+<td>175</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 127, null, null, null, 1, FOQS048, 化工设备机械基础, 020010, 王英航</td>
+</tr>
+
+<tr>
+<td>175</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 128, null, null, null, 1, FOSE044, 食品微生物学, 020012, 王立丽</td>
+</tr>
+
+<tr>
+<td>175</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 129, null, null, null, 1, FOSE045, 食品微生物学实验, 020013, 张仁</td>
+</tr>
+
+<tr>
+<td>176</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 130, null, null, null, 1, FOSE039, 食品化学, 020014, 宛济</td>
+</tr>
+
+<tr>
+<td>176</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 131, null, null, null, 1, FOSE263, 食品添加剂, 020015, 何文</td>
+</tr>
+
+<tr>
+<td>177</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 132, null, null, null, 1, FOSE228, 食品安全学, 020001, 熊路</td>
+</tr>
+
+<tr>
+<td>177</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 133, null, null, null, 1, FOSE041, 食品技术原理, 020002, 刘洪武</td>
+</tr>
+
+<tr>
+<td>177</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 134, null, null, null, 1, FOSE265, 食品物性学, 020003, 张加和</td>
+</tr>
+
+<tr>
+<td>178</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 135, null, null, null, 1, FOSE121, 营养与食品卫生学, 020004, 刘瑜伽</td>
+</tr>
+
+<tr>
+<td>179</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 136, null, null, null, 1, FOSE130, 食品专业外语, 020005, 郑丽荣</td>
+</tr>
+
+<tr>
+<td>180</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 137, null, null, null, 1, FOSE115, 食品理化检验, 020006, 王琳琳</td>
+</tr>
+
+<tr>
+<td>180</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 138, null, null, null, 1, FOSE034, 食品工厂设计概论, 020007, 吕欢乐</td>
+</tr>
+
+<tr>
+<td>180</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 139, null, null, null, 1, FOSE033, 食品感官评定, 020008, 赵卢龙</td>
+</tr>
+
+<tr>
+<td>181</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 140, null, null, null, 1, FOSE005, 功能食品, 020009, 张云彩</td>
+</tr>
+
+<tr>
+<td>181</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 141, null, null, null, 1, FOSE218, 食品科学研究进展, 020010, 王英航</td>
+</tr>
+
+<tr>
+<td>182</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 142, null, null, null, 1, FOSE251, 实验研究方法, 020011, 臧淑君</td>
+</tr>
+
+<tr>
+<td>183</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 143, null, null, null, 1, FOSE132, 脂肪与健康, 020012, 王立丽</td>
+</tr>
+
+<tr>
+<td>183</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 144, null, null, null, 1, FOSE216, 食品工程高新技术, 020013, 张仁</td>
+</tr>
+
+<tr>
+<td>184</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 145, 2018-09-02, 1, 测试, 1, COM029, 电子线路CAD, 010001, 穆言</td>
+</tr>
+
+<tr>
+<td>184</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==        Row: 146, 2018-08-23, 1, 测试, 0, COM395, 科技文献检索与写作, 010002, 孙扬</td>
+</tr>
+
+<tr>
+<td>184</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findAll category">com.lingnan.dao.teacher_course.tcDao.findAll</td>
+<td title="Message">&lt;==      Total: 146</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Aug 24 10:29:30 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findById category">com.lingnan.dao.teacher_course.tcDao.findById</td>
+<td title="Message">==&gt;  Preparing: SELECT tc_no,launch_year,launch_term,executed_plan,audit, tc.course_no,tc.course_name,t2.work_id,t2.t_name FROM tb_teach_course LEFT JOIN tb_course tc ON tb_teach_course.course_no = tc.course_no LEFT JOIN tb_teacher t2 ON tb_teach_course.work_id = t2.work_id WHERE tc_no=? </td>
+</tr>
+
+<tr>
+<td>55</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findById category">com.lingnan.dao.teacher_course.tcDao.findById</td>
+<td title="Message">==&gt; Parameters: 146(Integer)</td>
+</tr>
+
+<tr>
+<td>74</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findById category">com.lingnan.dao.teacher_course.tcDao.findById</td>
+<td title="Message">&lt;==    Columns: tc_no, launch_year, launch_term, executed_plan, audit, course_no, course_name, work_id, t_name</td>
+</tr>
+
+<tr>
+<td>74</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findById category">com.lingnan.dao.teacher_course.tcDao.findById</td>
+<td title="Message">&lt;==        Row: 146, 2018-08-23, 1, 测试, 0, COM395, 科技文献检索与写作, 010002, 孙扬</td>
+</tr>
+
+<tr>
+<td>77</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.teacher_course.tcDao.findById category">com.lingnan.dao.teacher_course.tcDao.findById</td>
+<td title="Message">&lt;==      Total: 1</td>
+</tr>

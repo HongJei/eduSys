@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lingnan.dao.teacher_course.tcDao">
+
+    <!--获取所有课程-->
+    <select id="findAll" resultMap="tc-teacher-course">
+        SELECT tc_no,launch_year,launch_term,executed_plan,audit,
+            tc.course_no,tc.course_name,t2.work_id,t2.t_name
+        FROM tb_teach_course
+        LEFT JOIN tb_course tc ON tb_teach_course.course_no = tc.course_no
+        LEFT JOIN tb_teacher t2 ON tb_teach_course.work_id = t2.work_id
+    </select>
+
+    <select id="findById" parameterType="Integer" resultMap="tc-teacher-course">
+        SELECT tc_no,launch_year,launch_term,executed_plan,audit,
+        tc.course_no,tc.course_name,t2.work_id,t2.t_name
+        FROM tb_teach_course
+        LEFT JOIN tb_course tc ON tb_teach_course.course_no = tc.course_no
+        LEFT JOIN tb_teacher t2 ON tb_teach_course.work_id = t2.work_id
+        WHERE tc_no=#{tc_no}
+    </select>
+
+    <!--修改计划状态-->
+    <update id="updateStatus" parameterType="Map">
+        UPDATE tb_teach_course SET audit=#{status}
+        WHERE tc_no=#{tc_no}
+    </update>
+
+    <!--根据ID删除一条数据-->
+    <delete id="delById" parameterType="Integer">
+        DELETE FROM tb_teach_course WHERE tc_no=#{tc_no}
+    </delete>
+
+
+    <!--新增计划-->
+    <insert id="addTC" parameterType="Teacher_Course">
+        INSERT INTO tb_teach_course(course_no, work_id, launch_year, launch_term, executed_plan, audit)
+        VALUES (#{course_no},#{work_id},#{launch_year},#{launch_term},#{executed_plan},#{audit})
+    </insert>
+
+    <!--更新-->
+    <update id="updateTC" parameterType="Teacher_Course">
+        UPDATE tb_teach_course SET
+            course_no=#{course_no},
+            work_id=#{work_id},
+            launch_year=#{launch_year},launch_term=#{launch_term},
+        executed_plan=#{executed_plan},audit=#{audit}
+        WHERE tc_no=#{tc_no}
+    </update>
+
+    <resultMap id="baseMap" type="Teacher_Course">
+        <id column="tc_no" property="tc_no"></id>
+        <result column="course_no" property="course_no"></result>
+        <result column="work_id" property="work_id"></result>
+        <result column="launch_year" property="launch_year"></result>
+        <result column="launch_term" property="launch_term"></result>
+        <result column="executed_plan" property="executed_plan"></result>
+        <result column="audit" property="audit"></result>
+    </resultMap>
+
+    <resultMap id="tc-teacher-course" type="Teacher_Course">
+        <id column="tc_no" property="tc_no"></id>
+        <result column="course_no" property="course_no"></result>
+        <result column="work_id" property="work_id"></result>
+        <result column="launch_year" property="launch_year"></result>
+        <result column="launch_term" property="launch_term"></result>
+        <result column="executed_plan" property="executed_plan"></result>
+        <result column="audit" property="audit"></result>
+        <association property="course" javaType="Course"
+                     resultMap="com.lingnan.dao.course.courseDao.baseMap">
+        </association>
+        <association property="teacher" javaType="Teacher"
+                     resultMap="com.lingnan.dao.teacher.teacherDao.baseMap">
+        </association>
+    </resultMap>
+
+
+</mapper>
