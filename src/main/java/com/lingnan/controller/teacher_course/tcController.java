@@ -56,7 +56,7 @@ public class tcController {
 
     @RequestMapping(value = "/delByIds")
     @ResponseBody
-    public String delByIds(@RequestParam(value = "tc_nos")int tc_nos[]){
+    public String delByIds(@RequestParam(value = "tc_nos")String tc_nos[]){
         return tcs.delByIds(tc_nos);
     }
 

@@ -16,7 +16,7 @@ public interface tcService {
 
     String delById(Integer tc_no);
 
-    String delByIds(int array[]);
+    String delByIds(String array[]);
 
     Teacher_Course findById(Integer tc_no);
 

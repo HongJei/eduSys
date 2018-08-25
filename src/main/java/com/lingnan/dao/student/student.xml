@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lingnan.dao.student.studentDao">
+
+    <!--根据ID获取-->
+    <select id="findById" parameterType="String" resultMap="student-major">
+        SELECT register_no,s_name,s_img,s_gender,s_dateofbirth,s_class,
+            s_address,s_tele,s_email,graduation,
+            m.major_no,major_name,college_no,major_status
+        FROM tb_student
+            LEFT JOIN tb_major m ON tb_student.major_no = m.major_no
+        WHERE register_no=#{register_no}
+    </select>
+
+    <!--更新状态-->
+    <update id="updateStatus" parameterType="Map">
+        UPDATE tb_student SET graduation=#{status}
+        WHERE register_no=#{register_no}
+    </update>
+
+    <!--获取所有Student-->
+    <select id="findAll" resultMap="student-major">
+        SELECT register_no,s_name,s_img,s_gender,s_dateofbirth,s_class,
+            s_address,s_tele,s_email,graduation,
+            m.major_no,major_name,college_no,major_status
+        FROM tb_student
+            LEFT JOIN tb_major m ON tb_student.major_no = m.major_no
+    </select>
+
+    <!--新增student-->
+    <insert id="addStudent" parameterType="Student">
+        INSERT INTO tb_student(register_no, major_no, s_name, s_img, s_gender, s_dateofbirth,
+                               s_class, s_address,s_tele, s_email,graduation)
+        VALUES (#{register_no},#{major_no},#{s_name},#{s_img},#{s_gender},#{s_dateofbirth},#{s_class},
+                #{s_address},#{s_tele},#{s_email},#{graduation})
+    </insert>
+
+    <!--根据ID删除一条数据-->
+    <delete id="delById" parameterType="String">
+        DELETE FROM tb_student WHERE register_no=#{register_no}
+    </delete>
+
+
+    <!--批量删除-->
+    <delete id="delByIds" parameterType="String">
+        DELETE FROM tb_student
+        WHERE work_id IN (
+        <foreach collection="array" item="register_no" separator=",">
+            #{register_no}
+        </foreach>
+        )
+    </delete>
+
+    <!--更新-->
+    <update id="updateStudent" parameterType="Student">
+        UPDATE tb_student SET
+            s_name=#{s_name},s_img=#{s_img},s_gender=#{s_gender},
+            major_no=#{major_no},s_dateofbirth=#{s_dateofbirth},
+            s_address=#{s_address},s_tele=#{s_tele},
+            s_email=#{s_email},graduation=#{graduation}
+        WHERE register_no=#{register_no}
+    </update>
+
+    <resultMap id="baseMap" type="Student">
+        <id column="register_no" property="register_no"></id>
+        <result column="major_no" property="major_no"></result>
+        <result column="s_name" property="s_name"></result>
+        <result column="s_img" property="s_img"></result>
+        <result column="s_gender" property="s_gender"></result>
+        <result column="s_dateofbirth" property="s_dateofbirth"></result>
+        <result column="s_class" property="s_class"></result>
+        <result column="s_tele" property="s_tele"></result>
+        <result column="s_address" property="s_address"></result>
+        <result column="s_email" property="s_email"></result>
+        <result column="graduation" property="graduation"></result>
+    </resultMap>
+
+    <resultMap id="student-major" type="Student">
+        <id column="register_no" property="register_no"></id>
+        <result column="major_no" property="major_no"></result>
+        <result column="s_name" property="s_name"></result>
+        <result column="s_img" property="s_img"></result>
+        <result column="s_gender" property="s_gender"></result>
+        <result column="s_dateofbirth" property="s_dateofbirth"></result>
+        <result column="s_class" property="s_class"></result>
+        <result column="s_tele" property="s_tele"></result>
+        <result column="s_address" property="s_address"></result>
+        <result column="s_email" property="s_email"></result>
+        <result column="graduation" property="graduation"></result>
+        <association property="major" javaType="Major"
+                     resultMap="com.lingnan.dao.major.majorDao.baseMap">
+        </association>
+    </resultMap>
+
+</mapper>

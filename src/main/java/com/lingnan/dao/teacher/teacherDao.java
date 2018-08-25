@@ -17,7 +17,7 @@ public interface teacherDao {
 
     int delById(String id);
 
-    int delByIds(int array[]);
+    int delByIds(String array[]);
 
     int updateStatus(Map<String, Object> map);
 

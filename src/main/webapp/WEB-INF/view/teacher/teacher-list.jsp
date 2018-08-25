@@ -233,10 +233,10 @@
         layer.confirm('确认要删除吗？',function(index){
             var Ids = [];
             $("input:checkbox[name = checkboxs]:checked").each(function(i){
-                //使用循环遍历迭代的方式得到所有被选中的checkbox复选框
                 console.log($(this).val());
-                Ids.push( $(this).val() ); //当前被选中checkbox背后对应的值
+                Ids.push( $(this).val() );
             });
+
             $.ajax({
                 traditional: true,
                 type: 'POST',
@@ -247,12 +247,13 @@
                     $("input:checkbox[name = checkboxs]:checked").each(function(i){
                         $(this).parents("tr").remove();
                     });
-                    layer.msg('已删除!',{icon:1,time:6000});
+                    layer.msg('已删除!',{icon:1,time:2000});
 
                 },
-                error:function(data) {
-                    layer.msg('出现异常!',{icon:5,time:2000});
-                    console.log(data.msg);
+                error:function(XMLHttpRequest,err,type,errorThrown) {
+                    layer.msg('失败!',{icon:5,time:4000});
+                    console.log("错误类型"+type);
+                    console.log(err);
                 },
             });
         });

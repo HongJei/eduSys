@@ -11539,3 +11539,586 @@ Log session start time Fri Aug 24 10:29:30 CST 2018<br>
 <td title="com.lingnan.dao.teacher_course.tcDao.findById category">com.lingnan.dao.teacher_course.tcDao.findById</td>
 <td title="Message">&lt;==      Total: 1</td>
 </tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Aug 24 22:08:45 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.updateStatus category">com.lingnan.dao.student.studentDao.updateStatus</td>
+<td title="Message">==&gt;  Preparing: UPDATE tb_student SET graduation=? WHERE register_no=? </td>
+</tr>
+
+<tr>
+<td>88</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.updateStatus category">com.lingnan.dao.student.studentDao.updateStatus</td>
+<td title="Message">==&gt; Parameters: null, 201231000093 (String)</td>
+</tr>
+
+<tr>
+<td>91</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.updateStatus category">com.lingnan.dao.student.studentDao.updateStatus</td>
+<td title="Message">&lt;==    Updates: 1</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Fri Aug 24 22:10:17 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.updateStatus category">com.lingnan.dao.student.studentDao.updateStatus</td>
+<td title="Message">==&gt;  Preparing: UPDATE tb_student SET graduation=? WHERE register_no=? </td>
+</tr>
+
+<tr>
+<td>62</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.updateStatus category">com.lingnan.dao.student.studentDao.updateStatus</td>
+<td title="Message">==&gt; Parameters: 1(Integer), 201231000093 (String)</td>
+</tr>
+
+<tr>
+<td>67</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.updateStatus category">com.lingnan.dao.student.studentDao.updateStatus</td>
+<td title="Message">&lt;==    Updates: 1</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat Aug 25 14:15:09 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.addStudent category">com.lingnan.dao.student.studentDao.addStudent</td>
+<td title="Message">==&gt;  Preparing: INSERT INTO tb_student(register_no, major_no, s_name, s_img, s_gender, s_dateofbirth, s_class, s_address,s_tele, s_email,graduation) VALUES (?,?,?,?,?,?,?, ?,?,?,?) </td>
+</tr>
+
+<tr>
+<td>63</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.addStudent category">com.lingnan.dao.student.studentDao.addStudent</td>
+<td title="Message">==&gt; Parameters: test(String), 405(String), test(String), test(String), 男(String), 2018-08-25 14:15:16.438(Timestamp), 1(Integer), test(String), test(String), test(String), 1(String)</td>
+</tr>
+
+<tr>
+<td>395</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.addStudent category">com.lingnan.dao.student.studentDao.addStudent</td>
+<td title="Message">&lt;==    Updates: 1</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat Aug 25 15:10:44 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.findById category">com.lingnan.dao.student.studentDao.findById</td>
+<td title="Message">==&gt;  Preparing: SELECT register_no,s_name,s_img,s_gender,s_dateofbirth,s_class, s_address,s_tele,s_email,graduation, m.major_no,major_name,college_no,major_status FROM tb_student LEFT JOIN tb_major m ON tb_student.major_no = m.major_no WHERE register_no=? </td>
+</tr>
+
+<tr>
+<td>77</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.findById category">com.lingnan.dao.student.studentDao.findById</td>
+<td title="Message">==&gt; Parameters: test2(String)</td>
+</tr>
+
+<tr>
+<td>98</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.student.studentDao.findById category">com.lingnan.dao.student.studentDao.findById</td>
+<td title="Message">&lt;==    Columns: register_no, s_name, s_img, s_gender, s_dateofbirth, s_class, s_address, s_tele, s_email, graduation, major_no, major_name, college_no, major_status</td>
+</tr>
+
+<tr>
+<td>98</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.student.studentDao.findById category">com.lingnan.dao.student.studentDao.findById</td>
+<td title="Message">&lt;==        Row: test2, test, 014f66aa-b0b4-49eb-b6b7-413b2c659b07.png, 男, 2018-08-25, 2, test, 13800138000, 13800138000@163.com, 1, 403, 数字媒体艺术, 04, 1</td>
+</tr>
+
+<tr>
+<td>104</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.findById category">com.lingnan.dao.student.studentDao.findById</td>
+<td title="Message">&lt;==      Total: 1</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat Aug 25 15:11:13 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.findById category">com.lingnan.dao.student.studentDao.findById</td>
+<td title="Message">==&gt;  Preparing: SELECT register_no,s_name,s_img,s_gender,s_dateofbirth,s_class, s_address,s_tele,s_email,graduation, m.major_no,major_name,college_no,major_status FROM tb_student LEFT JOIN tb_major m ON tb_student.major_no = m.major_no WHERE register_no=? </td>
+</tr>
+
+<tr>
+<td>61</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.findById category">com.lingnan.dao.student.studentDao.findById</td>
+<td title="Message">==&gt; Parameters: test2(String)</td>
+</tr>
+
+<tr>
+<td>79</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.student.studentDao.findById category">com.lingnan.dao.student.studentDao.findById</td>
+<td title="Message">&lt;==    Columns: register_no, s_name, s_img, s_gender, s_dateofbirth, s_class, s_address, s_tele, s_email, graduation, major_no, major_name, college_no, major_status</td>
+</tr>
+
+<tr>
+<td>80</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.student.studentDao.findById category">com.lingnan.dao.student.studentDao.findById</td>
+<td title="Message">&lt;==        Row: test2, test, 014f66aa-b0b4-49eb-b6b7-413b2c659b07.png, 男, 2018-08-25, 2, test, 13800138000, 13800138000@163.com, 1, 403, 数字媒体艺术, 04, 1</td>
+</tr>
+
+<tr>
+<td>84</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.findById category">com.lingnan.dao.student.studentDao.findById</td>
+<td title="Message">&lt;==      Total: 1</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat Aug 25 15:11:45 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.findById category">com.lingnan.dao.student.studentDao.findById</td>
+<td title="Message">==&gt;  Preparing: SELECT register_no,s_name,s_img,s_gender,s_dateofbirth,s_class, s_address,s_tele,s_email,graduation, m.major_no,major_name,college_no,major_status FROM tb_student LEFT JOIN tb_major m ON tb_student.major_no = m.major_no WHERE register_no=? </td>
+</tr>
+
+<tr>
+<td>70</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.findById category">com.lingnan.dao.student.studentDao.findById</td>
+<td title="Message">==&gt; Parameters: test2(String)</td>
+</tr>
+
+<tr>
+<td>87</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.student.studentDao.findById category">com.lingnan.dao.student.studentDao.findById</td>
+<td title="Message">&lt;==    Columns: register_no, s_name, s_img, s_gender, s_dateofbirth, s_class, s_address, s_tele, s_email, graduation, major_no, major_name, college_no, major_status</td>
+</tr>
+
+<tr>
+<td>87</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.student.studentDao.findById category">com.lingnan.dao.student.studentDao.findById</td>
+<td title="Message">&lt;==        Row: test2, test, 014f66aa-b0b4-49eb-b6b7-413b2c659b07.png, 男, 2018-08-25, 2, 吉林省龙井市, 13800138000, 13800138000@163.com, 1, 403, 数字媒体艺术, 04, 1</td>
+</tr>
+
+<tr>
+<td>90</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.findById category">com.lingnan.dao.student.studentDao.findById</td>
+<td title="Message">&lt;==      Total: 1</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat Aug 25 15:13:07 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.findById category">com.lingnan.dao.student.studentDao.findById</td>
+<td title="Message">==&gt;  Preparing: SELECT register_no,s_name,s_img,s_gender,s_dateofbirth,s_class, s_address,s_tele,s_email,graduation, m.major_no,major_name,college_no,major_status FROM tb_student LEFT JOIN tb_major m ON tb_student.major_no = m.major_no WHERE register_no=? </td>
+</tr>
+
+<tr>
+<td>94</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.findById category">com.lingnan.dao.student.studentDao.findById</td>
+<td title="Message">==&gt; Parameters: test2(String)</td>
+</tr>
+
+<tr>
+<td>122</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.student.studentDao.findById category">com.lingnan.dao.student.studentDao.findById</td>
+<td title="Message">&lt;==    Columns: register_no, s_name, s_img, s_gender, s_dateofbirth, s_class, s_address, s_tele, s_email, graduation, major_no, major_name, college_no, major_status</td>
+</tr>
+
+<tr>
+<td>122</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.student.studentDao.findById category">com.lingnan.dao.student.studentDao.findById</td>
+<td title="Message">&lt;==        Row: test2, test, 014f66aa-b0b4-49eb-b6b7-413b2c659b07.png, 男, 2018-08-25, 2, 吉林省龙井市, 13800138000, 13800138000@163.com, 1, 403, 数字媒体艺术, 04, 1</td>
+</tr>
+
+<tr>
+<td>127</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.findById category">com.lingnan.dao.student.studentDao.findById</td>
+<td title="Message">&lt;==      Total: 1</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat Aug 25 15:58:46 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.addStudent category">com.lingnan.dao.student.studentDao.addStudent</td>
+<td title="Message">==&gt;  Preparing: INSERT INTO tb_student(register_no, major_no, s_name, s_img, s_gender, s_dateofbirth, s_class, s_address,s_tele, s_email,graduation) VALUES (?,?,?,?,?,?,?, ?,?,?,?) </td>
+</tr>
+
+<tr>
+<td>78</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.addStudent category">com.lingnan.dao.student.studentDao.addStudent</td>
+<td title="Message">==&gt; Parameters: test(String), 405(String), test(String), test(String), 男(String), 2018-08-09(String), 1(Integer), test(String), test(String), test(String), 1(String)</td>
+</tr>
+
+<tr>
+<td>79</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.addStudent category">com.lingnan.dao.student.studentDao.addStudent</td>
+<td title="Message">&lt;==    Updates: 1</td>
+</tr>
+
+<tr>
+<td>85</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.addStudent category">com.lingnan.dao.student.studentDao.addStudent</td>
+<td title="Message">==&gt;  Preparing: INSERT INTO tb_student(register_no, major_no, s_name, s_img, s_gender, s_dateofbirth, s_class, s_address,s_tele, s_email,graduation) VALUES (?,?,?,?,?,?,?, ?,?,?,?) </td>
+</tr>
+
+<tr>
+<td>87</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.addStudent category">com.lingnan.dao.student.studentDao.addStudent</td>
+<td title="Message">==&gt; Parameters: test0(String), 405(String), test(String), test(String), 男(String), 2018-08-09(String), 1(Integer), test(String), test(String), test(String), 1(String)</td>
+</tr>
+
+<tr>
+<td>88</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.addStudent category">com.lingnan.dao.student.studentDao.addStudent</td>
+<td title="Message">&lt;==    Updates: 1</td>
+</tr>
+
+<tr>
+<td>91</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.addStudent category">com.lingnan.dao.student.studentDao.addStudent</td>
+<td title="Message">==&gt;  Preparing: INSERT INTO tb_student(register_no, major_no, s_name, s_img, s_gender, s_dateofbirth, s_class, s_address,s_tele, s_email,graduation) VALUES (?,?,?,?,?,?,?, ?,?,?,?) </td>
+</tr>
+
+<tr>
+<td>93</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.addStudent category">com.lingnan.dao.student.studentDao.addStudent</td>
+<td title="Message">==&gt; Parameters: test01(String), 405(String), test(String), test(String), 男(String), 2018-08-09(String), 1(Integer), test(String), test(String), test(String), 1(String)</td>
+</tr>
+
+<tr>
+<td>94</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.addStudent category">com.lingnan.dao.student.studentDao.addStudent</td>
+<td title="Message">&lt;==    Updates: 1</td>
+</tr>
+
+<tr>
+<td>98</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.addStudent category">com.lingnan.dao.student.studentDao.addStudent</td>
+<td title="Message">==&gt;  Preparing: INSERT INTO tb_student(register_no, major_no, s_name, s_img, s_gender, s_dateofbirth, s_class, s_address,s_tele, s_email,graduation) VALUES (?,?,?,?,?,?,?, ?,?,?,?) </td>
+</tr>
+
+<tr>
+<td>99</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.addStudent category">com.lingnan.dao.student.studentDao.addStudent</td>
+<td title="Message">==&gt; Parameters: test012(String), 405(String), test(String), test(String), 男(String), 2018-08-09(String), 1(Integer), test(String), test(String), test(String), 1(String)</td>
+</tr>
+
+<tr>
+<td>100</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.addStudent category">com.lingnan.dao.student.studentDao.addStudent</td>
+<td title="Message">&lt;==    Updates: 1</td>
+</tr>
+
+<tr>
+<td>104</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.addStudent category">com.lingnan.dao.student.studentDao.addStudent</td>
+<td title="Message">==&gt;  Preparing: INSERT INTO tb_student(register_no, major_no, s_name, s_img, s_gender, s_dateofbirth, s_class, s_address,s_tele, s_email,graduation) VALUES (?,?,?,?,?,?,?, ?,?,?,?) </td>
+</tr>
+
+<tr>
+<td>105</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.addStudent category">com.lingnan.dao.student.studentDao.addStudent</td>
+<td title="Message">==&gt; Parameters: test0123(String), 405(String), test(String), test(String), 男(String), 2018-08-09(String), 1(Integer), test(String), test(String), test(String), 1(String)</td>
+</tr>
+
+<tr>
+<td>106</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.addStudent category">com.lingnan.dao.student.studentDao.addStudent</td>
+<td title="Message">&lt;==    Updates: 1</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat Aug 25 16:00:49 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.delById category">com.lingnan.dao.student.studentDao.delById</td>
+<td title="Message">==&gt;  Preparing: DELETE FROM tb_student WHERE register_no=? </td>
+</tr>
+
+<tr>
+<td>55</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.delById category">com.lingnan.dao.student.studentDao.delById</td>
+<td title="Message">==&gt; Parameters: test(String)</td>
+</tr>
+
+<tr>
+<td>56</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.student.studentDao.delById category">com.lingnan.dao.student.studentDao.delById</td>
+<td title="Message">&lt;==    Updates: 1</td>
+</tr>

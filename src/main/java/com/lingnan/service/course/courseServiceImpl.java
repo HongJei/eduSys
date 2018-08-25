@@ -39,7 +39,7 @@ public class courseServiceImpl implements courseService {
 
     @Transactional
     @Override
-    public int delByIds(int[] array) {
+    public int delByIds(String[] array) {
         return cd.delByIds(array);
     }
 

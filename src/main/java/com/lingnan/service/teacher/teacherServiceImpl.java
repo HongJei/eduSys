@@ -43,7 +43,7 @@ public class teacherServiceImpl implements teacherService {
 
     @Transactional
     @Override
-    public int delByIds(int[] array) {
+    public int delByIds(String[] array) {
         return td.delByIds(array);
     }
     @Transactional

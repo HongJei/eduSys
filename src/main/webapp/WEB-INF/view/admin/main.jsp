@@ -77,7 +77,7 @@
             <dt><i class="Hui-iconfont">&#xe622;</i> 学生管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
             <dd>
                 <ul>
-                    <li><a data-href="http://h-ui.duoshuo.com/admin/" data-title="学生列表" href="javascript:;">学生列表</a></li>
+                    <li><a data-href="${path}/student/toList" data-title="学生列表" href="javascript:;">学生列表</a></li>
                     <li><a data-href="product-brand.html" data-title="成绩管理" href="javascript:void(0)">成绩管理</a></li>
                 </ul>
             </dd>

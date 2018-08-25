@@ -1258,7 +1258,7 @@
     </column>
     <column id="299" parent="220" name="s_dateofbirth">
       <Position>6</Position>
-      <DataType>date|0</DataType>
+      <DataType>varchar(25)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="300" parent="220" name="s_class">
@@ -1271,217 +1271,213 @@
       <DataType>varchar(25)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="302" parent="220" name="s_postcode">
+    <column id="302" parent="220" name="s_tele">
       <Position>9</Position>
-      <DataType>varchar(10)|0</DataType>
+      <DataType>varchar(20)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="303" parent="220" name="s_mail_address">
+    <column id="303" parent="220" name="s_email">
       <Position>10</Position>
       <DataType>varchar(25)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="304" parent="220" name="s_tele">
+    <column id="304" parent="220" name="graduation">
       <Position>11</Position>
-      <DataType>varchar(20)|0</DataType>
+      <DataType>varchar(5)|0</DataType>
+      <DefaultExpression>&apos;1&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="305" parent="220" name="s_email">
-      <Position>12</Position>
-      <DataType>varchar(25)|0</DataType>
-      <ColumnKind>normal</ColumnKind>
-    </column>
-    <index id="306" parent="220" name="FK_maj_std">
+    <index id="305" parent="220" name="FK_maj_std">
       <ColNames>major_no</ColNames>
     </index>
-    <key id="307" parent="220" name="PRIMARY">
+    <key id="306" parent="220" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>register_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="308" parent="220" name="FK_maj_std">
+    <foreign-key id="307" parent="220" name="FK_maj_std">
       <ColNames>major_no</ColNames>
       <RefSchemaName>db_edu</RefSchemaName>
       <RefTableName>tb_major</RefTableName>
       <RefColNames>major_no</RefColNames>
     </foreign-key>
-    <column id="309" parent="221" name="register_id">
+    <column id="308" parent="221" name="register_id">
       <Position>1</Position>
       <DataType>varchar(20)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="310" parent="221" name="login_pwd">
+    <column id="309" parent="221" name="login_pwd">
       <Position>2</Position>
       <DataType>varchar(25)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="311" parent="221" name="FK_std_sp">
+    <index id="310" parent="221" name="FK_std_sp">
       <ColNames>register_id</ColNames>
     </index>
-    <foreign-key id="312" parent="221" name="FK_std_sp">
+    <foreign-key id="311" parent="221" name="FK_std_sp">
       <ColNames>register_id</ColNames>
       <RefSchemaName>db_edu</RefSchemaName>
       <RefTableName>tb_student</RefTableName>
       <RefColNames>register_no</RefColNames>
     </foreign-key>
-    <column id="313" parent="222" name="tc_no">
+    <column id="312" parent="222" name="tc_no">
       <Position>1</Position>
       <DataType>int(5)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="314" parent="222" name="course_no">
+    <column id="313" parent="222" name="course_no">
       <Position>2</Position>
       <DataType>varchar(20)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="315" parent="222" name="work_id">
+    <column id="314" parent="222" name="work_id">
       <Position>3</Position>
       <DataType>varchar(20)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="316" parent="222" name="launch_year">
+    <column id="315" parent="222" name="launch_year">
       <Position>4</Position>
       <DataType>varchar(25)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="317" parent="222" name="launch_term">
+    <column id="316" parent="222" name="launch_term">
       <Position>5</Position>
       <DataType>int(5)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="318" parent="222" name="executed_plan">
+    <column id="317" parent="222" name="executed_plan">
       <Position>6</Position>
       <DataType>varchar(10)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="319" parent="222" name="audit">
+    <column id="318" parent="222" name="audit">
       <Position>7</Position>
       <DataType>int(5)|0</DataType>
       <DefaultExpression>&apos;1&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="320" parent="222" name="FK_cou_fp">
+    <index id="319" parent="222" name="FK_cou_fp">
       <ColNames>course_no</ColNames>
     </index>
-    <index id="321" parent="222" name="FK_tea_fp">
+    <index id="320" parent="222" name="FK_tea_fp">
       <ColNames>work_id</ColNames>
     </index>
-    <key id="322" parent="222" name="PRIMARY">
+    <key id="321" parent="222" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>tc_no</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="323" parent="222" name="FK_cou_fp">
+    <foreign-key id="322" parent="222" name="FK_cou_fp">
       <ColNames>course_no</ColNames>
       <RefSchemaName>db_edu</RefSchemaName>
       <RefTableName>tb_course</RefTableName>
       <RefColNames>course_no</RefColNames>
     </foreign-key>
-    <foreign-key id="324" parent="222" name="FK_tea_fp">
+    <foreign-key id="323" parent="222" name="FK_tea_fp">
       <ColNames>work_id</ColNames>
       <RefSchemaName>db_edu</RefSchemaName>
       <RefTableName>tb_teacher</RefTableName>
       <RefColNames>work_id</RefColNames>
     </foreign-key>
-    <column id="325" parent="223" name="work_id">
+    <column id="324" parent="223" name="work_id">
       <Position>1</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="326" parent="223" name="t_name">
+    <column id="325" parent="223" name="t_name">
       <Position>2</Position>
       <DataType>varchar(10)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="327" parent="223" name="t_img">
+    <column id="326" parent="223" name="t_img">
       <Position>3</Position>
       <DataType>varchar(55)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="328" parent="223" name="t_gender">
+    <column id="327" parent="223" name="t_gender">
       <Position>4</Position>
       <DataType>varchar(10)|0</DataType>
       <DefaultExpression>&apos;男&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="329" parent="223" name="major_no">
+    <column id="328" parent="223" name="major_no">
       <Position>5</Position>
       <DataType>varchar(20)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="330" parent="223" name="college_no">
+    <column id="329" parent="223" name="college_no">
       <Position>6</Position>
       <DataType>varchar(20)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="331" parent="223" name="t_address">
+    <column id="330" parent="223" name="t_address">
       <Position>7</Position>
       <DataType>varchar(25)|0</DataType>
       <DefaultExpression>&apos;广东省湛江市&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="332" parent="223" name="t_telephone">
+    <column id="331" parent="223" name="t_telephone">
       <Position>8</Position>
       <DataType>varchar(20)|0</DataType>
       <DefaultExpression>&apos;1380013800&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="333" parent="223" name="t_status">
+    <column id="332" parent="223" name="t_status">
       <Position>9</Position>
       <DataType>varchar(10)|0</DataType>
       <DefaultExpression>&apos;1&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="334" parent="223" name="t_email">
+    <column id="333" parent="223" name="t_email">
       <Position>10</Position>
       <DataType>varchar(25)|0</DataType>
       <DefaultExpression>&apos;limx@dlpu.edu.cn&apos;</DefaultExpression>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <index id="335" parent="223" name="FK_maj_tea">
+    <index id="334" parent="223" name="FK_maj_tea">
       <ColNames>major_no</ColNames>
     </index>
-    <index id="336" parent="223" name="FK_col_tea">
+    <index id="335" parent="223" name="FK_col_tea">
       <ColNames>college_no</ColNames>
     </index>
-    <key id="337" parent="223" name="PRIMARY">
+    <key id="336" parent="223" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>work_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="338" parent="223" name="FK_maj_tea">
+    <foreign-key id="337" parent="223" name="FK_maj_tea">
       <ColNames>major_no</ColNames>
       <RefSchemaName>db_edu</RefSchemaName>
       <RefTableName>tb_major</RefTableName>
       <RefColNames>major_no</RefColNames>
     </foreign-key>
-    <foreign-key id="339" parent="223" name="FK_col_tea">
+    <foreign-key id="338" parent="223" name="FK_col_tea">
       <ColNames>college_no</ColNames>
       <RefSchemaName>db_edu</RefSchemaName>
       <RefTableName>tb_college</RefTableName>
       <RefColNames>college_no</RefColNames>
     </foreign-key>
-    <column id="340" parent="224" name="u_id">
+    <column id="339" parent="224" name="u_id">
       <Position>1</Position>
       <DataType>int(5)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="341" parent="224" name="username">
+    <column id="340" parent="224" name="username">
       <Position>2</Position>
       <DataType>varchar(20)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="342" parent="224" name="password">
+    <column id="341" parent="224" name="password">
       <Position>3</Position>
       <DataType>varchar(20)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="343" parent="224" name="PRIMARY">
+    <key id="342" parent="224" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>u_id</ColNames>
       <Primary>1</Primary>

@@ -51,7 +51,7 @@ public class courseController {
 
     @RequestMapping("/delByIds")
     @ResponseBody
-    public String delByIds(@RequestParam(value = "course_nos")int course_nos[]){
+    public String delByIds(@RequestParam(value = "course_nos")String course_nos[]){
         int i = cs.delByIds(course_nos);
         if (i ==1 )
             return "success";

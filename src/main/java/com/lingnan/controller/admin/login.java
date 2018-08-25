@@ -120,7 +120,7 @@ public class login {
         int i = adminService.delByIds(Ids);
         if (i==1)
             return "success";
-        else return "200";
+        return "error";
     }
 
     /*获取一条数据*/

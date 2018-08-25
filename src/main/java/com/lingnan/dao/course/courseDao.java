@@ -19,7 +19,7 @@ public interface courseDao {
 
     int updateStatus(Map<String, Object> map);
 
-    int delByIds(int array[]);
+    int delByIds(String array[]);
 
     Course findById(String course_no);
 

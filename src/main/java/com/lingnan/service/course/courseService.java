@@ -17,7 +17,7 @@ public interface courseService {
 
     int delById(String course_no);
 
-    int delByIds(int array[]);
+    int delByIds(String array[]);
 
     Course findById(String course_no);
 

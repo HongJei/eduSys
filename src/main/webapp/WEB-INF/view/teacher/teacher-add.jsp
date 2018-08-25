@@ -215,8 +215,6 @@
                     if (${teacher!=null}){
                         url = "${path}/teacher/doUpdate";
                     }
-                    alert(url);
-                    alert(params);
                     layer.confirm('确认提交吗？',function(index){
                         $(form).ajaxSubmit({
                             type: 'post',

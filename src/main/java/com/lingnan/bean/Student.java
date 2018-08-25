@@ -12,13 +12,12 @@ public class Student {
     private String s_name;
     private String s_gender;
     private String s_img;
-    private Date s_dateofbirth;
+    private String s_dateofbirth;
     private Integer s_class;
     private String s_address;
-    private String s_postcode;
-    private String s_mail_address;
     private String s_tele;
     private String s_email;
+    private String graduation;
 
     private Major major;
 
@@ -26,9 +25,8 @@ public class Student {
     }
 
     public Student(String register_no, String major_no, String s_name,
-                   String s_gender, String s_img, Date s_dateofbirth, Integer s_class,
-                   String s_address, String s_postcode,
-                   String s_mail_address, String s_tele, String s_email
+                   String s_gender, String s_img, String s_dateofbirth, Integer s_class,
+                   String s_address, String graduation, String s_tele, String s_email
                    ) {
         this.register_no = register_no;
         this.major_no = major_no;
@@ -38,8 +36,7 @@ public class Student {
         this.s_dateofbirth = s_dateofbirth;
         this.s_class = s_class;
         this.s_address = s_address;
-        this.s_postcode = s_postcode;
-        this.s_mail_address = s_mail_address;
+        this.graduation = graduation;
         this.s_tele = s_tele;
         this.s_email = s_email;
     }
@@ -76,11 +73,11 @@ public class Student {
         this.s_gender = s_gender;
     }
 
-    public Date getS_dateofbirth() {
+    public String getS_dateofbirth() {
         return s_dateofbirth;
     }
 
-    public void setS_dateofbirth(Date s_dateofbirth) {
+    public void setS_dateofbirth(String s_dateofbirth) {
         this.s_dateofbirth = s_dateofbirth;
     }
 
@@ -98,22 +95,6 @@ public class Student {
 
     public void setS_address(String s_address) {
         this.s_address = s_address;
-    }
-
-    public String getS_postcode() {
-        return s_postcode;
-    }
-
-    public void setS_postcode(String s_postcode) {
-        this.s_postcode = s_postcode;
-    }
-
-    public String getS_mail_address() {
-        return s_mail_address;
-    }
-
-    public void setS_mail_address(String s_mail_address) {
-        this.s_mail_address = s_mail_address;
     }
 
     public String getS_tele() {
@@ -148,6 +129,14 @@ public class Student {
         this.s_img = s_img;
     }
 
+    public String getGraduation() {
+        return graduation;
+    }
+
+    public void setGraduation(String graduation) {
+        this.graduation = graduation;
+    }
+
     @Override
     public String toString() {
         return "Student{" +
@@ -159,11 +148,10 @@ public class Student {
                 ", s_dateofbirth=" + s_dateofbirth +
                 ", s_class=" + s_class +
                 ", s_address='" + s_address + '\'' +
-                ", s_postcode='" + s_postcode + '\'' +
-                ", s_mail_address='" + s_mail_address + '\'' +
                 ", s_tele='" + s_tele + '\'' +
                 ", s_email='" + s_email + '\'' +
                 ", major=" + major +
+                ", graduation=" + graduation +
                 '}';
     }
 }

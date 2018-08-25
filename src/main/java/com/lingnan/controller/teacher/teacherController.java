@@ -49,7 +49,7 @@ public class teacherController {
     /*批量删除教师*/
     @RequestMapping("/delByIds")
     @ResponseBody
-    public String delByIds(@RequestParam(value = "Ids")int Ids[]){
+    public String delByIds(@RequestParam(value = "Ids")String Ids[]){
         int i = ts.delByIds(Ids);
         if (i == 1)
             return "success";

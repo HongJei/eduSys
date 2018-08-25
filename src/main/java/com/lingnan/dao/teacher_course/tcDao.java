@@ -17,7 +17,7 @@ public interface tcDao {
 
     int delById(Integer tc_no);
 
-    int delByIds(int array[]);
+    int delByIds(String array[]);
 
     Teacher_Course findById(Integer tc_no);
 

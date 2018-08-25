@@ -18,7 +18,7 @@ public interface teacherService {
 
     int delById(String id);
 
-    int delByIds(int array[]);
+    int delByIds(String array[]);
 
     int updateStatus(String work_id,String status);
 

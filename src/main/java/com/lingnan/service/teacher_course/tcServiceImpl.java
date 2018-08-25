@@ -43,7 +43,7 @@ public class tcServiceImpl implements tcService{
     }
 
     @Override
-    public String delByIds(int[] array) {
+    public String delByIds(String[] array) {
         int i = tcd.delByIds(array);
         if (i == 1)
             return "删除成功";
