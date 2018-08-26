@@ -94,5 +94,12 @@ public class collegeController {
         else return "error";
     }
 
+    @RequestMapping("/toUpdate")
+    public String toUpdate(@RequestParam(value = "college_no")String college_no,ModelMap map){
+        College oneCol = cs.getOneCol(college_no);
+        map.put("college",oneCol);
+        return "college/college-add";
+    }
+
 
 }

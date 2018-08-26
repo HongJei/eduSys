@@ -28,7 +28,7 @@
                 <i class="Hui-iconfont">&#xe6e2;</i>
                 批量删除
             </a>
-            <a class="btn btn-primary radius" data-title="添加学院" data-href="${path}/college/toAddCollege" onclick="Hui_admin_tab(this)" href="javascript:;">
+            <a class="btn btn-primary radius" data-title="添加专业" onclick="major_add('添加管理员','${path}/major/toAdd','800','500')" href="javascript:;">
                 <i class="Hui-iconfont">&#xe600;</i> 添加专业
             </a>
         </span>
@@ -40,7 +40,7 @@
                 <th width="25"><input type="checkbox" name="" ></th>
                 <th width="80">ID</th>
                 <th width="120">专业名称</th>
-                <th width="120">专业所属学院编号</th>
+                <th width="120">所属学院</th>
                 <th width="60">专业状态</th>
                 <th width="60">操作</th>
             </tr>
@@ -51,7 +51,7 @@
                     <td><input type="checkbox" value="${major.major_no}" name="colcheck"></td>
                     <td>${major.major_no}</td>
                     <td>${major.major_name}</td>
-                    <td>${major.college_no}</td>
+                    <td>${major.college.college_name}</td>
                     <td class="td-status">
                         <c:if test="${major.major_status==1}">
                             <span class="label label-success radius">正常</span>
@@ -72,7 +72,7 @@
                             </a>
                         </c:if>
 
-                        <a style="text-decoration:none" class="ml-5" href="javascript:;" onclick="getOneMajor(${major.major_no})" data-toggle="modal" data-target="#myModal" title="编辑">
+                        <a style="text-decoration:none" class="ml-5" href="javascript:;" onclick="major_edit('专业编辑','${path}/major/toUpdate?major_no=${major.major_no}','800','500')" data-toggle="modal" data-target="#myModal" title="编辑">
                             <i class="Hui-iconfont">&#xe6df;</i>
                         </a>
                         <a style="text-decoration:none" class="ml-5" onClick="major_del(this,'${major.major_no}')" href="javascript:;" title="删除">
@@ -84,53 +84,12 @@
             </tbody>
         </table>
     </div>
-
-    <!-- 模态框（Modal） -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <form id="form-update">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                            &times;
-                        </button>
-                        <h4 class="modal-title" id="myModalLabel">
-                            更新专业
-                        </h4>
-                    </div>
-                    <div class="modal-body">
-                        <input type="text" class="input-text radius" name="major_no" id="major_no_up" hidden="hidden">
-                        专业名称:<input type="text" class="input-text radius" name="major_name" id="major_name_up" placeholder="请输入专业名称">
-                        <br>专业所属学院:<input type="text" class="input-text radius" name="college_no" id="college_no_up" placeholder="请选择学院">
-                        <br><div class="dropdown">请选择专业状态:
-                        <select class="btn" name="major_status" id="major_status_up" role="menu" aria-labelledby="dropdownMenu1">
-                            <option role="presentation" value="0" >
-                                关闭
-                            </option>
-                            <option role="presentation" selected="selected" value="1">
-                                正常
-                            </option>
-                        </select>
-                    </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭
-                        </button>
-                        <button type="button" onclick="doUpdate()" class="btn btn-primary">
-                            提交更改
-                        </button>
-                    </div>
-                </div>
-            </form><!-- /.modal-content -->
-        </div><!-- /.modal -->
-
-    </div>
+</div>
 </div>
 <script type="text/javascript" src="${path}/lib/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="${path}/lib/layer/2.4/layer.js"></script>
 <script type="text/javascript" src="${path}/static/h-ui/js/H-ui.min.js"></script>
-<script type="text/javascript" src="${path}/static/h-ui.admin/js/H-ui.admin.js"></script> <!--/_footer 作为公共模版分离出去-->
-
+<script type="text/javascript" src="${path}/static/h-ui.admin/js/H-ui.admin.js"></script>
 <script type="text/javascript" src="${path}/lib/My97DatePicker/4.8/WdatePicker.js"></script>
 <script type="text/javascript" src="${path}/lib/datatables/1.10.0/jquery.dataTables.min.js"></script>
 <script type="text/javascript" src="${path}/lib/laypage/1.2/laypage.js"></script>
@@ -145,8 +104,14 @@
         ]
     });
 
+    function major_add(title,url,w,h){
+        layer_show(title,url,w,h);
+    }
 
-    /*学院-删除*/
+    function major_edit(title,url,w,h){
+        layer_show(title,url,w,h);
+    }
+
     function major_del(obj,id){
         layer.confirm('确认要删除吗？',function(index){
             $.ajax({
@@ -237,49 +202,6 @@
                 },
                 error:function(data) {
                     layer.msg('失败啦!',{icon: 5,time:1000});
-                    console.log(data.msg);
-                },
-            });
-        });
-    }
-    /*获取一个专业信息*/
-    function getOneMajor(id) {
-        $.ajax({
-            type: 'POST',
-            url: '${path}/major/getOneMajor',
-            data:{"major_no":id},
-            dataType:"json",
-            success: function(data){
-                $('#major_no_up').val(data.major_no);
-                $('#major_name_up').val(data.major_name);
-                $('#college_no_up').val(data.college_no);
-                if (data.major_status==1){
-                    $('#major_status_up').val("1");
-                }else{
-                    $('#major_status_up').val("0");
-                }
-            },
-            error:function(data) {
-                layer.msg('失败!',{icon: 5,time:1000});
-                console.log(data.msg);
-            },
-        });
-    }
-
-    <!--更新专业-->
-    function doUpdate() {
-        layer.confirm('确认要这样更新吗？',function(index){
-            var params = $('#form-update').serialize();
-            $.ajax({
-                type: 'POST',
-                url: '${path}/major/doUpdate',
-                data: params,
-                dataType:"text",
-                success: function(data){
-                    location.replace(location.href);
-                },
-                error:function(data) {
-                    layer.msg('更新失败!',{icon: 5,time:5000});
                     console.log(data.msg);
                 },
             });

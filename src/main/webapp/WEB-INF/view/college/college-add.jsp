@@ -30,35 +30,40 @@
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>学院编号：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="college_no" name="college_no">
+                <c:if test="${college!=null}">
+                    <input type="text" class="input-text" readonly value="${college.college_no}" placeholder="" id="college_no" name="college_no">
+                </c:if>
+                <c:if test="${college==null}">
+                    <input type="text" class="input-text" value="" placeholder="" id="college_no" name="college_no">
+                </c:if>
             </div>
         </div>
 
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>学院名称：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="college_name" name="college_name">
+                <input type="text" class="input-text" value="${college.college_name}" placeholder="" id="college_name" name="college_name">
             </div>
         </div>
 
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">学院开设人数：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text"  class="input-text" value="0" placeholder=""  name="setting_quota">
+                <input type="text"  class="input-text" value="${college.setting_quota}" placeholder=""  name="setting_quota">
             </div>
         </div>
 
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">学院实际人数：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="0" placeholder=""  name="current_quota">
+                <input type="text" class="input-text" value="${college.current_quota}" placeholder=""  name="current_quota">
             </div>
         </div>
 
         <div class="row cl">
             <label class="form-label col-xs-4 col-sm-2">学院专业数目：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="0" placeholder=""  name="major_int">
+                <input type="text" class="input-text" value="${college.major_int}" placeholder=""  name="major_int">
             </div>
         </div>
 
@@ -116,19 +121,24 @@
             focusCleanup:true,
             success:"valid",
             submitHandler:function(form){
-                layer.confirm('确认要新增学院吗？',function(index){
+
+                var url = "${path}/college/addCollege";
+                if (${college!=null}){
+                    url = "${path}/college/doUpdate";
+                }
+                layer.confirm('确认吗？',function(index){
                     var params = $("#form-college-add").serialize();
                     $.ajax({
                         type: 'POST',
-                        url: '${path}/college/addCollege',
+                        url: url,
                         data:params,
                         dataType: "text",
                         success: function(data){
-                            layer.msg('已添加!',{icon:6,time:4000});
+                            layer.msg('成功!',{icon:6,time:2000});
                             $('#form-college-add')[0].reset();
                         },
                         error:function(data) {
-                            alert("失败啦");
+                            layer.msg('失败!',{icon:5,time:4000});
                             console.log(data.msg);
                         },
                     });

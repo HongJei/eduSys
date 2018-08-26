@@ -28,7 +28,7 @@
                 <i class="Hui-iconfont">&#xe6e2;</i>
                 批量删除
             </a>
-            <a class="btn btn-primary radius" data-title="添加学院" data-href="${path}/college/toAddCollege" onclick="Hui_admin_tab(this)" href="javascript:;">
+            <a class="btn btn-primary radius" data-title="添加学院"  onclick="college_add('添加管理员','${path}/college/toAddCollege','800','500')" href="javascript:;">
                 <i class="Hui-iconfont">&#xe600;</i> 添加学院
             </a>
         </span>
@@ -76,7 +76,7 @@
                             </a>
                         </c:if>
 
-                        <a style="text-decoration:none" class="ml-5" href="javascript:;" onclick="getOneCol(${colg.college_no})" data-toggle="modal" data-target="#myModal" title="编辑">
+                        <a style="text-decoration:none" class="ml-5" href="javascript:;" onclick="college_edit('添加管理员','${path}/college/toUpdate?college_no=${colg.college_no}','800','500')" data-toggle="modal" data-target="#myModal" title="编辑">
                             <i class="Hui-iconfont">&#xe6df;</i>
                         </a>
                         <a style="text-decoration:none" class="ml-5" onClick="college_del(this,'${colg.college_no}')" href="javascript:" title="删除">
@@ -89,48 +89,7 @@
         </table>
     </div>
 
-    <!-- 模态框（Modal） -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <form id="form-update">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
-                            &times;
-                        </button>
-                        <h4 class="modal-title" id="myModalLabel">
-                            更新学院
-                        </h4>
-                    </div>
-                    <div class="modal-body">
-                        <input type="text" class="input-text radius" name="college_no" id="college_no_up" hidden="hidden">
-                        学院名称:<input type="text" class="input-text radius" name="college_name" id="college_name_up" placeholder="请输入学院名称">
-                        <br>学院开设人数:<input type="text" class="input-text radius" name="setting_quota" id="setting_quota_up" placeholder="请输入开设人数">
-                        <br>学院目前人数:<input type="text" class="input-text radius" name="current_quota" id="current_quota_up" placeholder="请输入实际人数">
-                        <br>学院专业数目:<input type="text" class="input-text radius" name="major_int" id="major_int_up" placeholder="请输入专业数目">
-                        <br><div class="dropdown">请选择学院状态:
-                        <select class="btn" name="college_status" id="college_status_up" role="menu" aria-labelledby="dropdownMenu1">
-                            <option role="presentation" value="0" >
-                                关闭
-                            </option>
-                            <option role="presentation" selected="selected" value="1">
-                                正常
-                            </option>
-                        </select>
-                    </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">关闭
-                        </button>
-                        <button type="button" onclick="doUpdate()" class="btn btn-primary">
-                            提交更改
-                        </button>
-                    </div>
-                </div>
-            </form><!-- /.modal-content -->
-        </div><!-- /.modal -->
-
-    </div>
+</div>
 </div>
 <script type="text/javascript" src="${path}/lib/jquery/1.9.1/jquery.min.js"></script>
 <script type="text/javascript" src="${path}/lib/layer/2.4/layer.js"></script>
@@ -151,24 +110,15 @@
         ]
     });
 
-    /*学院添加*/
-    function article_add(title,url,w,h){
-        var index = layer.open({
-            type: 2,
-            title: title,
-            content: url
-        });
-        layer.full(index);
+    function college_edit(title,url,w,h){
+        layer_show(title,url,w,h);
     }
-    /*学院更新*/
-    function college_edit(title,id){
-        var index = layer.open({
-            type: 2,
-            title: title,
-            content: url
-        });
-        layer.full(index);
+
+    function college_add(title,url,w,h){
+        layer_show(title,url,w,h);
     }
+
+
     /*学院-删除*/
     function college_del(obj,id){
         layer.confirm('确认要删除吗？',function(index){

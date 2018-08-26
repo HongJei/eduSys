@@ -1,6 +1,8 @@
 package com.lingnan.controller.major;
 
+import com.lingnan.bean.College;
 import com.lingnan.bean.Major;
+import com.lingnan.service.college.collegeService;
 import com.lingnan.service.major.majorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -20,6 +22,8 @@ public class MajorController {
 
     @Autowired
     private majorService ms;
+    @Autowired
+    private collegeService cs;
 
     /*获取专业列表*/
     @RequestMapping("/toMajorList")
@@ -40,8 +44,10 @@ public class MajorController {
     }
 
     /*跳转到添加页面*/
-    @RequestMapping("/toAddMajor")
-    public String toAddMajor(){
+    @RequestMapping("/toAdd")
+    public String toAdd(ModelMap map){
+        List<College> all = cs.findAll();
+        map.put("collegeList",all);
         return "major/major-add";
     }
 
@@ -84,13 +90,6 @@ public class MajorController {
         else return "error";
     }
 
-    /*获取当前专业信息*/
-    @RequestMapping("/getOneMajor")
-    @ResponseBody
-    public Major getOneMajor(@RequestParam(value = "major_no")String major_no){
-        return ms.getOneMajor(major_no);
-    }
-
     /*更新*/
     @RequestMapping("/doUpdate")
     @ResponseBody
@@ -101,5 +100,14 @@ public class MajorController {
         else return "error";
     }
 
+
+    @RequestMapping("/toUpdate")
+    public String toUpdate(@RequestParam(value = "major_no")String major_no,ModelMap map){
+        Major oneMajor = ms.getOneMajor(major_no);
+        List<College> all = cs.findAll();
+        map.put("collegeList",all);
+        map.put("major",oneMajor);
+        return "major/major-add";
+    }
 
 }

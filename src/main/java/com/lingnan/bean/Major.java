@@ -9,6 +9,7 @@ public class Major {
     private String major_name;
     private String college_no;
     private Integer major_status;
+    private College college;
 
     public Major(String major_no, String major_name,String college_no,Integer major_status) {
         this.major_no = major_no;
@@ -52,6 +53,14 @@ public class Major {
         this.college_no = college_no;
     }
 
+    public College getCollege() {
+        return college;
+    }
+
+    public void setCollege(College college) {
+        this.college = college;
+    }
+
     @Override
     public String toString() {
         return "Major{" +
@@ -59,6 +68,7 @@ public class Major {
                 ", major_name='" + major_name + '\'' +
                 ", college_no='" + college_no + '\'' +
                 ", major_status='" + major_status + '\'' +
+                ", college='" + college + '\'' +
                 '}';
     }
 }

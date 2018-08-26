@@ -6,8 +6,11 @@
 <mapper namespace="com.lingnan.dao.major.majorDao">
 
     <!--获取所有专业-->
-    <select id="findAll" resultType="Major">
-        SELECT * FROM tb_major
+    <select id="findAll" resultMap="major-college">
+        SELECT major_no,major_name,major_status,
+            c.college_no,c.college_name
+        FROM tb_major
+        LEFT JOIN tb_college c ON tb_major.college_no = c.college_no
     </select>
 
     <!--根据学院编号获取数据-->
@@ -58,6 +61,18 @@
     <resultMap id="baseMap" type="Major">
         <id column="major_no" property="major_no"></id>
         <result column="major_name" property="major_name"></result>
+        <result column="college_no" property="college_no"></result>
+        <result column="major_status" property="major_status"></result>
+    </resultMap>
+
+    <resultMap id="major-college" type="Major">
+        <id column="major_no" property="major_no"></id>
+        <result column="major_name" property="major_name"></result>
+        <result column="college_no" property="college_no"></result>
+        <result column="major_status" property="major_status"></result>
+        <association property="college" javaType="College"
+                     resultMap="com.lingnan.dao.college.collegeDao.baseMap">
+        </association>
     </resultMap>
 
 </mapper>

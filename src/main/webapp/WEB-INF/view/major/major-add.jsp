@@ -26,49 +26,59 @@
 </head>
 <body>
 <article class="page-container">
-    <form class="form" id="form-college-add">
+    <form class="form" id="form-major-add">
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>学院编号：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>专业编号：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="college_no" name="college_no">
+                <c:if test="${major!=null}">
+                    <input type="text" readonly class="input-text" value="${major.major_no}" placeholder="" id="major_no" name="major_no">
+                </c:if>
+                <c:if test="${major==null}">
+                    <input type="text"  class="input-text" value="" placeholder="" id="major_no" name="major_no">
+                </c:if>
             </div>
         </div>
 
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>学院名称：</label>
+            <label class="form-label col-xs-4 col-sm-2"><span class="c-red">*</span>专业名称：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="" placeholder="" id="college_name" name="college_name">
+                <input type="text" class="input-text" value="${major.major_name}" placeholder="" id="major_name" name="major_name">
             </div>
         </div>
 
         <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2">学院开设人数：</label>
+            <label class="form-label col-xs-4 col-sm-2">所属学院：</label>
             <div class="formControls col-xs-8 col-sm-9">
-                <input type="text"  class="input-text" value="0" placeholder=""  name="setting_quota">
-            </div>
-        </div>
-
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2">学院实际人数：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="0" placeholder=""  name="current_quota">
-            </div>
-        </div>
-
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2">学院专业数目：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <input type="text" class="input-text" value="0" placeholder=""  name="major_int">
-            </div>
-        </div>
-
-        <div class="row cl">
-            <label class="form-label col-xs-4 col-sm-2">学院状态：</label>
-            <div class="formControls col-xs-8 col-sm-9">
-                <select name="college_status" class="input-text">
-                    <option selected="selected" value="1">正常</option>
-                    <option value="0">关闭</option>
+                <select name="college_no" class="input-text">
+                    <c:if test="${major!=null}">
+                        <option value="${major.college_no}" >当前学院:${major.college.college_name}----${major.college_no}</option>
+                        <c:forEach items="${collegeList}" var="college">
+                            <option value="${college.college_no}">${college.college_name}----${college.college_no}</option>
+                        </c:forEach>
+                    </c:if>
+                    <c:if test="${major==null}">
+                        <option>--请选择--</option>
+                        <c:forEach items="${collegeList}" var="college">
+                            <option value="${college.college_no}">${college.college_name}----${college.college_no}</option>
+                        </c:forEach>
+                    </c:if>
                 </select>
+            </div>
+        </div>
+
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>状态：</label>
+            <div class="formControls col-xs-8 col-sm-9 skin-minimal">
+                <div class="radio-box">
+                    <input name="major_status" type="radio" value="1" id="status-1" checked>
+                    <label for="status-1">正常</label>
+                </div>
+
+                <div class="radio-box">
+                    <input type="radio" id="status-2" value="0" name="major_status">
+                    <label for="status-2">关闭</label>
+                </div>
+
             </div>
         </div>
 
@@ -103,33 +113,38 @@
             increaseArea: '20%'
         });
         //表单验证
-        $("#form-college-add").validate({
+        $("#form-major-add").validate({
             rules:{
-                college_no:{
+                major_no:{
                     required:true,
                 },
-                college_name:{
+                major_name:{
                     required:true,
+                    minlength:2,
+                    maxlength:10
                 }
             },
             onkeyup:false,
             focusCleanup:true,
             success:"valid",
             submitHandler:function(form){
-                layer.confirm('确认要新增学院吗？',function(index){
-                    var params = $("#form-college-add").serialize();
+                var url = "${path}/major/addMajor";
+                if (${major!=null}){
+                    url = "${path}/major/doUpdate"
+                }
+                layer.confirm('确认吗？',function(index){
+                    var params = $("#form-major-add").serialize();
                     $.ajax({
                         type: 'POST',
-                        url: '${path}/college/addCollege',
+                        url: url,
                         data:params,
                         dataType: "text",
                         success: function(data){
-                            layer.msg('已添加!',{icon:6,time:4000});
-                            $('#form-college-add')[0].reset();
+                            layer.msg('成功!',{icon:6,time:2000});
+                            $('#form-major-add')[0].reset();
                         },
                         error:function(data) {
-                            alert("失败啦");
-                            console.log(data.msg);
+                            layer.msg('失败!',{icon:5,time:3000});
                         },
                     });
                 });

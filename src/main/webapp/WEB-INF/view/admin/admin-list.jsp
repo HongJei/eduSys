@@ -146,20 +146,10 @@
         "bStateSave": true,//状态保存
         "pading":false,
         "aoColumnDefs": [
-            //{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
             {"orderable":false,"aTargets":[0,7]}// 不参与排序的列
         ]
     });
 
-    /*
-	参数解释：
-	title	标题
-	url		请求的url
-	id		需要操作的数据id
-	w		弹出层宽度（缺省调默认值）
-	h		弹出层高度（缺省调默认值）
-*/
-    /*管理员-增加*/
     function admin_add(title,url,w,h){
         layer_show(title,url,w,h);
     }
