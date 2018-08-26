@@ -7207,6 +7207,9 @@ a.label:hover,a.label:focus,a.badge:hover,a.badge:focus {
 .label-success,.badge-success {
     background-color:#5eb95e
 }
+.label-makeup,.badge-success {
+    background-color:#FF0000
+}
 .label-success[href],.badge-success[href] {
     background-color:#5eb95e
 }

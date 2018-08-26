@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.lingnan.dao.grade.gradeDao">
+
+    <!--获取所有成绩-->
+    <select id="findAll" resultMap="grade-course-student">
+        SELECT grade_no,final_grade,makeup_flag,
+            s.register_no,s.s_name,c.course_no,c.course_name,
+            t.t_name,t.work_id
+        FROM tb_grade
+        LEFT JOIN tb_course c ON tb_grade.course_no = c.course_no
+        LEFT JOIN tb_student s ON tb_grade.register_no = s.register_no
+        LEFT JOIN tb_teacher t ON tb_grade.work_id = t.work_id
+    </select>
+
+    <!--根据课程编号获取数据-->
+    <select id="findById" resultMap="grade-course-student">
+        SELECT grade_no,final_grade,makeup_flag,
+            s.register_no,s.s_name,c.course_no,c.course_name,
+            t.t_name,t.work_id
+        FROM tb_grade
+            LEFT JOIN tb_course c ON tb_grade.course_no = c.course_no
+            LEFT JOIN tb_student s ON tb_grade.register_no = s.register_no
+            LEFT JOIN tb_teacher t ON tb_grade.work_id = t.work_id
+        WHERE grade_no=#{grade_no}
+    </select>
+
+    <!--新增成绩-->
+    <insert id="addGrade" parameterType="Grade">
+        INSERT INTO tb_grade(grade_no, register_no, work_id, course_no, final_grade, makeup_flag)
+        VALUES (#{grade_no},#{register_no},#{work_id},#{course_no},#{final_grade},#{makeup_flag})
+    </insert>
+
+    <!--根据ID删除一条数据-->
+    <delete id="delById" parameterType="String">
+        DELETE FROM tb_grade WHERE grade_no=#{grade_no}
+    </delete>
+
+    <update id="updateStatus" parameterType="Map">
+        UPDATE tb_grade SET makeup_flag=#{status}
+        WHERE grade_no=#{grade_no}
+    </update>
+
+    <!--批量删除-->
+    <delete id="delByIds" parameterType="String">
+        DELETE FROM tb_grade
+        WHERE grade_no IN (
+        <foreach collection="array" item="grade_no" separator=",">
+            #{grade_no}
+        </foreach>
+        )
+    </delete>
+
+    <!--更新-->
+    <update id="updateGrade" parameterType="Grade">
+        UPDATE tb_grade SET
+            work_id=#{work_id},course_no=#{course_no},
+            final_grade=#{final_grade},makeup_flag=#{makeup_flag}
+        WHERE grade_no=#{grade_no}
+    </update>
+
+
+
+    <resultMap id="baseMap" type="Grade">
+        <id column="grade_no" property="grade_no"></id>
+        <result column="register_no" property="register_no"></result>
+        <result column="work_id" property="work_id"></result>
+        <result column="course_no" property="course_no"></result>
+        <result column="final_grade" property="final_grade"></result>
+        <result column="makeup_flag" property="makeup_flag"></result>
+    </resultMap>
+
+    <resultMap id="grade-course-student" type="Grade">
+        <id column="grade_no" property="grade_no"></id>
+        <result column="register_no" property="register_no"></result>
+        <result column="work_id" property="work_id"></result>
+        <result column="course_no" property="course_no"></result>
+        <result column="final_grade" property="final_grade"></result>
+        <result column="makeup_flag" property="makeup_flag"></result>
+        <association property="course" javaType="Course"
+                     resultMap="com.lingnan.dao.course.courseDao.baseMap">
+        </association>
+        <association property="student" javaType="Student"
+                     resultMap="com.lingnan.dao.student.studentDao.baseMap">
+        </association>
+        <association property="teacher" javaType="Teacher"
+                     resultMap="com.lingnan.dao.teacher.teacherDao.baseMap">
+        </association>
+
+    </resultMap>
+
+
+</mapper>

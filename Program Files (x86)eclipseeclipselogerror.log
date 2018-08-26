@@ -12122,3 +12122,1469 @@ Log session start time Sat Aug 25 16:00:49 CST 2018<br>
 <td title="com.lingnan.dao.student.studentDao.delById category">com.lingnan.dao.student.studentDao.delById</td>
 <td title="Message">&lt;==    Updates: 1</td>
 </tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat Aug 25 22:11:12 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>2</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#993300"><strong>ERROR</strong></font></td>
+<td title="org.springframework.test.context.TestContextManager category">org.springframework.test.context.TestContextManager</td>
+<td title="Message">Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@404bbcbd] to prepare test instance [daoTest.gradeTest@1e81f160]</td>
+</tr>
+<tr><td bgcolor="#993300" style="color:White; font-size : xx-small;" colspan="6">java.lang.IllegalStateException: Failed to load ApplicationContext
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:117)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:228)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:230)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:249)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:193)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:242)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [spring-mybatis.xml]: Invocation of init method failed; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [I:\IdeaProjects\eduSys\target\classes\com\lingnan\dao\grade\grade.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.lingnan.dao.grade.gradeDao.mapper_resultMap[grade-course-student]_association[major]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1582)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:545)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:482)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:759)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:839)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:538)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:125)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.test.context.support.AbstractGenericContextLoader.loadContext(AbstractGenericContextLoader.java:60)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.delegateLoading(AbstractDelegatingSmartContextLoader.java:109)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.test.context.support.AbstractDelegatingSmartContextLoader.loadContext(AbstractDelegatingSmartContextLoader.java:261)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 24 more
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [I:\IdeaProjects\eduSys\target\classes\com\lingnan\dao\grade\grade.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.lingnan.dao.grade.gradeDao.mapper_resultMap[grade-course-student]_association[major]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:523)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:380)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1641)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1578)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 39 more
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. Cause: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.lingnan.dao.grade.gradeDao.mapper_resultMap[grade-course-student]_association[major]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:120)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:92)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:521)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 42 more
+<br>&nbsp;&nbsp;&nbsp;&nbsp;Caused by: java.lang.IllegalArgumentException: Result Maps collection already contains value for com.lingnan.dao.grade.gradeDao.mapper_resultMap[grade-course-student]_association[major]
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:844)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.ibatis.session.Configuration$StrictMap.put(Configuration.java:816)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.ibatis.session.Configuration.addResultMap(Configuration.java:598)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.ibatis.builder.MapperBuilderAssistant.addResultMap(MapperBuilderAssistant.java:214)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.ibatis.builder.ResultMapResolver.resolve(ResultMapResolver.java:47)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:285)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.ibatis.builder.xml.XMLMapperBuilder.processNestedResultMappings(XMLMapperBuilder.java:386)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.ibatis.builder.xml.XMLMapperBuilder.buildResultMappingFromContext(XMLMapperBuilder.java:366)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:280)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:252)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:244)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:116)
+<br>&nbsp;&nbsp;&nbsp;&nbsp;	... 44 more
+</td></tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat Aug 25 22:12:08 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">==&gt;  Preparing: SELECT grade_no,final_grade,makeup_flag, s.register_no,s.s_name,c.course_no,c.course_name FROM tb_grade LEFT JOIN tb_course c ON tb_grade.course_no = c.course_no LEFT JOIN tb_student s ON tb_grade.register_no = s.register_no </td>
+</tr>
+
+<tr>
+<td>64</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">==&gt; Parameters: </td>
+</tr>
+
+<tr>
+<td>89</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==    Columns: grade_no, final_grade, makeup_flag, register_no, s_name, course_no, course_name</td>
+</tr>
+
+<tr>
+<td>89</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 1, 86, null, 201231000069 , 史宏, LAC044, 体育</td>
+</tr>
+
+<tr>
+<td>93</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 2, 88, null, 201231000070 , 王璐发, LAC410, 马克思主义基本原理</td>
+</tr>
+
+<tr>
+<td>94</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 3, 84, null, 201231000071 , 卢勇进, MATH416, 高等数学1</td>
+</tr>
+
+<tr>
+<td>95</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 4, 90, null, 201231000072 , 于涛, MATH417, 高等数学2</td>
+</tr>
+
+<tr>
+<td>97</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 5, 85, null, 201231000073 , 苗峰, LAC409, 中国近现代史纲要</td>
+</tr>
+
+<tr>
+<td>97</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 6, 84, null, 201231000074 , 李贵银, MATH093, 线性代数</td>
+</tr>
+
+<tr>
+<td>98</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 7, 86, null, 201231000075 , 王亚光, PHY638, 大学物理1</td>
+</tr>
+
+<tr>
+<td>99</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 8, 93, null, 201231000076 , 叶俊, PHY639, 大学物理2</td>
+</tr>
+
+<tr>
+<td>99</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 9, 85, null, 201231000077 , 于涛涛, PHY522, 大学物理实验2</td>
+</tr>
+
+<tr>
+<td>100</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 10, 87, null, 201231000078, 贾锦, PHY013, 大学物理实验1</td>
+</tr>
+
+<tr>
+<td>100</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 11, 85, null, 201231000079 , 孟晴天, MATH033, 概率论与数理统计</td>
+</tr>
+
+<tr>
+<td>101</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 12, 82, null, 201231000080 , 李红, CS141, 计算机系统基础</td>
+</tr>
+
+<tr>
+<td>101</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 13, 81, null, 201231000081 , 张乐天, CS110, 程序设计基础</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 14, 85, null, 201231000082 , 姜东, CS156, 电路与电子技术基础</td>
+</tr>
+
+<tr>
+<td>104</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 15, 84, null, 201231000083 , 马银器, MATH056, 离散数学</td>
+</tr>
+
+<tr>
+<td>107</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 16, 83, null, 201231000084 , 梁国策, CS270, 数据结构</td>
+</tr>
+
+<tr>
+<td>123</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 17, 85, null, 200930000028 , 杜丽荣, CS079, 数字电路与数字逻辑</td>
+</tr>
+
+<tr>
+<td>127</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 18, 89, null, 200930000029 , 赵志文, CS243, 编译原理</td>
+</tr>
+
+<tr>
+<td>132</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 19, 82, null, 200930000030 , 李凯, CS244, 数据库原理</td>
+</tr>
+
+<tr>
+<td>133</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 20, 87, null, 200930000031 , 刘光辉, CS328, 计算机组成原理</td>
+</tr>
+
+<tr>
+<td>134</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 21, 78, null, 200930000032 , 李伟岸, CS307, 操作系统原理</td>
+</tr>
+
+<tr>
+<td>135</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 22, 84, null, 200930000033 , 邹芬芳, CS342, 面向对象程序设计</td>
+</tr>
+
+<tr>
+<td>137</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 23, 81, null, 200930000034 , 冯博士, CS347, 微机原理与接口技术</td>
+</tr>
+
+<tr>
+<td>138</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 24, 81, null, 200930000035 , 王磊落, CS449, 计算机网络</td>
+</tr>
+
+<tr>
+<td>138</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 25, 81, null, 200930000036 , 梁传宗, CS446, Web开发技术基础</td>
+</tr>
+
+<tr>
+<td>139</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 26, 86, null, 200930000037 , 丁晨发, CS426, 高级数据库应用</td>
+</tr>
+
+<tr>
+<td>140</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 27, 88, null, 200930000038 , 郑林立, CS448, 嵌入式系统基础</td>
+</tr>
+
+<tr>
+<td>141</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 28, 84, null, 200930000039 , 王彦辉, CS473, 软件质量保证与测试</td>
+</tr>
+
+<tr>
+<td>141</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 29, 90, null, 200930000040 , 牛宇, CS449, 计算机网络</td>
+</tr>
+
+<tr>
+<td>143</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 30, 85, null, 200930000041 , 邵治国, MATH045, 计算方法</td>
+</tr>
+
+<tr>
+<td>145</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 31, 84, null, 200930000042 , 张久逢, CS435, java技术与应用</td>
+</tr>
+
+<tr>
+<td>145</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 32, 86, null, 200930000043 , 徐楠, CS478, 计算机图形图像处理</td>
+</tr>
+
+<tr>
+<td>146</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 33, 93, null, 200930000068 , 宁吉林, CS479, 嵌入式操作系统</td>
+</tr>
+
+<tr>
+<td>147</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 34, 85, null, 200930000069 , 王丹心, CS489, .net技术与应用</td>
+</tr>
+
+<tr>
+<td>148</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 35, 87, null, 200930000070 , 徐洪水, CS347, 微机原理与接口技术</td>
+</tr>
+
+<tr>
+<td>149</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 36, 85, null, 200930000071 , 林则港, CS480, 软件项目管理</td>
+</tr>
+
+<tr>
+<td>150</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 37, 82, null, 200930000072 , 李怡心, CS676, 工程制图</td>
+</tr>
+
+<tr>
+<td>150</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 38, 81, null, 200930000073 , 薛琬如, CS053, 科技论文写作</td>
+</tr>
+
+<tr>
+<td>151</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 39, 85, null, 200930000074 , 李盼盼, CS6CS, 移动互联网技术及开发</td>
+</tr>
+
+<tr>
+<td>151</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 40, 84, null, 200930000075 , 吕健功, CS690, 网络安全技术</td>
+</tr>
+
+<tr>
+<td>152</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 41, 83, null, 200930000076 , 王海洋, CS813, 物联网理论与物联技术</td>
+</tr>
+
+<tr>
+<td>152</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 42, 85, null, 200930000077 , 李欢, CS119, 数据结构课程设计</td>
+</tr>
+
+<tr>
+<td>153</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 43, 89, null, 200930000078 , 应华华, CS741, 电子装配实习</td>
+</tr>
+
+<tr>
+<td>154</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 44, 82, null, 200930000079 , 靳新圆, CS625, 生产实习</td>
+</tr>
+
+<tr>
+<td>154</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 45, 87, null, 200930000080 , 张孝亲, CS484, 软件工程专题训练</td>
+</tr>
+
+<tr>
+<td>155</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 46, 78, null, 200930000081 , 王茂升, CS482, 数据库专题训练</td>
+</tr>
+
+<tr>
+<td>155</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 47, 84, null, 201131000044 , 宋世家, COM809, 传感检测技术</td>
+</tr>
+
+<tr>
+<td>156</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 48, 81, null, 201131000045 , 孟祥, COM807, 自组织网络</td>
+</tr>
+
+<tr>
+<td>156</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 49, 81, null, 201131000046 , 宋琪琪, COM803, 通信专业英语</td>
+</tr>
+
+<tr>
+<td>157</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 50, 99, 1, 201231000068 , 刘茁初, LAC264, 大学外语</td>
+</tr>
+
+<tr>
+<td>157</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==      Total: 50</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat Aug 25 22:15:10 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">==&gt;  Preparing: SELECT grade_no,final_grade,makeup_flag, s.register_no,s.s_name,c.course_no,c.course_name, t.t_name,t.work_id FROM tb_grade LEFT JOIN tb_course c ON tb_grade.course_no = c.course_no LEFT JOIN tb_student s ON tb_grade.register_no = s.register_no LEFT JOIN tb_teacher t ON tb_grade.work_id = t.work_id </td>
+</tr>
+
+<tr>
+<td>69</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">==&gt; Parameters: </td>
+</tr>
+
+<tr>
+<td>91</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==    Columns: grade_no, final_grade, makeup_flag, register_no, s_name, course_no, course_name, t_name, work_id</td>
+</tr>
+
+<tr>
+<td>91</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 1, 86, null, 201231000069 , 史宏, LAC044, 体育, 王蒙, 030020</td>
+</tr>
+
+<tr>
+<td>97</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 2, 88, null, 201231000070 , 王璐发, LAC410, 马克思主义基本原理, 张大行, 030019</td>
+</tr>
+
+<tr>
+<td>98</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 3, 84, null, 201231000071 , 卢勇进, MATH416, 高等数学1, 薛晓豆, 030018</td>
+</tr>
+
+<tr>
+<td>98</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 4, 90, null, 201231000072 , 于涛, MATH417, 高等数学2, 邵辉烟, 030017</td>
+</tr>
+
+<tr>
+<td>100</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 5, 85, null, 201231000073 , 苗峰, LAC409, 中国近现代史纲要, 刘艳丽, 030016</td>
+</tr>
+
+<tr>
+<td>101</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 6, 84, null, 201231000074 , 李贵银, MATH093, 线性代数, 刘超然, 030015</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 7, 86, null, 201231000075 , 王亚光, PHY638, 大学物理1, 康健建, 030014</td>
+</tr>
+
+<tr>
+<td>103</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 8, 93, null, 201231000076 , 叶俊, PHY639, 大学物理2, 季军, 030013</td>
+</tr>
+
+<tr>
+<td>104</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 9, 85, null, 201231000077 , 于涛涛, PHY522, 大学物理实验2, 杨开萍, 030012</td>
+</tr>
+
+<tr>
+<td>105</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 10, 87, null, 201231000078, 贾锦, PHY013, 大学物理实验1, 赵正如, 030011</td>
+</tr>
+
+<tr>
+<td>106</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 11, 85, null, 201231000079 , 孟晴天, MATH033, 概率论与数理统计, 王蔚蓝, 030010</td>
+</tr>
+
+<tr>
+<td>107</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 12, 82, null, 201231000080 , 李红, CS141, 计算机系统基础, 于加为, 030009</td>
+</tr>
+
+<tr>
+<td>108</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 13, 81, null, 201231000081 , 张乐天, CS110, 程序设计基础, 董小蜜, 030008</td>
+</tr>
+
+<tr>
+<td>109</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 14, 85, null, 201231000082 , 姜东, CS156, 电路与电子技术基础, 张丰润, 030007</td>
+</tr>
+
+<tr>
+<td>109</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 15, 84, null, 201231000083 , 马银器, MATH056, 离散数学, 付德利, 030006</td>
+</tr>
+
+<tr>
+<td>111</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 16, 83, null, 201231000084 , 梁国策, CS270, 数据结构, 曹冠珠, 030005</td>
+</tr>
+
+<tr>
+<td>119</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 17, 85, null, 200930000028 , 杜丽荣, CS079, 数字电路与数字逻辑, 康吉健, 030004</td>
+</tr>
+
+<tr>
+<td>120</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 18, 89, null, 200930000029 , 赵志文, CS243, 编译原理, 王亚哈, 030003</td>
+</tr>
+
+<tr>
+<td>121</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 19, 82, null, 200930000030 , 李凯, CS244, 数据库原理, 王从良, 030002</td>
+</tr>
+
+<tr>
+<td>122</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 20, 87, null, 200930000031 , 刘光辉, CS328, 计算机组成原理, 梁鸿威, 030001</td>
+</tr>
+
+<tr>
+<td>123</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 21, 78, null, 200930000032 , 李伟岸, CS307, 操作系统原理, 张海燕, 030034</td>
+</tr>
+
+<tr>
+<td>124</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 22, 84, null, 200930000033 , 邹芬芳, CS342, 面向对象程序设计, 李笑雁, 030023</td>
+</tr>
+
+<tr>
+<td>125</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 23, 81, null, 200930000034 , 冯博士, CS347, 微机原理与接口技术, 王慧, 030027</td>
+</tr>
+
+<tr>
+<td>126</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 24, 81, null, 200930000035 , 王磊落, CS449, 计算机网络, 王楚艳, 030028</td>
+</tr>
+
+<tr>
+<td>128</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 25, 81, null, 200930000036 , 梁传宗, CS446, Web开发技术基础, 崔志衎, 030029</td>
+</tr>
+
+<tr>
+<td>129</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 26, 86, null, 200930000037 , 丁晨发, CS426, 高级数据库应用, 石德义, 040030</td>
+</tr>
+
+<tr>
+<td>130</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 27, 88, null, 200930000038 , 郑林立, CS448, 嵌入式系统基础, 李默然, 030031</td>
+</tr>
+
+<tr>
+<td>131</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 28, 84, null, 200930000039 , 王彦辉, CS473, 软件质量保证与测试, 杨得之, 030032</td>
+</tr>
+
+<tr>
+<td>132</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 29, 90, null, 200930000040 , 牛宇, CS449, 计算机网络, 王码, 030033</td>
+</tr>
+
+<tr>
+<td>133</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 30, 85, null, 200930000041 , 邵治国, MATH045, 计算方法, 张海燕, 030034</td>
+</tr>
+
+<tr>
+<td>135</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 31, 84, null, 200930000042 , 张久逢, CS435, java技术与应用, 李笑雁, 030023</td>
+</tr>
+
+<tr>
+<td>137</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 32, 86, null, 200930000043 , 徐楠, CS478, 计算机图形图像处理, 赵西男, 030024</td>
+</tr>
+
+<tr>
+<td>137</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 33, 93, null, 200930000068 , 宁吉林, CS479, 嵌入式操作系统, 王正司, 030025</td>
+</tr>
+
+<tr>
+<td>138</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 34, 85, null, 200930000069 , 王丹心, CS489, .net技术与应用, 王慧, 030027</td>
+</tr>
+
+<tr>
+<td>139</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 35, 87, null, 200930000070 , 徐洪水, CS347, 微机原理与接口技术, 王楚艳, 030028</td>
+</tr>
+
+<tr>
+<td>139</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 36, 85, null, 200930000071 , 林则港, CS480, 软件项目管理, 崔志衎, 030029</td>
+</tr>
+
+<tr>
+<td>141</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 37, 82, null, 200930000072 , 李怡心, CS676, 工程制图, 石德义, 040030</td>
+</tr>
+
+<tr>
+<td>141</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 38, 81, null, 200930000073 , 薛琬如, CS053, 科技论文写作, 李默然, 030031</td>
+</tr>
+
+<tr>
+<td>142</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 39, 85, null, 200930000074 , 李盼盼, CS6CS, 移动互联网技术及开发, 杨得之, 030032</td>
+</tr>
+
+<tr>
+<td>143</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 40, 84, null, 200930000075 , 吕健功, CS690, 网络安全技术, 王码, 030033</td>
+</tr>
+
+<tr>
+<td>146</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 41, 83, null, 200930000076 , 王海洋, CS813, 物联网理论与物联技术, 张海燕, 030034</td>
+</tr>
+
+<tr>
+<td>147</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 42, 85, null, 200930000077 , 李欢, CS119, 数据结构课程设计, 李笑雁, 030023</td>
+</tr>
+
+<tr>
+<td>148</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 43, 89, null, 200930000078 , 应华华, CS741, 电子装配实习, 王正司, 030025</td>
+</tr>
+
+<tr>
+<td>149</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 44, 82, null, 200930000079 , 靳新圆, CS625, 生产实习, 王楚艳, 030028</td>
+</tr>
+
+<tr>
+<td>150</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 45, 87, null, 200930000080 , 张孝亲, CS484, 软件工程专题训练, 崔志衎, 030029</td>
+</tr>
+
+<tr>
+<td>150</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 46, 78, null, 200930000081 , 王茂升, CS482, 数据库专题训练, 石德义, 040030</td>
+</tr>
+
+<tr>
+<td>152</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 47, 84, null, 201131000044 , 宋世家, COM809, 传感检测技术, 赵正如, 030011</td>
+</tr>
+
+<tr>
+<td>153</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 48, 81, null, 201131000045 , 孟祥, COM807, 自组织网络, 王蔚蓝, 030010</td>
+</tr>
+
+<tr>
+<td>154</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 49, 81, null, 201131000046 , 宋琪琪, COM803, 通信专业英语, 于加为, 030009</td>
+</tr>
+
+<tr>
+<td>154</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 50, 99, 1, 201231000068 , 刘茁初, LAC264, 大学外语, 杜连栋, 030021</td>
+</tr>
+
+<tr>
+<td>155</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==      Total: 50</td>
+</tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Log4J Log Messages</title>
+<style type="text/css">
+<!--
+body, table {font-family: arial,sans-serif; font-size: x-small;}
+th {background: #336699; color: #FFFFFF; text-align: left;}
+-->
+</style>
+</head>
+<body bgcolor="#FFFFFF" topmargin="6" leftmargin="6">
+<hr size="1" noshade>
+Log session start time Sat Aug 25 22:25:09 CST 2018<br>
+<br>
+<table cellspacing="0" cellpadding="4" border="1" bordercolor="#224466" width="100%">
+<tr>
+<th>Time</th>
+<th>Thread</th>
+<th>Level</th>
+<th>Category</th>
+<th>Message</th>
+</tr>
+
+<tr>
+<td>0</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">==&gt;  Preparing: SELECT grade_no,final_grade,makeup_flag, s.register_no,s.s_name,c.course_no,c.course_name, t.t_name,t.work_id FROM tb_grade LEFT JOIN tb_course c ON tb_grade.course_no = c.course_no LEFT JOIN tb_student s ON tb_grade.register_no = s.register_no LEFT JOIN tb_teacher t ON tb_grade.work_id = t.work_id </td>
+</tr>
+
+<tr>
+<td>69</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">==&gt; Parameters: </td>
+</tr>
+
+<tr>
+<td>88</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==    Columns: grade_no, final_grade, makeup_flag, register_no, s_name, course_no, course_name, t_name, work_id</td>
+</tr>
+
+<tr>
+<td>89</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 1, 86, null, 201231000069 , 史宏, LAC044, 体育, 王蒙, 030020</td>
+</tr>
+
+<tr>
+<td>93</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 2, 88, null, 201231000070 , 王璐发, LAC410, 马克思主义基本原理, 张大行, 030019</td>
+</tr>
+
+<tr>
+<td>95</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 3, 84, null, 201231000071 , 卢勇进, MATH416, 高等数学1, 薛晓豆, 030018</td>
+</tr>
+
+<tr>
+<td>96</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 4, 90, null, 201231000072 , 于涛, MATH417, 高等数学2, 邵辉烟, 030017</td>
+</tr>
+
+<tr>
+<td>98</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 5, 85, null, 201231000073 , 苗峰, LAC409, 中国近现代史纲要, 刘艳丽, 030016</td>
+</tr>
+
+<tr>
+<td>100</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 6, 84, null, 201231000074 , 李贵银, MATH093, 线性代数, 刘超然, 030015</td>
+</tr>
+
+<tr>
+<td>102</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 7, 86, null, 201231000075 , 王亚光, PHY638, 大学物理1, 康健建, 030014</td>
+</tr>
+
+<tr>
+<td>104</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 8, 93, null, 201231000076 , 叶俊, PHY639, 大学物理2, 季军, 030013</td>
+</tr>
+
+<tr>
+<td>106</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 9, 85, null, 201231000077 , 于涛涛, PHY522, 大学物理实验2, 杨开萍, 030012</td>
+</tr>
+
+<tr>
+<td>107</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 10, 87, null, 201231000078, 贾锦, PHY013, 大学物理实验1, 赵正如, 030011</td>
+</tr>
+
+<tr>
+<td>108</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 11, 85, null, 201231000079 , 孟晴天, MATH033, 概率论与数理统计, 王蔚蓝, 030010</td>
+</tr>
+
+<tr>
+<td>108</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 12, 82, null, 201231000080 , 李红, CS141, 计算机系统基础, 于加为, 030009</td>
+</tr>
+
+<tr>
+<td>110</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 13, 81, null, 201231000081 , 张乐天, CS110, 程序设计基础, 董小蜜, 030008</td>
+</tr>
+
+<tr>
+<td>111</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 14, 85, null, 201231000082 , 姜东, CS156, 电路与电子技术基础, 张丰润, 030007</td>
+</tr>
+
+<tr>
+<td>111</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 15, 84, null, 201231000083 , 马银器, MATH056, 离散数学, 付德利, 030006</td>
+</tr>
+
+<tr>
+<td>113</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 16, 83, null, 201231000084 , 梁国策, CS270, 数据结构, 曹冠珠, 030005</td>
+</tr>
+
+<tr>
+<td>120</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 17, 85, null, 200930000028 , 杜丽荣, CS079, 数字电路与数字逻辑, 康吉健, 030004</td>
+</tr>
+
+<tr>
+<td>127</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 18, 89, null, 200930000029 , 赵志文, CS243, 编译原理, 王亚哈, 030003</td>
+</tr>
+
+<tr>
+<td>133</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 19, 82, null, 200930000030 , 李凯, CS244, 数据库原理, 王从良, 030002</td>
+</tr>
+
+<tr>
+<td>137</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 20, 87, null, 200930000031 , 刘光辉, CS328, 计算机组成原理, 梁鸿威, 030001</td>
+</tr>
+
+<tr>
+<td>139</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 21, 78, null, 200930000032 , 李伟岸, CS307, 操作系统原理, 张海燕, 030034</td>
+</tr>
+
+<tr>
+<td>141</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 22, 84, null, 200930000033 , 邹芬芳, CS342, 面向对象程序设计, 李笑雁, 030023</td>
+</tr>
+
+<tr>
+<td>146</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 23, 81, null, 200930000034 , 冯博士, CS347, 微机原理与接口技术, 王慧, 030027</td>
+</tr>
+
+<tr>
+<td>147</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 24, 81, null, 200930000035 , 王磊落, CS449, 计算机网络, 王楚艳, 030028</td>
+</tr>
+
+<tr>
+<td>148</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 25, 81, null, 200930000036 , 梁传宗, CS446, Web开发技术基础, 崔志衎, 030029</td>
+</tr>
+
+<tr>
+<td>149</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 26, 86, null, 200930000037 , 丁晨发, CS426, 高级数据库应用, 石德义, 040030</td>
+</tr>
+
+<tr>
+<td>150</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 27, 88, null, 200930000038 , 郑林立, CS448, 嵌入式系统基础, 李默然, 030031</td>
+</tr>
+
+<tr>
+<td>151</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 28, 84, null, 200930000039 , 王彦辉, CS473, 软件质量保证与测试, 杨得之, 030032</td>
+</tr>
+
+<tr>
+<td>152</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 29, 90, null, 200930000040 , 牛宇, CS449, 计算机网络, 王码, 030033</td>
+</tr>
+
+<tr>
+<td>152</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 30, 85, null, 200930000041 , 邵治国, MATH045, 计算方法, 张海燕, 030034</td>
+</tr>
+
+<tr>
+<td>153</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 31, 84, null, 200930000042 , 张久逢, CS435, java技术与应用, 李笑雁, 030023</td>
+</tr>
+
+<tr>
+<td>154</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 32, 86, null, 200930000043 , 徐楠, CS478, 计算机图形图像处理, 赵西男, 030024</td>
+</tr>
+
+<tr>
+<td>154</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 33, 93, null, 200930000068 , 宁吉林, CS479, 嵌入式操作系统, 王正司, 030025</td>
+</tr>
+
+<tr>
+<td>155</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 34, 85, null, 200930000069 , 王丹心, CS489, .net技术与应用, 王慧, 030027</td>
+</tr>
+
+<tr>
+<td>156</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 35, 87, null, 200930000070 , 徐洪水, CS347, 微机原理与接口技术, 王楚艳, 030028</td>
+</tr>
+
+<tr>
+<td>157</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 36, 85, null, 200930000071 , 林则港, CS480, 软件项目管理, 崔志衎, 030029</td>
+</tr>
+
+<tr>
+<td>158</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 37, 82, null, 200930000072 , 李怡心, CS676, 工程制图, 石德义, 040030</td>
+</tr>
+
+<tr>
+<td>158</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 38, 81, null, 200930000073 , 薛琬如, CS053, 科技论文写作, 李默然, 030031</td>
+</tr>
+
+<tr>
+<td>159</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 39, 85, null, 200930000074 , 李盼盼, CS6CS, 移动互联网技术及开发, 杨得之, 030032</td>
+</tr>
+
+<tr>
+<td>159</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 40, 84, null, 200930000075 , 吕健功, CS690, 网络安全技术, 王码, 030033</td>
+</tr>
+
+<tr>
+<td>160</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 41, 83, null, 200930000076 , 王海洋, CS813, 物联网理论与物联技术, 张海燕, 030034</td>
+</tr>
+
+<tr>
+<td>160</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 42, 85, null, 200930000077 , 李欢, CS119, 数据结构课程设计, 李笑雁, 030023</td>
+</tr>
+
+<tr>
+<td>161</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 43, 89, null, 200930000078 , 应华华, CS741, 电子装配实习, 王正司, 030025</td>
+</tr>
+
+<tr>
+<td>161</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 44, 82, null, 200930000079 , 靳新圆, CS625, 生产实习, 王楚艳, 030028</td>
+</tr>
+
+<tr>
+<td>163</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 45, 87, null, 200930000080 , 张孝亲, CS484, 软件工程专题训练, 崔志衎, 030029</td>
+</tr>
+
+<tr>
+<td>164</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 46, 78, null, 200930000081 , 王茂升, CS482, 数据库专题训练, 石德义, 040030</td>
+</tr>
+
+<tr>
+<td>165</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 47, 84, null, 201131000044 , 宋世家, COM809, 传感检测技术, 赵正如, 030011</td>
+</tr>
+
+<tr>
+<td>165</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 48, 81, null, 201131000045 , 孟祥, COM807, 自组织网络, 王蔚蓝, 030010</td>
+</tr>
+
+<tr>
+<td>166</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 49, 81, null, 201131000046 , 宋琪琪, COM803, 通信专业英语, 于加为, 030009</td>
+</tr>
+
+<tr>
+<td>166</td>
+<td title="main thread">main</td>
+<td title="Level">TRACE</td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==        Row: 50, 99, 1, 201231000068 , 刘茁初, LAC264, 大学外语, 杜连栋, 030021</td>
+</tr>
+
+<tr>
+<td>167</td>
+<td title="main thread">main</td>
+<td title="Level"><font color="#339933">DEBUG</font></td>
+<td title="com.lingnan.dao.grade.gradeDao.findAll category">com.lingnan.dao.grade.gradeDao.findAll</td>
+<td title="Message">&lt;==      Total: 50</td>
+</tr>

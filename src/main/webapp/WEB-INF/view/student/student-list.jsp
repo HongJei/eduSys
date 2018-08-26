@@ -196,7 +196,6 @@
                 },
                 error:function(data) {
                     layer.msg('更新失败!',{icon: 5,time:5000});
-                    console.log(data.msg);
                 },
             });
             ;
