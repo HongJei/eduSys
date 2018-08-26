@@ -179,6 +179,7 @@
                 },
                 s_class:{
                     required:true,
+                    digits:true
                 },
                 s_address:{
                     required:true,

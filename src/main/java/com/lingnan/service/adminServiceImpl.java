@@ -17,15 +17,16 @@ public class adminServiceImpl implements adminService {
     private adminDao adminDao;
 
     @Override
-    public boolean login(Admin admin) {
+    public String login(Admin admin) {
         Admin ad = adminDao.login(admin);
-        if (!ad.getAdminName().equals(admin.getAdminName())){
-            return false;
+        //先判断是否存在用户
+        if (ad == null||!ad.getAdminName().equals(admin.getAdminName())){
+            return "用户名不存在";
         }
         if (!ad.getAdminPwd().equals(admin.getAdminPwd())){
-            return false;
+            return "密码不正确";
         }
-        return true;
+        return "success";
     }
 
     @Override

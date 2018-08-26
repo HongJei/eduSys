@@ -115,6 +115,15 @@
                 },
                 college_name:{
                     required:true,
+                    digits:true
+                },
+                setting_quota:{
+                    required:true,
+                    digits:true
+                },
+                current_quota:{
+                    required:true,
+                    digits:true
                 }
             },
             onkeyup:false,

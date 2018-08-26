@@ -5,7 +5,7 @@ import com.lingnan.bean.Admin;
 import java.util.List;
 
 public interface adminService {
-    boolean login(Admin admin);
+    String login(Admin admin);
 
     List<Admin> findAll();
 

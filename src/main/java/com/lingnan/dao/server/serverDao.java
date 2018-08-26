@@ -1,6 +1,7 @@
 package com.lingnan.dao.server;
 
 import com.lingnan.bean.Major;
+import com.lingnan.bean.Server;
 
 import java.util.List;
 import java.util.Map;
@@ -10,19 +11,8 @@ import java.util.Map;
  */
 public interface serverDao {
 
-    List<Major> findAll();
+    int newIP(Server server);
 
-    int addMajor(Major major);
+    List<Server> findAll();
 
-    int delById(String major_no);
-
-    int updateStatus(Map<String, Object> map);
-
-    int delByIds(int array[]);
-
-    Major getOneMajor(String major_no);
-
-    int updateMajor(Major major);
-
-    List<Major> findByCollegeId(int parentId);
 }

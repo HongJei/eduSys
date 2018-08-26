@@ -3,62 +3,72 @@ package com.lingnan.bean;
 import java.util.Date;
 
 public class Server {
-    private Integer sId;
-    private String sIp;
-    private Date snTime;
-    private Date soTime;
-    private Integer sNum;
 
-    public Integer getsId() {
-        return sId;
+    private Integer s_id;
+    private String s_ip;
+    private String s_ntime;
+    private String s_otime;
+    private Integer s_num;
+
+    public Server() {
     }
 
-    public void setsId(Integer sId) {
-        this.sId = sId;
+    public Server(Integer s_id, String s_ip, String s_ntime, String s_otime, Integer s_num) {
+        this.s_id = s_id;
+        this.s_ip = s_ip;
+        this.s_ntime = s_ntime;
+        this.s_otime = s_otime;
+        this.s_num = s_num;
     }
 
-    public String getsIp() {
-        return sIp;
+    public Integer getS_id() {
+        return s_id;
     }
 
-    public void setsIp(String sIp) {
-        this.sIp = sIp;
+    public void setS_id(Integer s_id) {
+        this.s_id = s_id;
     }
 
-    public Date getSnTime() {
-        return snTime;
+    public String getS_ip() {
+        return s_ip;
     }
 
-    public void setSnTime(Date snTime) {
-        this.snTime = snTime;
+    public void setS_ip(String s_ip) {
+        this.s_ip = s_ip;
     }
 
-    public Date getSoTime() {
-        return soTime;
+    public String getS_ntime() {
+        return s_ntime;
     }
 
-    public void setSoTime(Date soTime) {
-        this.soTime = soTime;
+    public void setS_ntime(String s_ntime) {
+        this.s_ntime = s_ntime;
     }
 
-    public Integer getsNum() {
-        return sNum;
+    public String getS_otime() {
+        return s_otime;
     }
 
-    public void setsNum(Integer sNum) {
-        this.sNum = sNum;
+    public void setS_otime(String s_otime) {
+        this.s_otime = s_otime;
+    }
+
+    public Integer getS_num() {
+        return s_num;
+    }
+
+    public void setS_num(Integer s_num) {
+        this.s_num = s_num;
     }
 
     @Override
     public String toString() {
         return "Server{" +
-                "sId=" + sId +
-                ", sIp='" + sIp + '\'' +
-                ", snTime=" + snTime +
-                ", soTime=" + soTime +
-                ", sNum=" + sNum +
+                "s_id=" + s_id +
+                ", s_ip='" + s_ip + '\'' +
+                ", s_ntime='" + s_ntime + '\'' +
+                ", s_otime='" + s_otime + '\'' +
+                ", s_num=" + s_num +
                 '}';
     }
-
-
 }

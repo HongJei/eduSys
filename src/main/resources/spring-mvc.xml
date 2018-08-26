@@ -29,5 +29,9 @@
 		<property name="maxUploadSize" value="5000000"></property>
 	</bean>
 
+    <!--配置拦截器-->
+	<mvc:interceptors>
+        <bean class="com.lingnan.interceptor.SecurityInterceptor"/>
+	</mvc:interceptors>
 
 </beans>

@@ -1,22 +1,31 @@
-package com.lingnan.controller.admin;
+package com.lingnan.service.server;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import com.lingnan.bean.Server;
+import com.lingnan.dao.server.serverDao;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import javax.servlet.http.HttpServletRequest;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import java.util.Date;
+import java.util.List;
 
-@Controller
-@RequestMapping("util")
-public class util {
+/**
+ * Created By HongJei Lee on 2018/8/26
+ */
+@Service
+public class serverServiceImpl implements serverService {
 
-    /**
-     * 获取服务器IP地址
-     *
-     */
-    @RequestMapping("/getIp")
-    public String getIp(HttpServletRequest request) {
+    @Autowired
+    private serverDao sd;
+
+    @Override
+    public List<Server> findAll() {
+        return sd.findAll();
+    }
+
+    public String setIP(HttpServletRequest request) {
         // 获取请求主机IP地址,如果通过代理进来，则透过防火墙获取真实IP地址
         System.out.println("获取IP：");
         String ip = request.getHeader("X-Forwarded-For");
@@ -57,8 +66,13 @@ public class util {
             }
             ip= inet.getHostAddress();
         }
-        System.out.println("ip = " + ip);
-        return null;
-    }
 
+        System.out.println("ip = " + ip);
+        //保存IP
+        Server server = new Server();
+        server.setS_ip(ip);
+        server.setS_ntime(new Date().toString());
+        sd.newIP(server);
+        return ip;
+    }
 }

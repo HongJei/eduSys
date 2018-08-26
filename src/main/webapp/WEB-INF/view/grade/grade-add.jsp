@@ -124,6 +124,7 @@
                 },
                 final_grade:{
                     required:true,
+                    digits:true
                 },
                 makeup_flag:{
                     required:true,

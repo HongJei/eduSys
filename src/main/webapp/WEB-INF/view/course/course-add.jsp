@@ -148,6 +148,7 @@
                 },
                 credit:{
                     required:true,
+                    digits:true
                 },
                 planned_hour:{
                     required:true,

@@ -2,6 +2,7 @@ package com.lingnan.controller.admin;
 
 import com.lingnan.bean.Admin;
 import com.lingnan.service.adminService;
+import com.lingnan.service.server.serverService;
 import com.lingnan.util.RandomValidateCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -31,9 +32,12 @@ public class login {
     @Autowired
     private adminService adminService;
 
+    @Autowired
+    private serverService ss;
+
     @RequestMapping("/toLogin")
     public String toLogin(){
-        return "admin/log&reg/login";
+        return "admin/login/login";
     }
 
 
@@ -42,30 +46,25 @@ public class login {
         return "admin/main";
     }
 
-    @RequestMapping("/doLogin")
+    @RequestMapping(value = "/doLogin",produces = "text/html;charset=UTF-8")
     @ResponseBody
-    public String doLogin(Admin admin, String checkCode, HttpSession session){
+    public String doLogin(Admin admin, String checkCode, HttpSession session,HttpServletRequest request){
         String passCode = (String) session.getAttribute("randomcode_key");
-        boolean flag = adminService.login(admin);
-        if (flag!=false){
             if (!checkCode.equals(passCode)){
-                session.setAttribute("msg","验证码错误!!");
-                return null;
+                return "验证码错误!!";
+            }else {
+                //保存登录信息
+                session.setAttribute("adminName",admin.getAdminName());
+                //保存IP信息
+                return adminService.login(admin);
             }
-            //保存登录信息
-            session.setAttribute("adminName",admin.getAdminName());
-            return "admin/toMain";
-        }else{
-            session.setAttribute("msg","账户或者密码错误!!");
-            return null;
-        }
     }
 
     /*注销*/
     @RequestMapping("/logOut")
     public String logOut(HttpSession session){
         session.removeAttribute("adminName");
-        return "admin/log&reg/login";
+        return "admin/login/login";
     }
 
     /*获取所有管理员*/

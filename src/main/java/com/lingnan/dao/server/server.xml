@@ -5,6 +5,15 @@
 
 <mapper namespace="com.lingnan.dao.server.serverDao">
 
+    <select id="findAll" resultType="Server">
+        SELECT * FROM tb_server
+    </select>
+
+    <insert id="newIP" parameterType="Server">
+        INSERT INTO tb_server(s_ip, s_ntime, s_otime, s_num)
+        VALUES (#{s_ip},#{s_ntime},#{s_otime},#{s_num})
+    </insert>
+
 
 
 </mapper>
