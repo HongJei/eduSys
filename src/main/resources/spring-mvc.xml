@@ -17,7 +17,11 @@
 	<mvc:annotation-driven>
 
 	</mvc:annotation-driven>
-	<!-- 开启静态资源  默认处理servlet -->
+	<!-- 开启静态资源处理：
+	       1.然而并没有什么用
+	       2.我也不知道为什么
+	       3.所以我用了下面的拦截器
+	 -->
 	<mvc:default-servlet-handler/>
 
 	<!-- 设置视图解析器 -->
@@ -25,9 +29,10 @@
 		<property name="prefix" value="/WEB-INF/view/"></property>
 		<property name="suffix" value=".jsp"></property>
 	</bean>
-	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-		<property name="maxUploadSize" value="5000000"></property>
-	</bean>
+    <!--最大上传数据大小-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="5000000"></property>
+    </bean>
 
     <!--配置拦截器-->
 	<mvc:interceptors>
