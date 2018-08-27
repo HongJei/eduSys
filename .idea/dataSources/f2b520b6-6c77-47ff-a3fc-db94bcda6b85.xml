@@ -1187,19 +1187,18 @@
       <Position>2</Position>
       <Comment>服务器IP地址</Comment>
       <DataType>varchar(255)|0</DataType>
-      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="286" parent="219" name="s_ntime">
       <Position>3</Position>
       <Comment>最新访问时间</Comment>
-      <DataType>date|0</DataType>
+      <DataType>varchar(255)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="287" parent="219" name="s_otime">
       <Position>4</Position>
       <Comment>上一次访问时间</Comment>
-      <DataType>date|0</DataType>
+      <DataType>varchar(255)|0</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <column id="288" parent="219" name="s_num">
@@ -1213,7 +1212,7 @@
     </index>
     <key id="290" parent="219" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>s_ip</ColNames>
+      <ColNames>s_id</ColNames>
       <Primary>1</Primary>
     </key>
     <column id="291" parent="220" name="register_no">

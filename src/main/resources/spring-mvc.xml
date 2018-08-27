@@ -31,7 +31,18 @@
 
     <!--配置拦截器-->
 	<mvc:interceptors>
-        <bean class="com.lingnan.interceptor.SecurityInterceptor"/>
+        <mvc:interceptor>
+            <mvc:mapping path="/**"></mvc:mapping>
+            <mvc:exclude-mapping path="/**/toLogin" />
+            <mvc:exclude-mapping path="/**/doLogin" />
+            <mvc:exclude-mapping path="/**/checkCode" />
+            <mvc:exclude-mapping path="/**/*.js" />
+            <mvc:exclude-mapping path="/**/*.css" />
+            <mvc:exclude-mapping path="/**/*.jpg" />
+            <mvc:exclude-mapping path="/**/*.ico" />
+            <mvc:exclude-mapping path="/**/*.png" />
+            <bean class="com.lingnan.interceptor.SecurityInterceptor"/>
+        </mvc:interceptor>
 	</mvc:interceptors>
 
 </beans>

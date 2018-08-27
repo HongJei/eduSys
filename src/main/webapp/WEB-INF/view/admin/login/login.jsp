@@ -1,6 +1,6 @@
 ﻿<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" pageEncoding="UTF-8" contentType="text/html; charset=UTF-8"%>
-<!-- 获取应用的路径  并给与path变量 -->
+
 <c:set var="path" value="${pageContext.request.contextPath}"></c:set>
 <!DOCTYPE HTML>
 <html>
@@ -47,7 +47,7 @@
                 <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe6cb;</i></label>
                 <div class="formControls col-xs-8">
                     <input class="input-text size-L radius" id="checkCode" type="text" placeholder="验证码" name="checkCode" aria-placeholder="验证码:"  style="width:150px;">
-                    <img src="checkCode" alt="" width="100" height="32" name="passCode" class="passcode radius" style="height:43px;cursor:pointer;" onclick="this.src=this.src+'?'">
+                    <img src="${path}/admin/checkCode" alt="" width="100" height="32" name="passCode" class="passcode radius" style="height:43px;cursor:pointer;" onclick="this.src=this.src+'?'">
                 </div>
             </div>
             <div class="row cl">
@@ -88,7 +88,7 @@
                 var params = $('#form-admin-login').serialize();
                 $(form).ajaxSubmit({
                     type: 'post',
-                    url: '${path}/admin/doLogin' ,
+                    url: '${path}/log/doLogin' ,
                     data: params,
                     dataType: 'text',
                     success: function(data){

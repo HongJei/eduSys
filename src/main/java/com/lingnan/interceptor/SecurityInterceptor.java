@@ -32,11 +32,12 @@ public class SecurityInterceptor implements HandlerInterceptor {
             host= inet.getHostAddress();
         }
 
-        logger.log(Level.INFO,"IP为---->>> " + host + " <<<-----访问了系统");
+        System.out.println("hst = " + request.getRequestURI());
 
-        if(request.getRequestURI().startsWith(request.getContextPath()+"/WEB-INF/view/admin/login.jsp")){
+        logger.info("IP为---->>> " + host + " <<<-----访问了系统");
+        /*if(request.getRequestURI().startsWith("/eduSys/log/toLogin")||request.getRequestURI().startsWith("/eduSys/admin/checkCode")){
             return true;
-        }
+        }*/
         if(request.getSession().getAttribute("adminName") == null) {
             request.getRequestDispatcher("/WEB-INF/view/admin/login/login.jsp").forward(request,response);
             return false;

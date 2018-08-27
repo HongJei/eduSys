@@ -31,31 +31,22 @@ public class test {
     private adminDao ad;
 
 
-    /*@Test
-    public void fun1(){
-        adminDao ad = context.getBean("adminDao",adminDao.class);
-        System.out.println("ad = " + ad);
-        Admin admin = new Admin(1,"a","admin","pm");
-        Admin byName = ad.findByName("a");
-        System.out.println(byName.getAdminName());
+    ApplicationContext context;
+
+    @Before
+    public void before() {
+        context =
+                new ClassPathXmlApplicationContext("spring-main.xml");
     }
-    
-    @Test
-    public void fun2(){
-        adminService as = context.getBean("adminServiceImpl",adminService.class);
-        Admin admin = new Admin(1,"admin","aa","pm");
-        boolean login = as.login(admin);
-        System.out.println("login = " + login);
-    }*/
 
 
 
     @Test
     public void findAll(){
-        List<Admin> all = ad.findAll();
-        System.out.println("all = " + all);
+        login ac = context.getBean("login",login.class);
+        System.out.println("all = " + ac);
     }
-
+/*
     @Test
     public void addAdmin(){
         Admin admin = new Admin(4,1,"Jei","431423412",
@@ -78,6 +69,6 @@ public class test {
                 "超级管理员","1380013800","123456789@163.om");
         int i = ad.updateAdmin(admin);
         System.out.println("i = " + i);
-    }
+    }*/
 
 }
